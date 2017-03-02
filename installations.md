@@ -62,8 +62,12 @@ Tomcat se moze startovati i zaustaviti iz /opt/tomcat-latest/bin foldera pomocu 
 
 ### Podesavanje tomcat-users.xml
 
-Sada treba da damo username i pass za Apache Tomcat role 
-```vi /home/edureka/tomcat9/conf/tomcat-users.xml```
+Sada treba da damo username i pass za Apache Tomcat role (pre toga zaustavimo tomcat9)
+
+```
+./opt/tomcat-latest/bin/shutdown.sh
+vi /home/edureka/tomcat9/conf/tomcat-users.xml
+```
 
 ```
 <tomcat-users>
@@ -76,6 +80,18 @@ Sada treba da damo username i pass za Apache Tomcat role
   <user username="admin" password="password!" roles="manager-gui,manager-script,manager-jmx,manager-status,admin-gui,admin-script"/>
   </tomcat-users>
 ```
+Sada ponovo startujemo tomcat9 i pristupimo mu iz browsera po portu (localhost:8880) koji smo definisali uz pomoc -p parametra u docker run id -p 8880:8080 komandi
+
+Svaka web aplikacija koja je deplojovana, ima context.xml fajl koji se nalazi u ```/conf/Catalina/localhost```  (po defaultu) i ima isto ime kao web app.
+Kako bi mogli da pristupamo Tomcat 9 Manager aplikaciji (da bi mogli da uradimo deploy Jankins.war paketa) treba izmeniti ```manager.xml``` fajl i definisati pravilo da zelimo da dozvolimo remote access
+U ovom primeru dozvoljavamo pristup svim IP adresama:
+```
+<Context privileged="true" antiResourceLocking="false" 
+         docBase="${catalina.home}/webapps/manager">
+    <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
+</Context>
+```
+
 
 
 
