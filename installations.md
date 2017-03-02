@@ -37,14 +37,18 @@ Snimi, izadji i ponovo ucitaj fajl
 
 ## Instalacija i podesavanje Tomcat 9 
 
-## Instalacija Tomcat 9 
+### Instalacija Tomcat 9 
 
 ```cd /opt/``` 
+
 ```apt-get install wget```
+
 ```wget http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.0.M17/bin/apache-tomcat-9.0.0.M17.tar.gz```
+
 ```tar xzf apache-tomcat-9.0.0.M17.tar.gz```
 
 Iz sigurnosnih razloga, nije dobro da pokrecemo Tomcat kao root, pa cemo napraviti novog sistemskog usera:
+
 ```useradd -r tomcat9 --shell /bin/false```
 
 Napravi symbolic link  Tomcat foldera u  /opt/tomcat-latest podesi odgovarajuci ownership:
@@ -52,12 +56,15 @@ Napravi symbolic link  Tomcat foldera u  /opt/tomcat-latest podesi odgovarajuci 
 ```chown -hR tomcat9: tomcat-latest apache-tomcat-9.0.0.M6```
 
 Tomcat se moze startovati i zaustaviti iz /opt/tomcat-latest/bin foldera pomocu bash  skripti
-```./opt/tomcat-latest/bin/startup.sh``` 
+```
+./opt/tomcat-latest/bin/startup.sh
+``` 
 
-## Podesavanje tomcat-users.xml
+### Podesavanje tomcat-users.xml
 
 Sada treba da damo username i pass za Apache Tomcat role 
 ```vi /home/edureka/tomcat9/conf/tomcat-users.xml```
+
 ```
 <tomcat-users>
 <pre><role rolename="manager-gui"/>
