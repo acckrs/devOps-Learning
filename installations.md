@@ -111,6 +111,9 @@ Nakon toga izaberemo Install suggested plugins
 
 ![alt tag](img/plugins.jpg)
 
+Nakon toga moramo kreirati prvog administrativnog usera i posle toga je Jenkins spreman za upotrebu
+
+
 
 
 
