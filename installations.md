@@ -1,4 +1,3 @@
-docker ps-
 ## Instalacija Jave 
 
 
