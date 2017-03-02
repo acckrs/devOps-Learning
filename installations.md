@@ -6,11 +6,11 @@ Instalacija defaultnog JRE/JDK
 
 Prvo, updejtujemo index paketa.
 
-    $ sudo apt-get update
+  ```  $ sudo apt-get update```
 
 Onda, instaliramo Javu. Konkretno, u ovom slučaju instaliramo Java Runtime Environment (JRE).
 
-    $ sudo apt-get-install default-jre
+  ```  $ sudo apt-get-install default-jre```
 
 
 
