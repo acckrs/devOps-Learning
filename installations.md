@@ -105,5 +105,13 @@ Downloadujemo Jenkins.war u folder (npr /opt/jenkins)
 Na Apache Tomcat manager web aplikaciji u sekciji Deploy, unesemo wrednosti za Context Path (/jenkins) i za WAR or Directory URL (/opt/jenkins/jenkins.war)
 ![alt tag](img/jenkinsDeploy.jpg)
 
+Da bi otkljucali Jenkins web app, sifru cemo naci u `/root/.jenkins/secrets/initialAdminPassword` 
+
+Nakon toga izaberemo Install suggested plugins
+![alt tag](img/plugins.jpg)
+
+
+
+
 
 
