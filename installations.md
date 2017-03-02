@@ -14,9 +14,8 @@ Onda, instaliramo Javu. Konkretno, u ovom slučaju instaliramo Java Runtime Envi
 
 ## Managing Java
 
- 
-There can be multiple Java installations on one server. You can configure which version is the default for use in the command line by using update-alternatives, which manages which symbolic links are used for different commands.
-
+Na serveru moze biti vise Java instalacija. U tom slucaju se moze konfigurisati koja je verzija defaultna pomocu komande ```update-alternatives``` koja podesava koji sybolic linkovi se koriste za razlicite komande.
+```sudo update-alternatives --config java```
 
 
 
