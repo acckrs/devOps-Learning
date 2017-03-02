@@ -12,7 +12,7 @@ Onda, instaliramo Javu. Konkretno, u ovom slučaju instaliramo Java Runtime Envi
 
   ```  $ sudo apt-get-install default-jre```
 
-## Managing Java
+### Podesavanje Jave
 
 Na serveru moze biti vise Java instalacija. U tom slucaju se moze konfigurisati koja je verzija defaultna pomocu komande ```update-alternatives``` koja podesava koji sybolic linkovi se koriste za razlicite komande.
 
@@ -22,7 +22,15 @@ U outputu mozemo izabrati broj za verziju koju zelimo da koristimo. Ovo vazi i z
 
 ### Podesavanje JAVA_HOME Environment Variable
 
-Da bi podesili JAVA_HOME varijablu, iz outputa ```update-variables``` iskopiramo putanju do instalacionog foldera u ```/etc/environment```  dokument.
+Da bi podesili JAVA_HOME varijablu, iz outputa ```update-variables``` iskopiramo putanju do instalacionog foldera u ```/etc/environment```  dokument:
+
+JAVA_HOME="/usr/lib/jvm/java-8-oracle" \# ovde staviti pravu putanju
+
+Snimi, izadji i ponovo ucitaj fajl
+```$ source /etc/environment
+   $echo JAVA_HOME
+```
+
 
 
 
