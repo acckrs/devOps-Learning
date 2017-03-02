@@ -71,7 +71,7 @@ Sada treba da damo username i pass za Apache Tomcat role (pre toga zaustavimo to
 
 ```
 ./opt/tomcat-latest/bin/shutdown.sh
-vi /home/edureka/tomcat9/conf/tomcat-users.xml
+vi /opt/tomcat-latest/conf/tomcat-users.xml
 ```
 
 ```
@@ -97,12 +97,13 @@ U ovom primeru dozvoljavamo pristup svim IP adresama:
 </Context>
 ```
 
-# 4. Download and deploy Jenkins.war 
+### 4. Download and deploy Jenkins.war 
 
 Downloadujemo Jenkins.war u folder (npr /opt/jenkins)
 `wget http://updates.jenkins-ci.org/latest/jenkins.war`
 
-Na Apache Tomcat manager 
+Na Apache Tomcat manager web aplikaciji u sekciji Deploy, unesemo wrednosti za Context Path (/jenkins) i za WAR or Directory URL (/opt/jenkins/jenkins.war)
+![alt tag](img/jenkinsDeploy.jpg)
 
 
 
