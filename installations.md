@@ -41,7 +41,7 @@ Snimi, izadji i ponovo ucitaj fajl
 
 ```apt-get install git```
 
-## Instalacija i podesavanje Tomcat 9 
+## 3. Instalacija i podesavanje Tomcat 9 
 
 ### Instalacija Tomcat 9 
 
