@@ -97,9 +97,12 @@ U ovom primeru dozvoljavamo pristup svim IP adresama:
 </Context>
 ```
 
-4. Download and deploy Jenkins.war 
+# 4. Download and deploy Jenkins.war 
 
+Downloadujemo Jenkins.war u folder (npr /opt/jenkins)
 `wget http://updates.jenkins-ci.org/latest/jenkins.war`
+
+Na Apache Tomcat manager 
 
 
 
