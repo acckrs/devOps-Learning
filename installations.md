@@ -1,4 +1,11 @@
-## Instalacija Jave 
+1. Install Java 8
+2. install Git
+3. Install Tomcat 9
+4. Download Jenkins.war
+5. Deploy Jenkins.war
+6. Install relevant plugins za Jenkins
+
+## 1. Instalacija Jave 
 
 
 ### Instalacija defaultnog JRE/JDK
@@ -30,7 +37,7 @@ Snimi, izadji i ponovo ucitaj fajl
 ```$ source /etc/environment```
    ```$ echo JAVA_HOME```
 
-## Instalacija Git-a
+## 2. Instalacija Git-a
 
 ```apt-get install git```
 
