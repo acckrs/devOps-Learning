@@ -31,11 +31,13 @@ Snimi, izadji i ponovo ucitaj fajl
 ```$ source /etc/environment```
    ```$ echo JAVA_HOME```
 
-### Instalacija Git-a
+## Instalacija Git-a
 
 ```apt-get install git```
 
-### Instalacija Tomcat 9
+## Instalacija i podesavanje Tomcat 9 
+
+## Instalacija Tomcat 9 
 
 ```cd /opt/``` 
 ```apt-get install wget```
@@ -49,32 +51,24 @@ Napravi symbolic link  Tomcat foldera u  /opt/tomcat-latest podesi odgovarajuci 
 ```ln -s apache-tomcat-9.0.0.M6 tomcat-latest```
 ```chown -hR tomcat9: tomcat-latest apache-tomcat-9.0.0.M6```
 
-Tomcat se moze startovati iz /opt/tomcat-latest/bin foldera pomocu bash  skripti, ali je jos bolje da napravimo systemd init file 
-```nano /etc/systemd/system/tomcat.service```  i u njega dodamo:
+Tomcat se moze startovati i zaustaviti iz /opt/tomcat-latest/bin foldera pomocu bash  skripti
+```./opt/tomcat-latest/bin/startup.sh``` 
+
+## Podesavanje tomcat-users.xml
+
+Sada treba da damo username i pass za Apache Tomcat role 
+```vi /home/edureka/tomcat9/conf/tomcat-users.xml```
 ```
-[Unit]
-Description=Tomcat9
-After=network.target
-
-[Service]
-Type=forking
-User=tomcat9
-Group=tomcat9
-
-Environment=CATALINA_PID=/opt/tomcat-latest/tomcat9.pid
-Environment=JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
-Environment=CATALINA_HOME=/opt/tomcat-latest
-Environment=CATALINA_BASE=/opt/tomcat-latest
-Environment="CATALINA_OPTS=-Xms512m -Xmx512m"
-Environment="JAVA_OPTS=-Dfile.encoding=UTF-8 -Dnet.sf.ehcache.skipUpdateCheck=true -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:+UseParNewGC"
-
-ExecStart=/opt/tomcat-latest/bin/startup.sh
-ExecStop=/opt/tomcat-latest/bin/shutdown.sh
-
-[Install]
-WantedBy=multi-user.target
+<tomcat-users>
+<pre><role rolename="manager-gui"/>
+  <role rolename="manager-script"/>
+  <role rolename="manager-jmx"/>
+  <role rolename="manager-status"/>
+  <role rolename="admin-gui"/>
+  <role rolename="admin-script"/>
+  <user username="admin" password="password!" roles="manager-gui,manager-script,manager-jmx,manager-status,admin-gui,admin-script"/>
+  </tomcat-users>
 ```
-
 
 
 
