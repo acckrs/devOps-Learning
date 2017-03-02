@@ -1,7 +1,7 @@
 # Instalacija Java pomoću Apt-Get na Ubuntu 16.04
 
 
-## Instalacija defaultnog JRE/JDK
+### Instalacija defaultnog JRE/JDK
 
 
 Prvo, updejtujemo index paketa.
@@ -18,13 +18,12 @@ Na serveru moze biti vise Java instalacija. U tom slucaju se moze konfigurisati 
 
 ```sudo update-alternatives --config java```
 
+U outputu mozemo izabrati broj za verziju koju zelimo da koristimo. Ovo vazi i za druge java commande kao sto su kompajler(```javac```) generator dokumentacije (```javadoc```) isl.
+
+### Podesavanje JAVA_HOME Environment Variable
+
+Da bi podesili JAVA_HOME varijablu, iz outputa ```update-variables``` iskopiramo putanju do instalacionog foldera u ```/etc/environment```  dokument.
 
 
 
 
-
-
-
-
-
-> Written with [StackEdit](https://stackedit.io/).
