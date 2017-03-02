@@ -24,12 +24,11 @@ U outputu mozemo izabrati broj za verziju koju zelimo da koristimo. Ovo vazi i z
 
 Da bi podesili JAVA_HOME varijablu, iz outputa ```update-variables``` iskopiramo putanju do instalacionog foldera u ```/etc/environment```  dokument:
 
-JAVA_HOME="/usr/lib/jvm/java-8-oracle" \# ovde staviti pravu putanju
+````JAVA_HOME="/usr/lib/jvm/java-8-oracle" \# ovde staviti pravu putanju```
 
 Snimi, izadji i ponovo ucitaj fajl
-```$ source /etc/environment
-   $echo JAVA_HOME
-```
+```$ source /etc/environment```
+   ```$echo JAVA_HOME```
 
 
 
