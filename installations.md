@@ -76,7 +76,7 @@ vi /opt/tomcat-latest/conf/tomcat-users.xml
 
 ```
 <tomcat-users>
-<pre><role rolename="manager-gui"/>
+ <role rolename="manager-gui"/>
   <role rolename="manager-script"/>
   <role rolename="manager-jmx"/>
   <role rolename="manager-status"/>
