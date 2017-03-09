@@ -16,7 +16,10 @@ Prvo, updejtujemo index paketa.
 
 Onda, instaliramo Javu. Konkretno, u ovom slučaju instaliramo Java Runtime Environment (JRE).
 
-  ```  $ sudo apt-get-install default-jre```
+  `$ sudo apt-get-install default-jre`
+  
+  `$ sudo apt-get-install default-jdk`
+
 
 ### Podesavanje Jave
 
