@@ -1,4 +1,4 @@
-## Korisne komande za tomcat ## 
+## Korisne komande za tomcat 
 
 * Da bi mogli da koristimo `jar` komandu, moramo da instaliramo JDK:
 `apt-get install default-jdk`
