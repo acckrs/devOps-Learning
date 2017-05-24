@@ -15,7 +15,7 @@ Function Get-DiskInfo {
     foreach ($disk in $disks) {
         $perFree = ($disk.FreeSpace / $disk.Size) * 100;
         if ($perFree -ge $MinimumFreePercent) {$OK = $True}
-        else {$OK = $False}; $disk|Select DeviceID, VolumeName, Size, FreeSpace, `
+        else {$OK = $False}; $disk|Select-Object DeviceID, VolumeName, Size, FreeSpace, `
         @{Name = "OK"; Expression = {$OK}}
     }
 }

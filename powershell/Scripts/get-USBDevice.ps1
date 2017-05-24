@@ -19,7 +19,7 @@ Param
         try
         {     
 'helloo world';       
-            $wmi = gwmi -Class win32_USBControllerDevice -ComputerName $computer -ea Stop | % { [wmi]$_.dependent } 
+            $wmi = Get-WmiObject -Class win32_USBControllerDevice -ComputerName $computer -ea Stop | ForEach-Object { [wmi]$_.dependent } 
         }
         catch 
         {
@@ -31,6 +31,6 @@ Param
         }
         else
         {
-            $wmi | ? {$_.status -eq 'error'} | select caption,description,manufacturer,deviceid,service,pscomputername  
+            $wmi | Where-Object {$_.status -eq 'error'} | Select-Object caption,description,manufacturer,deviceid,service,pscomputername  
         }
     }
