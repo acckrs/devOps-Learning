@@ -35,4 +35,4 @@ function get-runningServicesProc {
 
 }
 
-get-runningServicesProc -computerName localhost
+get-runningServicesProc -computerName (gc .\pcs.txt)
