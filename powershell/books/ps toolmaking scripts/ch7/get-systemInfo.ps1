@@ -1,9 +1,13 @@
 function get-systemInfo {
     [cmdletbinding()]
     param(
+        [Parameter(Mandatory = $true,
+            ValueFromPipelineByPropertyName = $true,
+            Position = 0)]
         [string[]] $computerName,
 
-        [string] $errorLog
+        [string] $errorLog = "C:\acca\githubRepos\devOps-Learning\powershell\books\ps toolmaking scripts\ch7\errorLog.txt"
+
     )
     BEGIN {}
     PROCESS {
@@ -12,12 +16,20 @@ function get-systemInfo {
             $comp = Get-WmiObject -Class win32_computerSystem -ComputerName $computer
             $bios = Get-WmiObject -Class win32_BIOS -ComputerName $computer
 
-            $props = @{'ComputerName' = $computer;
-                'OSVersion'           = $os.version;
-                'SPVersion'           = $os.servicepackmajorversion;
-                'BIOSserial'          = $bios.serialNumber;
-                'Manufacturer'        = $comp.manufacturer;
-                'Model'               = $comp.model
+            switch ($comp.AdminPasswordStatus) {
+                0 { $admPasswordStatus = "Disabled" }
+                2 { $admPasswordStatus = "Enabled" }
+                3 { $admPasswordStatus = "NA" }
+                4 { $admPasswordStatus = "Unknown" }
+            }
+
+            $props = @{'ComputerName'= $computer;
+                'OSVersion'          = $os.version;
+                'SPVersion'          = $os.servicepackmajorversion;
+                'BIOSserial'         = $bios.serialNumber;
+                'Manufacturer'       = $comp.manufacturer;
+                'Model'              = $comp.model;
+                'AdminPaswordStatus' = $admPasswordStatus
             }
 
             $obj = New-Object -TypeName psobject -Property $props
@@ -27,4 +39,4 @@ function get-systemInfo {
     }
     END {}
 }
-get-systemInfo -computerName ict-211-4723, ict-211-5888 -errorLog "c:\acca\errorLog.txt"
+get-systemInfo  -errorLog "c:\acca\errorLog.txt"
