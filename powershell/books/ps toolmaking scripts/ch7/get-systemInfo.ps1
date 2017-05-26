@@ -5,9 +5,7 @@ function get-systemInfo {
 
         [string] $errorLog
     )
-    BEGIN {
-        Write-Output "The error log is in $errorLog"
-    }
+    BEGIN {}
     PROCESS {
         foreach ($computer in $computerName) {
             $os = Get-WmiObject -Class win32_operatingSystem -ComputerName $computer
@@ -29,4 +27,4 @@ function get-systemInfo {
     }
     END {}
 }
-get-systemInfo -computerName localhost, ict-211-5888 -errorLog "c:\acca\errorLog.txt"
+get-systemInfo -computerName ict-211-4723, ict-211-5888 -errorLog "c:\acca\errorLog.txt"
