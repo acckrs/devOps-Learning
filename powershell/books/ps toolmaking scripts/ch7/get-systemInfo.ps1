@@ -2,8 +2,7 @@ function get-systemInfo {
     [cmdletbinding()]
     param(
         [Parameter(Mandatory = $true,
-            ValueFromPipelineByPropertyName = $true,
-            Position = 0)]
+            ValueFromPipelineByPropertyName = $true)]
         [alias('hostname')]
         [string[]] $computerName,
 
