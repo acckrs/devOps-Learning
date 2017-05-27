@@ -4,14 +4,19 @@ function get-systemInfo {
         [Parameter(Mandatory = $true,
             ValueFromPipelineByPropertyName = $true,
             Position = 0)]
+        [alias('hostname')]
         [string[]] $computerName,
 
         [string] $errorLog = "C:\acca\githubRepos\devOps-Learning\powershell\books\ps toolmaking scripts\ch7\errorLog.txt"
 
     )
-    BEGIN {}
+    BEGIN {
+        Write-Verbose "Error log will be $errorLog"
+    }
     PROCESS {
+        
         foreach ($computer in $computerName) {
+            Write-Verbose "Begin querying WMI from $computer for computer info"
             $os = Get-WmiObject -Class win32_operatingSystem -ComputerName $computer
             $comp = Get-WmiObject -Class win32_computerSystem -ComputerName $computer
             $bios = Get-WmiObject -Class win32_BIOS -ComputerName $computer
@@ -24,7 +29,7 @@ function get-systemInfo {
             }
 
             $props = @{'ComputerName'= $computer;
-                "Workgroup"=$comp.workgroup;
+                "Workgroup"=$comp.Workgroup;
                 'OSVersion'          = $os.version;
                 'SPVersion'          = $os.servicepackmajorversion;
                 'BIOSserial'         = $bios.serialNumber;
@@ -32,12 +37,14 @@ function get-systemInfo {
                 'Model'              = $comp.model;
                 'AdminPaswordStatus' = $admPasswordStatus
             }
+            Write-Verbose "WMI queries complete"
 
             $obj = New-Object -TypeName psobject -Property $props
             Write-Output $obj
+            Write-Verbose "end\"
 
         }
     }
     END {}
 }
-get-systemInfo  -errorLog "c:\acca\errorLog.txt" -computerName localhost
+get-systemInfo  -errorLog "c:\acca\errorLog.txt" -hostname localhost -verbose
