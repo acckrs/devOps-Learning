@@ -1,24 +1,29 @@
 function get-systemInfo {
     [cmdletbinding()]
     param(
-        [Parameter(Mandatory = $true,
-            ValueFromPipeline = $true)]
-            [validateCount(1,0)]
+        [Parameter(Mandatory = $True,
+            ValueFromPipeline = $True,
+            HelpMessage = "Computer name or IP address")] 
+        [validateCount(1, 10)]
+        [ValidateNotNullOrEmpty()]
         [alias('hostname')]
         [string[]] $computerName,
 
-        [string] $errorLog = "C:\acca\githubRepos\devOps-Learning\powershell\books\ps toolmaking scripts\ch7\errorLog.txt"
-
+        [string] $errorLog = "C:\acca\githubRepos\devOps-Learning\powershell\books\ps toolmaking scripts\ch7\errorLog.txt",
+        [switch] $logErrors
     )
     BEGIN {
         Write-Verbose "BEGIN block: Error log will be $errorLog"
     }
     PROCESS {
-        Write-Verbose "Beginning PROCESS block"
-        foreach ($computer in $computerName) {
-            Write-Verbose "Begin querying WMI from $computer for computer info"
-            $os = Get-WmiObject -Class win32_operatingSystem -ComputerName $computer
+        Write-Verbose "Starting Get-ComputerData"
+           foreach ($computer in $computerName) {
+            Write-Verbose "Getting data from $computer"
+            Write-Verbose "Win32_ComputerSystem"
             $comp = Get-WmiObject -Class win32_computerSystem -ComputerName $computer
+            Write-Verbose "Win32_OperatingSystem"
+            $os = Get-WmiObject -Class win32_operatingSystem -ComputerName $computer
+            Write-Verbose "Win32_BIOS"
             $bios = Get-WmiObject -Class win32_BIOS -ComputerName $computer
 
             switch ($comp.AdminPasswordStatus) {
@@ -46,7 +51,7 @@ function get-systemInfo {
         }
     }
     END {
-        Write-Verbose "END block"
+        Write-Verbose "Ending get-computerData" 
     }
 }
-get-systemInfo -hostname localhost, 'ict-211-0205' -verbose
+"localhost" | get-systemInfo   -verbose 
