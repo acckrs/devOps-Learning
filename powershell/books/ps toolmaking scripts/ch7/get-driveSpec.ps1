@@ -30,5 +30,4 @@ function get-driveSpec {
     END {}
     
 }
-$pcs=gc .\pcs.txt
-get-driveSpec -computername $pcs
+get-driveSpec -computername w-cs-ws234

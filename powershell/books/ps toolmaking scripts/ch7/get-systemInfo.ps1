@@ -24,6 +24,7 @@ function get-systemInfo {
             }
 
             $props = @{'ComputerName'= $computer;
+                "Workgroup"=$comp.workgroup;
                 'OSVersion'          = $os.version;
                 'SPVersion'          = $os.servicepackmajorversion;
                 'BIOSserial'         = $bios.serialNumber;
@@ -39,4 +40,4 @@ function get-systemInfo {
     }
     END {}
 }
-get-systemInfo  -errorLog "c:\acca\errorLog.txt"
+get-systemInfo  -errorLog "c:\acca\errorLog.txt" -computerName localhost
