@@ -1,6 +1,6 @@
 function get-runningServicesProc {
     
-      <#
+    <#
         .SYNOPSIS
             get-runninServicesProc retrieves info about running services and their matching processes using WMI
         .DESCRIPTION
@@ -9,7 +9,9 @@ function get-runningServicesProc {
         .PARAMETER ComputerName
             Name(s) or IP address(es) of computer(s) to query
         .PARAMETER errorLog
-            The path to error log. Default is C:\acca\githubRepos\devOps-Learning\powershell\books\ps toolmaking scripts\ch7\errorLog.txt
+            The path to error log. Default is C:\acca\errorServicesLog.txt
+        .PARAMETER logErrors
+            Switch parameter to indicate wheter tio log erross or not. If ommited, defaults to disabled logging 
         .INPUTS
             None
         .OUTPUTS
@@ -31,10 +33,12 @@ function get-runningServicesProc {
     param(
         [parameter(Mandatory = $true,
             ValueFromPipeline = $true)]
-            [ValidateNotNullOrEmpty()]
+        [ValidateNotNullOrEmpty()]
         [string[]] $computerName,
 
-        [string] $errorLog = "C:\Acca\githubRepos\devOps-Learning\powershell\books\ps toolmaking scripts\ch7\error.txt"
+        [string] $errorLog = "C:\Acca\errorServicesLog.txt",
+
+        [switch] $logErrors
     )
     BEGIN {
         Write-Verbose "Starting get-serviceInfo" 
@@ -43,29 +47,49 @@ function get-runningServicesProc {
     PROCESS {
         foreach ($computer in $computerName) {
             Write-Verbose "Getting services from $computer"
-            $runningServices = Get-WmiObject -ComputerName $computer -class win32_service| where -FilterScript {$_.state -eq "Running" }
-            foreach ($service in $runningServices) {
-                Write-Verbose "Processing service $($service.DisplayName) from $computer"
-                $process = Get-WmiObject -Class Win32_Process | where -FilterScript {$_.processID -eq $service.ProcessID}   
-                $props = @{"ComputerName"= $computer;
-                    "ServiceDisplayName" = $service.DisplayName;
-                    "ServiceName"        = $service.Name;
-                    "ProcessName"        = $process.ProcessName;
-                    "ProcessID"          = $process.processID;
-                    "ProcessThreadCount" = $process.ThreadCount;
-                    "ProcessVMSize"      = $process.Virtualsize;
-                    "ProcessPageFile"    = $process.peakPageFileUsage
-
-
-                } 
-                $obj = New-Object -TypeName psobject -Property $props  
-                Write-Output $obj   
+            try {
+                $allOK = $true
+                $runningServices = Get-WmiObject -ComputerName $computer -class win32_service -ea stop
             }
-        }
-    }
+            catch {
+                $allOK = $false
+                Write-Warning "Failed to get services from $computer"
+                if ($logErrors) {
+                    if (test-path $errorLog) {
+                        Write-Warning "Deleting old $errorLog!"
+                        rm $errorLog -Force
+                        write-verbose "Creating new error log at $errorLog"
+                        new-item $errorLog 
+                        Write-Warning "Writing error `"$($_.exception.message)`" to $errorLog" 
+                        $now=get-date
+                        "$now`:  Failed to get services from $computer. `"$($_.exception.message)`" "| out-file $errorLog -Append
+                    } # check if errorLog exists. If yes, re-create it and write error msg to it
+                }# check if switch for logging is turned on
+            } # catch
+
+            if ($allOK) {
+                $runningServices = Get-WmiObject -ComputerName $computer -class win32_service| where -FilterScript {$_.state -eq "Running" }
+                foreach ($service in $runningServices) {
+                    Write-Verbose "Processing service $($service.DisplayName) from $computer"
+                    $process = Get-WmiObject -Class Win32_Process | where -FilterScript {$_.processID -eq $service.ProcessID}   
+                    $props = @{"ComputerName"= $computer;
+                        "ServiceDisplayName" = $service.DisplayName;
+                        "ServiceName"        = $service.Name;
+                        "ProcessName"        = $process.ProcessName;
+                        "ProcessID"          = $process.processID;
+                        "ProcessThreadCount" = $process.ThreadCount;
+                        "ProcessVMSize"      = $process.Virtualsize;
+                        "ProcessPageFile"    = $process.peakPageFileUsage
+                    } # hash table cration for $obj properties
+                    $obj = New-Object -TypeName psobject -Property $props  
+                    Write-Output $obj
+                } # end foreach service loop  
+            } # end if allOK
+        } # end foreach computer loop
+    } # end PROCESS block
 
     END {}
 
 }
 
-get-help get-runningServiceProc -Full
+"localhost2","localhost" | get-runningServicesProc -verbose -logErrors | select -first 3

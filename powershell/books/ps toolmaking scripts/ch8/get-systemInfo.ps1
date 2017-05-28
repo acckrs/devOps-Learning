@@ -54,19 +54,21 @@ function get-systemInfo {
                 $os = Get-WmiObject -Class win32_operatingSystem -ComputerName $computer -ErrorAction Stop -ev err
             }
             catch {
-                Write-Warning "$computer failed"
+                $msg = "Failed getting system information from $computer."
                 $everythingOK = $false
                 if ($logErrors) {
-                    Write-Warning "Writing to log file: $err.message"
+                    #create an error message 
+                    Write-Warning $msg
+                    Write-Warning "Writing to log file: $computer is not online. ERROR is: $($_.exception.message)"
                     if (!(test-path $errorLog)) {
                         new-item $errorLog
-                        "$computer is not online. ERROR is: $err.message" | Out-File $errorLog -Append
+                        "$computer is not online. ERROR is: $($_.exception.message)" | Out-File $errorLog -Append
                     }
                     else {
-                        "$computer is not online. ERROR is: $err.message" | Out-File $errorLog -Append
+                        "$computer is not online. ERROR is: $($_.exception.message)" | Out-File $errorLog -Append
                     }
-                }
-            }
+                } # if $logErrors -eq $true
+            } #catch
             if ($everythingOK) {
                 $comp = Get-WmiObject -Class win32_computerSystem -ComputerName $computer
                 Write-Verbose "Win32_OperatingSystem"
@@ -102,4 +104,4 @@ function get-systemInfo {
         Write-Verbose "Ending get-computerData" 
     }
 }
-"localhost2" | get-systemInfo   -verbose  -logErrors -errorLog "C:\acca\errors3.txt"
+Measure-Command {"localhost2222", "w-cs-ws234" | get-systemInfo   -verbose  -logErrors -errorLog "C:\acca\errors3.txt" }
