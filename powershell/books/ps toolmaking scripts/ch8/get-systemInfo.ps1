@@ -38,7 +38,7 @@ function get-systemInfo {
         [alias('hostname')]
         [string[]] $computerName,
 
-        [string] $errorLog = "C:\Users\Acca\Documents\GitHub\devOps-Learning\powershell\books\ps toolmaking scripts\ch8\errorLog.txt",
+        [string] $errorLog = "C:\Acca\Errors2.txt",
         [switch] $logErrors
     )
     BEGIN {
@@ -57,8 +57,14 @@ function get-systemInfo {
                 Write-Warning "$computer failed"
                 $everythingOK = $false
                 if ($logErrors) {
-                    Write-Warning "Writing to log file"
-                    "$computer is not online. ERROR is: $err" | Out-File $errorLog -Append
+                    Write-Warning "Writing to log file: $err.message"
+                    if (!(test-path $errorLog)) {
+                        new-item $errorLog
+                        "$computer is not online. ERROR is: $err.message" | Out-File $errorLog -Append
+                    }
+                    else {
+                        "$computer is not online. ERROR is: $err.message" | Out-File $errorLog -Append
+                    }
                 }
             }
             if ($everythingOK) {
@@ -96,4 +102,4 @@ function get-systemInfo {
         Write-Verbose "Ending get-computerData" 
     }
 }
-"localhost2" | get-systemInfo   -verbose  -logErrors 
+"localhost2" | get-systemInfo   -verbose  -logErrors -errorLog "C:\acca\errors3.txt"
