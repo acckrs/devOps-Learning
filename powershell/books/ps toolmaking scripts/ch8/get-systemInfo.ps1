@@ -1,6 +1,6 @@
 function get-systemInfo {
         
-        <#
+    <#
         .SYNOPSIS
             get-systemInfo retrieves info about up to 10 computers from WMI
         .DESCRIPTION
@@ -38,7 +38,7 @@ function get-systemInfo {
         [alias('hostname')]
         [string[]] $computerName,
 
-        [string] $errorLog = "C:\acca\githubRepos\devOps-Learning\powershell\books\ps toolmaking scripts\ch7\errorLog.txt",
+        [string] $errorLog = "C:\Users\Acca\Documents\GitHub\devOps-Learning\powershell\books\ps toolmaking scripts\ch8\errorLog.txt",
         [switch] $logErrors
     )
     BEGIN {
@@ -49,39 +49,51 @@ function get-systemInfo {
         foreach ($computer in $computerName) {
             Write-Verbose "Getting data from $computer"
             Write-Verbose "Win32_ComputerSystem"
-            $comp = Get-WmiObject -Class win32_computerSystem -ComputerName $computer
-            Write-Verbose "Win32_OperatingSystem"
-            $os = Get-WmiObject -Class win32_operatingSystem -ComputerName $computer
-            Write-Verbose "Win32_BIOS"
-            $bios = Get-WmiObject -Class win32_BIOS -ComputerName $computer
-
-            switch ($comp.AdminPasswordStatus) {
-                0 { $admPasswordStatus = "Disabled" }
-                2 { $admPasswordStatus = "Enabled" }
-                3 { $admPasswordStatus = "NA" }
-                4 { $admPasswordStatus = "Unknown" }
+            try {
+                $everythingOK = $True
+                $os = Get-WmiObject -Class win32_operatingSystem -ComputerName $computer -ErrorAction Stop -ev err
             }
-
-            $props = @{'ComputerName'= $computer;
-                "Workgroup"          = $comp.Workgroup;
-                "Domain"             = $comp.Domain;
-                'OSVersion'          = $os.version;
-                'SPVersion'          = $os.servicepackmajorversion;
-                'BIOSserial'         = $bios.serialNumber;
-                'Manufacturer'       = $comp.manufacturer;
-                'Model'              = $comp.model;
-                'AdminPaswordStatus' = $admPasswordStatus
+            catch {
+                Write-Warning "$computer failed"
+                $everythingOK = $false
+                if ($logErrors) {
+                    Write-Warning "Writing to log file"
+                    "$computer is not online. ERROR is: $err" | Out-File $errorLog -Append
+                }
             }
-            Write-Verbose "WMI queries complete"
+            if ($everythingOK) {
+                $comp = Get-WmiObject -Class win32_computerSystem -ComputerName $computer
+                Write-Verbose "Win32_OperatingSystem"
+                $os = Get-WmiObject -Class win32_operatingSystem -ComputerName $computer
+                Write-Verbose "Win32_BIOS"
+                $bios = Get-WmiObject -Class win32_BIOS -ComputerName $computer
 
-            $obj = New-Object -TypeName psobject -Property $props
-            Write-Output $obj
+                switch ($comp.AdminPasswordStatus) {
+                    0 { $admPasswordStatus = "Disabled" }
+                    2 { $admPasswordStatus = "Enabled" }
+                    3 { $admPasswordStatus = "NA" }
+                    4 { $admPasswordStatus = "Unknown" }
+                } #end switch statement
 
-        }
-    }
+                $props = @{'ComputerName'= $computer;
+                    "Workgroup"          = $comp.Workgroup;
+                    "Domain"             = $comp.Domain;
+                    'OSVersion'          = $os.version;
+                    'SPVersion'          = $os.servicepackmajorversion;
+                    'BIOSserial'         = $bios.serialNumber;
+                    'Manufacturer'       = $comp.manufacturer;
+                    'Model'              = $comp.model;
+                    'AdminPaswordStatus' = $admPasswordStatus
+                } #end hash table for properties
+                Write-Verbose "WMI queries complete"
+
+                $obj = New-Object -TypeName psobject -Property $props
+                Write-Output $obj
+            } #end check if $everythingOK
+        } # end forEach loop for computers
+    } # end PROCESS block
     END {
         Write-Verbose "Ending get-computerData" 
     }
 }
-#"localhost" | get-systemInfo   -verbose 
-get-help get-systemInfo -full
+"localhost2" | get-systemInfo   -verbose  -logErrors 
