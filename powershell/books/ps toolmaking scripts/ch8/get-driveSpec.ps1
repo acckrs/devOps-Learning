@@ -1,4 +1,27 @@
 function get-driveSpec {
+
+     <#
+        .SYNOPSIS
+            get-driveSpec retrieves info ahrd drives from computers using WMI
+        .DESCRIPTION
+            get-systemINfo retrieves info about computers' harddrive(s) including their names, capacity and free space size.
+        .PARAMETER ComputerName
+            Name(s) or IP address(es) of computer(s) to query
+        .INPUTS
+            None
+        .OUTPUTS
+             None
+        .NOTES
+            Version:        1.0
+            Author:         Aleksandar Krstic
+            Creation Date:  May 25th, 2017
+            Purpose/Change: Initial script development
+        
+        .EXAMPLE
+            get-content names.txt | get-driveSpec 
+        .EXAMPLE
+            get-driveSpec -computerName computer1,computer2 
+    #>
 [cmdletbinding()]
 
     param (
@@ -36,4 +59,4 @@ function get-driveSpec {
     }
     
 }
-"localhost" | get-driveSpec -verbose
+get-help get-driveSpec -full

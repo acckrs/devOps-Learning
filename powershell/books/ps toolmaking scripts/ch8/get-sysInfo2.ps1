@@ -1,4 +1,29 @@
 function Get-SystemInfo {
+          <#
+        .SYNOPSIS
+            get-sysInfo2 retrieves computer and operating system informations using Windows Management Instrumentation (WMI) from computers. 
+        .DESCRIPTION
+            get-sysInfo2 retrieves computer and operating system informations using Windows Management Instrumentation (WMI) from computers. 
+            It displays last bootUp time, name, model, manufacturer and operating system version
+        .PARAMETER ComputerName
+            Name(s) or IP address(es) of computer(s) to query
+        .PARAMETER errorLog
+            The path to error log. Default is C:\acca\githubRepos\devOps-Learning\powershell\books\ps toolmaking scripts\ch7\errorLog.txt
+        .INPUTS
+            None
+        .OUTPUTS
+             Log file stored in $errorLog
+        .NOTES
+            Version:        1.0
+            Author:         Aleksandar Krstic
+            Creation Date:  May 25th, 2017
+            Purpose/Change: Initial script development
+        
+        .EXAMPLE
+            get-content names.txt | get-sysInfo2
+        .EXAMPLE
+            get-sysInfo2 -computerName computer1,computer2 -errorLog c:\errors.txt 
+    #>
     [CmdletBinding()]
     param(
         [parameter(ValueFromPipeline=$true)]
@@ -23,4 +48,4 @@ function Get-SystemInfo {
         }
     }
 }
-"localhost","ict-211-0205" | Get-SystemInfo -Verbose
+get-help get-sysInfo2 -full

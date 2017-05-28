@@ -1,4 +1,33 @@
 function get-systemInfo {
+        
+        <#
+        .SYNOPSIS
+            get-systemInfo retrieves info about up to 10 computers from WMI
+        .DESCRIPTION
+            get-systemINfo retrieves computer and operating system informations using Windows Management Instrumentation (WMI) from one to ten pcs. 
+            Enter IP address or name of computers to query
+        .PARAMETER ComputerName
+            Name or IP address of computer (maximum 10)
+        .PARAMETER errorLog
+            The path to error log. Default is C:\acca\githubRepos\devOps-Learning\powershell\books\ps toolmaking scripts\ch7\errorLog.txt
+        .PARAMETER logError
+            Switch parameter to log or not to log errors. If not specified, default is not to log (false)
+        .INPUTS
+            None
+        .OUTPUTS
+             Log file stored in $errorLog
+        .NOTES
+            Version:        1.0
+            Author:         Aleksandar Krstic
+            Creation Date:  May 25th, 2017
+            Purpose/Change: Initial script development
+        
+        .EXAMPLE
+            get-content names.txt | get-systemInfo 
+        .EXAMPLE
+            get-systemInfo -computerName computer1,computer2 -errorLog c:\errors.txt 
+        #>
+
     [cmdletbinding()]
     param(
         [Parameter(Mandatory = $True,
@@ -17,7 +46,7 @@ function get-systemInfo {
     }
     PROCESS {
         Write-Verbose "Starting Get-ComputerData"
-           foreach ($computer in $computerName) {
+        foreach ($computer in $computerName) {
             Write-Verbose "Getting data from $computer"
             Write-Verbose "Win32_ComputerSystem"
             $comp = Get-WmiObject -Class win32_computerSystem -ComputerName $computer
@@ -54,4 +83,5 @@ function get-systemInfo {
         Write-Verbose "Ending get-computerData" 
     }
 }
-"localhost" | get-systemInfo   -verbose 
+#"localhost" | get-systemInfo   -verbose 
+get-help get-systemInfo -full

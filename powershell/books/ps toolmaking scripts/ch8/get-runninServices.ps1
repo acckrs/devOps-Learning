@@ -1,4 +1,32 @@
 function get-runningServicesProc {
+    
+      <#
+        .SYNOPSIS
+            get-runninServicesProc retrieves info about running services and their matching processes using WMI
+        .DESCRIPTION
+            get-systemInfo retrieves running services and their matching processes information using Windows Management Instrumentation (WMI)
+            from one or more computers. Data to be shown include: ComputerName, ServiceDisplayName, ServiceName, ProcessName, ProcessID , ProcessThreadCount, ProcessVMSize and ProcessPageFile.
+        .PARAMETER ComputerName
+            Name(s) or IP address(es) of computer(s) to query
+        .PARAMETER errorLog
+            The path to error log. Default is C:\acca\githubRepos\devOps-Learning\powershell\books\ps toolmaking scripts\ch7\errorLog.txt
+        .INPUTS
+            None
+        .OUTPUTS
+             Log file stored in $errorLog
+        .NOTES
+            Version:        1.0
+            Author:         Aleksandar Krstic
+            Creation Date:  May 25th, 2017
+            Purpose/Change: Initial script development
+        
+        .EXAMPLE
+            get-content names.txt | get-runningServicesProc 
+        .EXAMPLE
+            get-runningServiceProc -computerName computer1,computer2 -errorLog c:\errors.txt 
+    #>
+
+
     [cmdletbinding()]
     param(
         [parameter(Mandatory = $true,
@@ -40,5 +68,4 @@ function get-runningServicesProc {
 
 }
 
-"ict-211-0205" | get-runningServicesProc -Verbose | select -First 6
-
+get-help get-runningServiceProc -Full
