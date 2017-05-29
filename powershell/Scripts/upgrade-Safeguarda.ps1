@@ -1,14 +1,13 @@
 function new-localUsers {
     <#
 .SYNOPSIS 
-Skripta za instalaciju nove verzije SafeGuard
+Funkcija koja kreira nove naloge i dodaje ih lokalne grupe na kompjuterima
 .DESCRIPTION
-Nije da je neophodno ovako, ali bolje cu se pripremiti
+Funkcija koja kreira nove naloge i dodaje ih lokalne grupe na kompjuterima. Imena naloga, kompjutera i grupa se mogu predati iz txt fajla ili navodjenjem vrednosti za parametre
 .PARAMETER accounts
-Comma separated imena ljudi iz SMART-a koje treba dodati u grupu lokalnih administratora. Korisnicki nalog koji kreiramo 
-treba da bude u formatu SMART.Ime.Prezime
+Nalozi koji ce se kreirati na komojuterima i koji ce biti odati u lokalne grupe. 
 .PARAMETER serverName
-Kompjuter na kome kreiramo lokalne naloge
+Kompjuteri na kojima kreiramo lokalne naloge
 .PARAMETER groupsForAccounts
 Grupe u koje dodajemo novokreirane naloge
 .NOTES
@@ -17,7 +16,7 @@ Grupe u koje dodajemo novokreirane naloge
             Creation Date:  May 29th, 2017
             Purpose/Change: Initial script development
  .EXAMPLE
-            get-content names.txt | new-localUsers 
+            new-localUsers -accounts (get-contents names.txt) -serverName Server1,Server2 -groupsForAccounts Administrators,Users
  .EXAMPLE
             new-localUsers -ime "SMART.Ime1.Prezime1", "SMART.Ime2.Prezime2" 
 #>
