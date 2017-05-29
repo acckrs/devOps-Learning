@@ -1,4 +1,4 @@
-$cijiGroupMembershipKopiramo="admin_mmarinko"
+$cijiGroupMembershipKopiramo="admin_user"
 $kogaUbacujemuuGrupe="admin_kaleksandar"
 Get-ADPrincipalGroupMembership $cijiGroupMembershipKopiramo | select name | export-csv groupsmembership.csv 
 $groups=import-csv groupsmembership.csv 

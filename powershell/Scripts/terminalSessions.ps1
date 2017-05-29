@@ -8,8 +8,8 @@
  )
 
 #izlistaj sve terminal sesije na serveru $servername
-qwinsta /SERVER:$servername
+#qwinsta /SERVER:$servername
 
 #Ubij terminal sesiju sa id-jem sesije $sessionID na serveru $servername 
-#rwinsta /server:$servername $sessionID
+rwinsta /server:$servername $sessionID
 

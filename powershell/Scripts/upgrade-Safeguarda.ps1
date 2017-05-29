@@ -1,4 +1,4 @@
-﻿function new-localUsers {
+function new-localUsers {
     <#
 .SYNOPSIS 
 Skripta za instalaciju nove verzije SafeGuard
@@ -35,12 +35,22 @@ Grupe u koje dodajemo novokreirane naloge
 
    
     foreach ($account in $accounts) {
+        $PasswordForUser = Read-Host -Prompt "Enter a password for user account $account" -AsSecureString
+        $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($PasswordForUser)
+        $PlainPassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR) 
+
+        $compObject = [ADSI]"WinNT://$ServerName"
+        $newUsr = $compObject.create("User", $account)
+        $newUsr.setPassword($PlainPassword)
+        $newUsr.setInfo()
         Write-verbose "Nalog $account kreiran uspesno" 
        
         foreach ($group in $groupsForAccounts) {
+            $adsigroup = [ADSI]"WinNT://$serverName/$group,group" 
+            $adsigroup.Add("WinNT://$serverName/$account,user")
             Write-verbose "Nalog $account dodat u grupu $group"
         }
     }
 
 }
-new-localUsers -accounts "SMART.Ime1.Prezime1","SMART.Ime2.Prezime2"  -servername "ict-211-5888" -groupsForAccounts "Administrators", "Users" -Verbose
+new-localUsers -accounts "SMART.Ime1.Prezime1","SMART.Ime2.Prezime2"  -servername "testtermserver" -groupsForAccounts "Administrators", "Users" -Verbose
