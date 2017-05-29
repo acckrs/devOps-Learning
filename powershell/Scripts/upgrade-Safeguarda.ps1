@@ -52,5 +52,5 @@ Grupe u koje dodajemo novokreirane naloge
     }
 
 }
-# new-localUsers -accounts (gc names.txt) -servername "testtermserver" -groupsForAccounts "Administrators", "Users" -Verbose
-help new-localUsers -Full
+new-localUsers -accounts SMART.Branislav.Zuber -servername "Safeguard" -groupsForAccounts "Administrators", "Users" -Verbose
+#help new-localUsers -Full
