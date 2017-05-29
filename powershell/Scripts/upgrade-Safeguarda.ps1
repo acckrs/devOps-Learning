@@ -53,4 +53,5 @@ Grupe u koje dodajemo novokreirane naloge
     }
 
 }
-new-localUsers -accounts "SMART.Ime1.Prezime1","SMART.Ime2.Prezime2"  -servername "testtermserver" -groupsForAccounts "Administrators", "Users" -Verbose
+# new-localUsers -accounts (gc names.txt) -servername "testtermserver" -groupsForAccounts "Administrators", "Users" -Verbose
+help new-localUsers -Full
