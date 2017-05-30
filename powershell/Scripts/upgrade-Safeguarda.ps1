@@ -62,9 +62,6 @@ Grupe u koje dodajemo novokreirane naloge
     } #end foreach server loop
 
 }
-<<<<<<< HEAD
-new-localUsers -accounts SMART.Branislav.Zuber -servername "Safeguard" -groupsForAccounts "Administrators", "Users" -Verbose
-=======
+
 new-localUsers -accounts "test" -server "ict-211-02059","ict-211-0205" -groupsForAccounts "Administrators", "Users" -Verbose
->>>>>>> 851585d874f8266d60728d1385fa627827d170f0
-#help new-localUsers -Full
+
