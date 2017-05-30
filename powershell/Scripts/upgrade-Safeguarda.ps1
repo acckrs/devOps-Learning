@@ -62,5 +62,6 @@ Grupe u koje dodajemo novokreirane naloge
     } #end foreach server loop
 
 }
+
 new-localUsers -accounts "test" -server "ict-211-02059","ict-211-0205" -groupsForAccounts "Administrators", "Users" -Verbose
-#help new-localUsers -Full
+
