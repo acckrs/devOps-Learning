@@ -26,31 +26,45 @@ Grupe u koje dodajemo novokreirane naloge
         [string[]] $accounts,
 
         [parameter(Mandatory = $true, ValueFromPipeline = $true)]
-        [string[] ]$serverName, 
+        [string[] ]$serverNames, 
 
         [parameter(ValueFromPipeline = $true)]
         [string[]] $groupsForAccounts
     )
 
-   
-    foreach ($account in $accounts) {
-        $PasswordForUser = Read-Host -Prompt "Enter a password for user account $account" -AsSecureString
-        $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($PasswordForUser)
-        $PlainPassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR) 
+    foreach ($server in $servernames) {
+        
+        $serverOnline=Test-Connection -ComputerName $server -count 1 -quiet
 
-        $compObject = [ADSI]"WinNT://$ServerName"
-        $newUsr = $compObject.create("User", $account)
-        $newUsr.setPassword($PlainPassword)
-        $newUsr.setInfo()
-        Write-verbose "Nalog $account kreiran uspesno" 
+        if ($serverOnline) {
+             Write-Verbose "$server is online."
+            foreach ($account in $accounts) {
+  
+                $PasswordForUser = Read-Host -Prompt "Enter a password for user account $account on server $server" -AsSecureString
+                $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($PasswordForUser)
+                $PlainPassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR) 
+
+                $compObject = [ADSI]"WinNT://$Server"
+                $newUsr = $compObject.create("User", $account)
+                $newUsr.setPassword($PlainPassword)
+                $newUsr.setInfo()
+                Write-verbose "Nalog $account kreiran uspesno" 
        
-        foreach ($group in $groupsForAccounts) {
-            $adsigroup = [ADSI]"WinNT://$serverName/$group,group" 
-            $adsigroup.Add("WinNT://$serverName/$account,user")
-            Write-verbose "Nalog $account dodat u grupu $group"
-        }
-    }
+                foreach ($group in $groupsForAccounts) {
+                    $adsigroup = [ADSI]"WinNT://$server/$group,group" 
+                    $adsigroup.Add("WinNT://$server/$account,user")
+                    Write-verbose "Nalog $account dodat u grupu $group"
+                } #end foreach group loop
+            }#end foreach account loop
+        }else{
+            Write-Warning "$server is not online."
+        } #end if $serverOnline question
+    } #end foreach server loop
 
 }
+<<<<<<< HEAD
 new-localUsers -accounts SMART.Branislav.Zuber -servername "Safeguard" -groupsForAccounts "Administrators", "Users" -Verbose
+=======
+new-localUsers -accounts "test" -server "ict-211-02059","ict-211-0205" -groupsForAccounts "Administrators", "Users" -Verbose
+>>>>>>> 851585d874f8266d60728d1385fa627827d170f0
 #help new-localUsers -Full
