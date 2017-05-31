@@ -33,18 +33,25 @@ Function Export-EventLogSource {
                     $logfile = Join-Path -Path $logpath -ChildPath "$computername-$log-$($_.Source).txt"
                     $_ | Format-List TimeWritten, MachineName, EventID, EntryType, Message |
                         Out-File -FilePath $logfile -append
-                    #clear variables for next time
-                    Remove-Variable -Name logs, logfile
-                }
-                else {Write-Warning "No logged events found for $log on $Computername"}
-            }
-        }
-        Catch { Write-Warning $_.Exception.Message }
-    }
+                } #end foreach 
+
+                #clear variables for next time
+                Remove-Variable -Name logs, logfile
+            } # if $logs
+            else {
+                Write-Warning "No logged events found for $log on $Computername"
+            }# else no logs
+            
+        } #try
+        Catch { 
+            Write-Warning $_.Exception.Message
+        } #close catch
+    } #close PROCESS
+
     End {
         dir $logpath
         Write-Verbose "Finished export event source function"
     }
 }
 
-Export-EventLogSource -verbose -Computername localhost -Log application
+Export-EventLogSource -verbose -Computername localhost -Log system
