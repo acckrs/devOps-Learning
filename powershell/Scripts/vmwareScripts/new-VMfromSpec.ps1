@@ -18,7 +18,7 @@ function new-VMfromSpec {
 
     BEGIN {
         Connect-VIServer -Server $vcenter
-        $usedDS = (Get-Datastore | sort FreeSpaceGB -Descending | select -ExpandProperty name -first 1 | Out-String)
+        $usedDS = (Get-Datastore | sort FreeSpaceGB -Descending | select -first 1 )
         $template = Get-Template -Name "blank_w2k12r2"
         $vmhost = Get-Cluster $cluster | Get-VMHost -State Connected | Get-Random
 
@@ -35,11 +35,7 @@ function new-VMfromSpec {
 
         Get-OSCustomizationNicMapping -Spec $spec.name| Set-OSCustomizationNicMapping -IpMode UseStaticIP -IpAddress $ip -SubnetMask '255.255.255.0' -Dns '10.35.170.22' -DefaultGateway '10.35.221.1' 
         Write-Verbose "Creating vm $vmname on host $vmhost with IP address $ip from $template template. Vm will be on $usedDS datastore"
-        New-VM -Name $vmName `
-            -VMHost $vmhost `
-            -Template $template `
-            -Datastore $usedDS `
-            -OSCustomizationSpec $spec 
+        New-VM -Name $vmName -VMHost $vmhost -Template $template -Datastore $usedDS  -OSCustomizationSpec $spec 
         Start-VM -VM $vmName
     }
 
