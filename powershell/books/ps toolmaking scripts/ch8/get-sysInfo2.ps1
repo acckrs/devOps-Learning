@@ -39,6 +39,7 @@ function Get-SystemInfo {
                 -computerName $computer
             $props = @{'ComputerName' = $computer;
                 'LastBootTime'        = ($os.ConvertToDateTime($os.LastBootupTime));
+                 'InstallTime'        = ($os.ConvertToDateTime($os.Installdate));
                 'OSVersion'           = $os.version;
                 'Manufacturer'        = $cs.manufacturer;
                 'Model'               = $cs.model
@@ -48,4 +49,4 @@ function Get-SystemInfo {
         }
     }
 }
-get-help get-sysInfo2 -full
+Get-SystemInfo -computerName fc1iibsql

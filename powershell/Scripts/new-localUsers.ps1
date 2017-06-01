@@ -63,5 +63,5 @@ Grupe u koje dodajemo novokreirane naloge
 
 }
 
-new-localUsers -accounts "test" -server "ict-211-02059","ict-211-0205" -groupsForAccounts "Administrators", "Users" -Verbose
+new-localUsers -accounts "deltabank\snow_mid_usr" -server "ict-211-0205" -groupsForAccounts "Administrators", "Users" -Verbose
 
