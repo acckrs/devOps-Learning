@@ -23,7 +23,7 @@ function new-VMfromSpec {
         $vmhost = Get-Cluster $cluster | Get-VMHost -State Connected | Get-Random
 
         if (Get-OSCustomizationspec -name tmp01) {
-            Remove-OSCustomizationSpec -OSCustomizationSpec tmp01 -Confirm $false
+            Remove-OSCustomizationSpec -OSCustomizationSpec tmp01 
             $spec = Get-OSCustomizationSpec -Name  "w2k12r2_spec1" | New-OSCustomizationSpec  -Name "tmp01" -Type NonPersistent | Set-OSCustomizationSpec -Name "tmp01"
         }
         else {
@@ -36,7 +36,7 @@ function new-VMfromSpec {
         Get-OSCustomizationNicMapping -Spec $spec.name| Set-OSCustomizationNicMapping -IpMode UseStaticIP -IpAddress $ip -SubnetMask '255.255.255.0' -Dns '10.35.170.22' -DefaultGateway '10.35.221.1' 
         Write-Verbose "Creating vm $vmname on host $vmhost with IP address $ip from $template template. Vm will be on $usedDS datastore"
         New-VM -Name $vmName -VMHost $vmhost -Template $template -Datastore $usedDS  -OSCustomizationSpec $spec 
-        Start-VM -VM $vmName
+        
     }
 
     END {}
