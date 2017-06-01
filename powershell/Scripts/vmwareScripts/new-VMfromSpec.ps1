@@ -23,7 +23,7 @@ function new-VMfromSpec {
         $vmhost = Get-Cluster $cluster | Get-VMHost -State Connected | Get-Random
 
         if (Get-OSCustomizationspec -name tmp01) {
-            Remove-OSCustomizationSpec -OSCustomizationSpec tmp01
+            Remove-OSCustomizationSpec -OSCustomizationSpec tmp01 -Confirm $false
             $spec = Get-OSCustomizationSpec -Name  "w2k12r2_spec1" | New-OSCustomizationSpec  -Name "tmp01" -Type NonPersistent | Set-OSCustomizationSpec -Name "tmp01"
         }
         else {
