@@ -18,7 +18,7 @@ function new-VMfromSpec {
 
     BEGIN {
         Connect-VIServer -Server $vcenter
-        $usedDS = (Get-Datastore | sort FreeSpaceGB -Descending | select -first 1 )
+        $usedDS = (Get-Datastore | Sort-Object FreeSpaceGB -Descending | Select-Object -first 1 )
         $template = Get-Template -Name "blank_w2k12r2"
         $vmhost = Get-Cluster $cluster | Get-VMHost -State Connected | Get-Random
 
