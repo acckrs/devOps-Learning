@@ -49,7 +49,7 @@ Function Export-EventLogSource {
     } #close PROCESS
 
     End {
-        dir $logpath
+        Get-ChildItem $logpath
         Write-Verbose "Finished export event source function"
     }
 }
