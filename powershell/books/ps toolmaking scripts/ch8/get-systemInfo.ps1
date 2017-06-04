@@ -94,7 +94,7 @@ function get-systemInfo {
                     'AdminPaswordStatus' = $admPasswordStatus
                 } #end hash table for properties
                 Write-Verbose "WMI queries complete"
-
+                $obj.psobject.TypeNames.Insert(0,'ACCA.ComputerSystemInfo')
                 $obj = New-Object -TypeName psobject -Property $props
                 Write-Output $obj
             } #end check if $everythingOK
@@ -104,4 +104,7 @@ function get-systemInfo {
         Write-Verbose "Ending get-computerData" 
     }
 }
-Measure-Command {"localhost2222", "w-cs-ws234" | get-systemInfo   -verbose  -logErrors -errorLog "C:\acca\errors3.txt" }
+
+#Measure-Command {"localhost2222", "w-cs-ws234" | get-systemInfo   -verbose  -logErrors -errorLog "C:\acca\errors3.txt" }
+Update-FormatData -PrependPath C:\test\CustomViewA.format.ps1xml
+get-systemInfo -computerName localhost

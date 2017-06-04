@@ -71,7 +71,8 @@ function get-driveSpec {
                         "FreeSize"             = [math]::round($drive.FreeSpace / 1GB, 2)
 
                     } # created hash table for $obj properties
-                    New-Object -TypeName psobject -Property $Props
+                   $obj= New-Object -TypeName psobject -Property $Props
+                    $obj.PSObject.TypeNames.insert(0,"ACCA.DiskInfo")                    
                     Write-Output $obj
                 } # end foreach drive loop
             } # check allOK
@@ -83,4 +84,6 @@ function get-driveSpec {
     }
     
 }
-"localhost", "blaveel" |get-driveSpec -Verbose -errorLog c:\acca\errorsDrives.log
+
+Update-FormatData -PrependPath "C:\Users\Acca\Documents\GitHub\devOps-Learning\powershell\books\ps toolmaking scripts\customViews\CustomViewB.format.ps1xml"
+get-driveSpec -computername localhost

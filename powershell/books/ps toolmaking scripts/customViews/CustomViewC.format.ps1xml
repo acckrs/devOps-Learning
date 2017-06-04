@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+    <ViewDefinitions>
+
+       <View>
+            <Name>ACCA.ServiceProcessInfo</Name>
+            <ViewSelectedBy>
+                <TypeName>ACCA.ServiceProcessInfo</TypeName>
+            </ViewSelectedBy>
+
+            <TableControl>
+                <TableHeaders>
+                    <TableColumnHeader>
+                        <Label>ComputerName</Label>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Label>Service</Label>
+                        </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Label>DisplayName</Label>
+                    </TableColumnHeader>
+                    <TableColumnHeader/>
+                    <TableColumnHeader>
+                        <Label>VM</Label>
+                    </TableColumnHeader>
+              </TableHeaders>
+                <TableRowEntries>
+                    <TableRowEntry>
+                        <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>ComputerName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>ServiceName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>ServiceDisplayName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>ProcessName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>ProcessVMSize</PropertyName>
+                            </TableColumnItem>
+                        </TableColumnItems>
+                    </TableRowEntry>
+                 </TableRowEntries>
+            </TableControl>
+        </View>        
+
+        <View>
+        <Name>ACCA.ServiceProcessInfo</Name>
+            <ViewSelectedBy>
+                <TypeName>ACCA.ServiceProcessInfo</TypeName>
+            </ViewSelectedBy>
+
+          <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                        <ListItems>
+                            <ListItem>
+                                <PropertyName>Computername</PropertyName>
+                            </ListItem>
+                            <ListItem>
+                                <PropertyName>ServiceName</PropertyName>
+                                <Label>Service</Label>
+                            </ListItem>
+                            <ListItem>
+                                <PropertyName>ServiceDisplayName</PropertyName>
+                                <Label>DislayName</Label>
+                            </ListItem>
+                            <ListItem>
+                                <PropertyName>ProcessName</PropertyName>
+                            </ListItem>
+                            <ListItem>
+                                <PropertyName>ProcessVMSize</PropertyName>
+                                <Label>VMSize</Label>
+                            </ListItem>
+                            <ListItem>
+                                <PropertyName>ProcessThreadCount</PropertyName>
+                                <Label>ThreadCount</Label>
+                            </ListItem>
+                            <ListItem>
+                                <PropertyName>ProcessPageFile</PropertyName>
+                                <Label>PeakPageFile</Label>
+                            </ListItem>
+                        </ListItems>
+                    </ListEntry>
+                </ListEntries>
+            </ListControl>
+
+        </View>
+    </ViewDefinitions>
+</Configuration>

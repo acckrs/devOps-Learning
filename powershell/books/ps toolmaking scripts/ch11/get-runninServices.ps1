@@ -82,6 +82,7 @@ function get-runningServicesProc {
                         "ProcessPageFile"    = $process.peakPageFileUsage
                     } # hash table cration for $obj properties
                     $obj = New-Object -TypeName psobject -Property $props  
+                    $obj.PSObject.TypeNames.Insert(0,"ACCA.ServiceProcessInfo")
                     Write-Output $obj
                 } # end foreach service loop  
             } # end if allOK
@@ -92,4 +93,5 @@ function get-runningServicesProc {
 
 }
 
-"localhost2","localhost" | get-runningServicesProc -verbose -logErrors | select -first 3
+Update-FormatData -PrependPath "C:\Users\Acca\Documents\GitHub\devOps-Learning\powershell\books\ps toolmaking scripts\customViews\CustomViewC.format.ps1xml"
+get-runningServicesProc -computerName localhost

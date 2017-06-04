@@ -96,7 +96,7 @@ function get-systemInfo {
                 Write-Verbose "WMI queries complete"
 
                 $obj = New-Object -TypeName psobject -Property $props
-         #       $obj.PSObject.TypeNames.Insert(0,'ACCA.SystemInfo')
+                $obj.PSObject.TypeNames.Insert(0,'ACCA.ComputerSystemInfo')
                 Write-Output $obj
             } #end check if $everythingOK
         } # end forEach loop for computers
@@ -107,4 +107,5 @@ function get-systemInfo {
 }
 #Measure-Command {"localhost2222", "w-cs-ws234" | get-systemInfo   -verbose  -logErrors -errorLog "C:\acca\errors3.txt" }
 
+Update-FormatData -PrependPath "C:\Users\Acca\Documents\GitHub\devOps-Learning\powershell\books\ps toolmaking scripts\customViews\CustomViewA.format.ps1xml"
 get-systemInfo -computerName localhost
