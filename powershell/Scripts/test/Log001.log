@@ -1,0 +1,23 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20170605112222
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\Sysnative\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.2.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.2.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.2.1' -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.2.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.2.1\logs\1496646513-63862bbe-c996-4221-bd6e-c52726681b021496646510423\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.2.1\sessions\PSES-VSCode-3364-917323' -FeatureFlags @()
+Process ID: 7716
+PSVersion: 5.1.14409.1005
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14409.1005
+BuildVersion: 10.0.14409.1005
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Acca\githubRepos\devOps-Learning\powershell\Scripts\test\Log001.log
+VERBOSE: Performing the operation "Remove File" on target "C:\Acca\githubRepos\devOps-Learning\powershell\Scripts\test\zaBrisanje.txt".
+**********************
+Windows PowerShell transcript end
+End time: 20170605112222
+**********************
