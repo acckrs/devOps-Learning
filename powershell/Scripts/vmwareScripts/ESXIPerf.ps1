@@ -18,7 +18,7 @@ if (!(Get-Module VMware.VimAutomation.Core)) {
 #>
 
 Write-Progress -Activity "Connecting to VIServers" -Status "***" -PercentComplete (2 / 5 * 100) -Id 1
-Connect-VIServer -Server "ict-test1"  -ea Stop
+Connect-VIServer -Server "bib-vcentar-01"  -ea Stop
 <#Connect-VIServer -Server "be-vce-bib.fbisp.eu" -Credential (Get-Credential "spimi\") -ea Stop
 Connect-VIServer -Server "bib-vcentar-01.deltabank.co.yu" -Credential (Get-Credential) -ea Stop
 
@@ -36,7 +36,7 @@ $today = (Get-Date).Date
 $lastDayOfMonth = $today.AddDays( - $today.Day)
 $firstDayOfMonth = $lastDayOfMonth.AddDays( - $lastDayOfMonth.Day + 1)
 $clusterSum = New-Object System.Collections.ArrayList 
-$clusters = "test cluster"
+$clusters = "BIB-LOCAL","BIB-DMZ"
 
 Write-Progress -Activity "Getting counters" -Status "..." -PercentComplete (3 / 5 * 100) -Id 1
 
@@ -53,14 +53,14 @@ foreach ($clus in $clusters) {
             $cpuAvg = Get-Stat -Entity $c -Start $firstDayOfMonth -Finish $lastDayOfMonth -Stat cpu.usage.average 
             if ($memAvg) {
                 $avgMem = ($memAvg | measure -Property value -Sum).Sum / $memAvg.count 
-                #Write-Host "VM === $($c.name) AVGMem === $avgMem" -ForegroundColor Green
+                Write-verbose "VM === $($c.name) AVGMem === $avgMem" 
             }
             else {
                 $avgMem = 0 
             }
             if ($cpuAvg) {
                 $avgCPU = ($cpuAvg | measure -Property value -Sum).Sum / $cpuAvg.count 
-                #Write-Host "VM === $($c.name) AVGCPU === $avgCPU" -ForegroundColor Green
+                Write-Host "VM === $($c.name) AVGCPU === $avgCPU" 
             }
             else {
                 $avgCPU = 0 

@@ -49,6 +49,7 @@ function new-localUsers {
                 $newUsr.setPassword($PlainPassword)
                 $newUsr.setInfo()
                 Write-verbose "Nalog $account kreiran uspesno" 
+                Start-Sleep 5
        
                 foreach ($group in $groupsForAccounts) {
                     $adsigroup = [ADSI]"WinNT://$server/$group,group" 
@@ -127,4 +128,4 @@ function add-DomainUsersToLocalGroup {
 
 }
 
-add-DomainUsersToLocalGroup -serverNames localhost -accounts kaleksandar -domainGroups srv_admins -groupsForAccounts Administrators -verbose
+new-localUsers -accounts "SMARTBranislavZuber" -serverName "localhost"  -groupsForAccounts Administrators,Users -verbose

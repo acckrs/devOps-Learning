@@ -171,7 +171,7 @@
                 </ListEntries>
             </ListControl>
         </View>
- <View>
+        <View>
             <Name>BIB.RemoteShareInfo</Name>
             <ViewSelectedBy>
                 <TypeName>BIB.remoteShareInfo</TypeName>
