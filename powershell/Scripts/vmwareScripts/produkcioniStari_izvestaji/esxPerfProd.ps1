@@ -1,3 +1,4 @@
+
 [cmdletbinding()]
 
 param 
@@ -6,7 +7,7 @@ param
 )
 
 Write-Progress -Activity "Importing PowerCli" -Status Progress -PercentComplete (1 / 5 * 100) -Id 1
-<#
+
 if (!(Get-Module VMware.VimAutomation.Core)) {
     try {        
         Get-Module VMware.VimAutomation.Core -ListAvailable | Import-Module -ea Stop
@@ -15,11 +16,9 @@ if (!(Get-Module VMware.VimAutomation.Core)) {
         throw "Nema PowerCli-a"
     }
 } 
-#>
-
 Write-Progress -Activity "Connecting to VIServers" -Status "***" -PercentComplete (2 / 5 * 100) -Id 1
-Connect-VIServer -Server "bib-vcentar-01"  -ea Stop
-<#Connect-VIServer -Server "be-vce-bib.fbisp.eu" -Credential (Get-Credential "spimi\") -ea Stop
+
+Connect-VIServer -Server "be-vce-bib.fbisp.eu" -Credential (Get-Credential "spimi\") -ea Stop
 Connect-VIServer -Server "bib-vcentar-01.deltabank.co.yu" -Credential (Get-Credential) -ea Stop
 
 if (!$global:DefaultVIServers) {
@@ -28,16 +27,15 @@ if (!$global:DefaultVIServers) {
 elseif ($global:DefaultVIServers.Count -lt 2) {
     Write-Warning ("Konektovan samo na  {0}" -f $global:DefaultVIServers.name)
 }
-#>
+
 Write-Verbose ("Konektovan na {0}" -f ($global:DefaultVIServers.name -join ', ')) 
 
 
 $today = (Get-Date).Date
 $lastDayOfMonth = $today.AddDays( - $today.Day)
 $firstDayOfMonth = $lastDayOfMonth.AddDays( - $lastDayOfMonth.Day + 1)
-
 $clusterSum = New-Object System.Collections.ArrayList 
-$clusters = VMware.VimAutomation.Core\Get-Cluster 
+$clusters = "CITRIX-PR", "CITRIX-ST", "TYPE2", "FLEX-PR"
 
 Write-Progress -Activity "Getting counters" -Status "..." -PercentComplete (3 / 5 * 100) -Id 1
 
@@ -54,14 +52,14 @@ foreach ($clus in $clusters) {
             $cpuAvg = Get-Stat -Entity $c -Start $firstDayOfMonth -Finish $lastDayOfMonth -Stat cpu.usage.average 
             if ($memAvg) {
                 $avgMem = ($memAvg | measure -Property value -Sum).Sum / $memAvg.count 
-                Write-verbose "VM === $($c.name) AVGMem === $avgMem" 
+                #Write-Host "VM === $($c.name) AVGMem === $avgMem" -ForegroundColor Green
             }
             else {
                 $avgMem = 0 
             }
             if ($cpuAvg) {
                 $avgCPU = ($cpuAvg | measure -Property value -Sum).Sum / $cpuAvg.count 
-                Write-Host "VM === $($c.name) AVGCPU === $avgCPU" 
+                #Write-Host "VM === $($c.name) AVGCPU === $avgCPU" -ForegroundColor Green
             }
             else {
                 $avgCPU = 0 
@@ -98,4 +96,4 @@ $clusterSum | ft
 
 Write-Progress -Status "Diskonektujem se" -Activity "Disconnecting..." -PercentComplete 100 -Id 1
 
-Disconnect-VIServer -server "bib-vcentar-01"
+Disconnect-VIServer * -Confirm:$false

@@ -76,7 +76,9 @@ function insert-BIBInventoryInDatabase {
     )
     PROCESS {
         foreach ($obj in $inputobject) {
-            $query = "INSERT INTO computers (osversion,spversion,manufacturer,model,computername) VALUES ('$($obj.osversion)','$($obj.spversion)','$($obj.manufacturer)','$($obj.model)','$($obj.computername)')"
+            $query = "INSERT INTO computers
+                            (osversion,spversion,manufacturer,model,computername) 
+                            VALUES ('$($obj.osversion)','$($obj.spversion)','$($obj.manufacturer)','$($obj.model)','$($obj.computername)')"
             Write-Verbose "Query will be $query"
             Invoke-BIBDatabaseQuery -connection $BIBConnectionString `
                 -isSQLServer `
