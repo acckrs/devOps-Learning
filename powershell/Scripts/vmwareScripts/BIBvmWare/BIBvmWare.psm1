@@ -35,12 +35,12 @@ function get-BIBclusterPerf {
         Write-verbose "Error log is $errorLog"
         write-verbose "Connecting to vCenter $vcenter"
 
-        $clusterCPUsumSUM = 0
-        $clusterMEMsumSUM = 0
+        $clusterCPUsum = 0
+        $clusterMEMsum = 0
 
         try {
             $everythingOk = $true
-            # connect-viserver $vcenter -ErrorAction Stop -ev $errmsg | where -filter {$_.name -like "type2"} |Out-Null
+            connect-viserver $vcenter -ErrorAction Stop -ev $errmsg | where -filter {$_.name -like "ict*"} |Out-Null
         }#end try
         catch {
             $time = get-date -format G
@@ -62,34 +62,26 @@ function get-BIBclusterPerf {
     PROCESS {
         
         if ($everythingOk) {
-            $clusters = VMware.VimAutomation.Core\Get-Cluster | where -filter {$_.name -like "type2"} |Out-Null
-            $brojClustera = (VMware.VimAutomation.Core\Get-Cluster | where -filter {$_.name -like "type2"}).count 
+            $clusters = VMware.VimAutomation.Core\Get-Cluster 
+            $brojClustera = $clusters.count
             $clustersObj = @()
 
             foreach ($cluster in $clusters) {
-                $clusterCPUsum = 0
-                $clusterMEMsum = 0
-
-                $vmHosts = $cluster|Get-VMHost
-                foreach ($vmHost in $vmHosts) {
-                    $statsCPU = Get-Stat -Entity $vmhost -Stat "cpu.usagemhz.average" -Start $firstDayOfMonth -Finish $lastDayOfMonth | measure-object -average -Property value | select Average
-                    $statsMem = Get-Stat -Entity $vmhost -Stat  "mem.consumed.average" -Start $firstDayOfMonth -Finish $lastDayOfMonth | Measure-Object -Average -Property Value | select Average
-                    $clusterCPUsum += $statsCPU.average
-                    $clusterMEMsum += $statsMem.average
-                }
+                $statsCPU = Get-Stat -Entity $cluster -Stat "cpu.usage.average" -Start $firstDayOfMonth -Finish $lastDayOfMonth | measure-object -average -Property value | select Average
+                $statsMem = Get-Stat -Entity $cluster -Stat  "mem.usage.average" -Start $firstDayOfMonth -Finish $lastDayOfMonth | Measure-Object -Average -Property Value | select Average
                 
-                $clusterCPUsumSUM += $clusterCPUsum
-                $clusterMEMsumSUM += $clusterMEMsum
+                $clusterCPUsum += $statsCPU.average
+                $clusterMEMsum += $statsMem.average
 
                 $props = @{
                     "vCenter"     = $vcenter
                     "ClusterName" = $cluster.name;
-                    "avgCPU"      = "{0:N2}" -f $clusterCPUsumSUM ;
-                    "avgMem"      = "{0:N2}" -f $clusterCPUsumSUM
+                    "avgCPU"      = "{0:N2}" -f $statsCPU.average ;
+                    "avgMem"      = "{0:N2}" -f $statsMem.average
                 }#end props splatting
                 $obj = New-Object -TypeName psobject -Property $props 
                 $obj.PSObject.TypeNames.Insert(0, 'BIB.clusterPerf')
-                $clustersObj += $obj
+                $clustersObj+=$obj
             }#end foreach cluster loop
         
         }#end if $everythingOK
@@ -108,9 +100,7 @@ function get-BIBclusterPerf {
         
         write-output $clustersObj | ft
        
-       # disconnect-viserver -Server $vCenter -Confirm:$true
+        #   disconnect-viserver -Server $vCenter -Confirm:$true
     }
 } #end function get-clusterPerf
-Update-FormatData -PrependPath .\BIBvmWare.format.ps1xml    
-get-BIBclusterPerf -vCenter "be-vce-bib.fbisp.eu" 
-
+Export-ModuleMember -Function * -alias *
