@@ -28,15 +28,15 @@ function get-BIBclusterPerf {
     )
     
     BEGIN {
+        if ($global:DefaultVIServer) {
+            Disconnect-VIServer -Server $global:DefaultVIServers  -Confirm:$false
+        }
         $today = (Get-Date).Date
         $lastDayOfMonth = $today.AddDays( - $today.Day)
         $firstDayOfMonth = $lastDayOfMonth.AddDays( - $lastDayOfMonth.Day + 1)
 
         Write-verbose "Error log is $errorLog"
         write-verbose "Connecting to vCenter $vcenter"
-
-        $clusterCPUsum = 0
-        $clusterMEMsum = 0
 
         try {
             $everythingOk = $true
@@ -66,23 +66,65 @@ function get-BIBclusterPerf {
             $brojClustera = $clusters.count
             $clustersObj = @()
 
-            foreach ($cluster in $clusters) {
-                $statsCPU = Get-Stat -Entity $cluster -Stat "cpu.usage.average" -Start $firstDayOfMonth -Finish $lastDayOfMonth | measure-object -average -Property value | select Average
-                $statsMem = Get-Stat -Entity $cluster -Stat  "mem.usage.average" -Start $firstDayOfMonth -Finish $lastDayOfMonth | Measure-Object -Average -Property Value | select Average
+            if ($vCenter -notlike '*fbisp*') {
+                $clusterCPUsum = 0
+                $clusterMEMsum = 0
+                foreach ($cluster in $clusters) {
+                    $statsCPU = Get-Stat -Entity $cluster -Stat "cpu.usage.average" -Start $firstDayOfMonth -Finish $lastDayOfMonth | measure-object -average -Property value | select Average
+                    $statsMem = Get-Stat -Entity $cluster -Stat  "mem.usage.average" -Start $firstDayOfMonth -Finish $lastDayOfMonth | Measure-Object -Average -Property Value | select Average
                 
-                $clusterCPUsum += $statsCPU.average
-                $clusterMEMsum += $statsMem.average
+                    $clusterCPUsum += $statsCPU.average
+                    $clusterMEMsum += $statsMem.average
 
-                $props = @{
-                    "vCenter"     = $vcenter
-                    "ClusterName" = $cluster.name;
-                    "avgCPU"      = "{0:N2}" -f $statsCPU.average ;
-                    "avgMem"      = "{0:N2}" -f $statsMem.average
-                }#end props splatting
-                $obj = New-Object -TypeName psobject -Property $props 
-                $obj.PSObject.TypeNames.Insert(0, 'BIB.clusterPerf')
-                $clustersObj+=$obj
-            }#end foreach cluster loop
+                    $props = @{
+                        "vCenter"     = $vcenter
+                        "ClusterName" = $cluster.name;
+                        "avgCPU"      = "{0:N2}" -f $statsCPU.average ;
+                        "avgMem"      = "{0:N2}" -f $statsMem.average
+                    }#end props splatting
+                    $obj = New-Object -TypeName psobject -Property $props 
+                    $obj.PSObject.TypeNames.Insert(0, 'BIB.clusterPerf')
+                    $clustersObj += $obj
+                }#end foreach cluster loop
+            } #end if ako nije vcentar u Italiji, onda radi get-stat -entity cluster
+            else {
+                $sviClustCPU = 0
+                $sviClustMEM = 0
+
+                foreach ($cluster in $clusters) {
+                    write-verbose "---Cluster is $cluster---"
+                    $clusterCPUsum = 0 
+                    $clusterMEMsum = 0
+                    $clusterCPUavg = 0
+                    $clusterMEMavg = 0
+
+                    $vmHosts = $cluster|Get-VMHost
+                    $brojHostovauKlasteru = $vmhosts.count
+                    write-verbose "broj hostova u klasteru je $brojHostovauKlasteru"
+                    foreach ($vmHost in $vmHosts) {
+                        write-verbose "host is $vmHost"
+                        $statsCPU = Get-Stat -Entity $vmhost -Stat "cpu.usage.average" -Start  $firstDayOfMonth -Finish  $lastDayOfMonth | measure-object -average -Property value | select Average
+                        $statsMem = Get-Stat -Entity $vmhost -Stat  "mem.usage.average" -Start  $firstDayOfMonth -Finish  $lastDayOfMonth | Measure-Object -Average -Property Value | select Average
+                        $clusterCPUsum += $statsCPU.average
+                        $clusterMEMsum += $statsMem.average
+                    }
+                
+                    $clusterCPUavg += $clusterCPUsum / $brojHostovauKlasteru
+                    $clusterMEMavg += $clusterMEMsum / $brojHostovauKlasteru
+
+                    $props = @{
+                        "vCenter"     = $vcenter
+                        "ClusterName" = $cluster.name;
+                        "avgCPU"      = "{0:N2}" -f $clusterCPUavg ;
+                        "avgMem"      = "{0:N2}" -f $clusterMEMavg
+                    }#end props splatting
+                    $obj = New-Object -TypeName psobject -Property $props 
+                    $obj.PSObject.TypeNames.Insert(0, 'BIB.clusterPerf')
+                    $clustersObj += $obj
+                    $sviClustCPU += $clusterCPUavg
+                    $sviClustMEM += $clusterMEMavg
+                }#end foreach cluster loop
+            }# end if ako je vcentar u Italiji, onda ne radi get-stat -entity cluster i mora da se proverava po vmhostovima
         
         }#end if $everythingOK
     }#end PROCESS block
@@ -100,7 +142,7 @@ function get-BIBclusterPerf {
         
         write-output $clustersObj | ft
        
-        #   disconnect-viserver -Server $vCenter -Confirm:$true
+        Disconnect-VIServer -Server $global:DefaultVIServers  -Confirm:$false
     }
 } #end function get-clusterPerf
 Export-ModuleMember -Function * -alias *
