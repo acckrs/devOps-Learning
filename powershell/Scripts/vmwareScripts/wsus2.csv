@@ -1,0 +1,7 @@
+#TYPE System.Management.Automation.PSCustomObject
+"Computer","Groups"
+"FC1XENAPPDBDEV1","Prod2"
+"FC1XENAPP-DEV01","Not in WSUS"
+"FC1XENAPP-DEV02","Not in WSUS"
+"FC1XENAPP-DEV03","Not in WSUS"
+"FC1XENAPPPFDEV1","Not in WSUS"
