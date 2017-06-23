@@ -1,0 +1,7 @@
+#TYPE System.Management.Automation.PSCustomObject
+"department","name","samaccountname"
+"10.0.0.0 - DIREKTOR ZA UPRAVLJANJE FINANSIJSKIM POSLOVANJEM","Dragica Mihajlovic","dmihajlovic"
+"10.3.0.0 - SEKTOR ZA PLAN I KONTROLU","Zeljko Vidojevic","zeljkov"
+"System.Object[]","System.Object[]","System.Object[]"
+"10.3.2.0 - ODELJENJE ZA MONITORING POSLOVNIH SEGMENATA I ANALIZU","Predrag Ilic","ILPREDRAG"
+"10.3.1.0 - ODELJENJE ZA STRATE?KO PLANIRANJE I MONITORING","Una Malbasic","MUNA"

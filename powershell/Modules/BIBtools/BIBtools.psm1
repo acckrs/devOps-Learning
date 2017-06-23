@@ -383,8 +383,6 @@ function get-BIBRemoteSmbShare {
             Name or IP address of computer 
         .PARAMETER errorLog
             The path to error log. Default is $BIBErrorLogPreference
-        .PARAMETER rrrorLog
-            the path to erro log file. Default is c:\errors.txt
         .NOTES
             Version:        1.0
             Author:         Aleksandar Krstic
@@ -433,7 +431,7 @@ function get-BIBRemoteSmbShare {
                 }
             }#end catch
             if ($everythingOk) {
-                $shares = invoke-command -ComputerName $computer -ScriptBlock {get-smbshare} -ErrorAction Stop -ev $errmsg
+                $shares = invoke-command -ComputerName $computer -ScriptBlock {get-smbshare} 
                 foreach ($share in $shares) {
                     $props = @{
                         "ComputerName"     = $computer;
@@ -452,10 +450,37 @@ function get-BIBRemoteSmbShare {
     END {}
 } #end function get-BIBRemoteSmbShare
 
+function Restart-BIBCimComputer {
+    [CmdletBinding(SupportsShouldProcess = $True,
+        ConfirmImpact = 'High')]
+    param(
+        [parameter(Mandatory = $True,
+            ValueFromPipeline = $True)]
+        [string[]]$computerName
+    )
+    PROCESS {
+        foreach ($computer in $computerName) {
+            try {
+                $allOK = $True
+                Invoke-CimMethod -ClassName win32_operatingSystem -MethodName Reboot -ComputerName $computer  -ErrorAction Continue -ev $errmsg 
+            }
+            catch {
+                Write-Warning  $($_.exception.message)
+                $allOK = $false
+            }
+            if ($allOK) {
+                Invoke-CimMethod -ClassName win32_operatingSystem -MethodName Reboot -ComputerName $computer 
+            }
+        }
+    }
+
+}
+
 #create aliases
 New-Alias -Name gBIBsys -Value get-BIBsystemInfo
 New-Alias -name gBIBdrv -Value get-BIBdriveSpec
 New-Alias -Name gBIBsrv -Value get-BIBrunningServicesProc
 New-Alias -name gBIBrsmb -Value get-BIBRemoteSmbShare
 
+Export-ModuleMember -Variable BIBErrorLogPreference 
 Export-ModuleMember -Function * -alias *

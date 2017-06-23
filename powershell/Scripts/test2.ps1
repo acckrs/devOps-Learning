@@ -1,20 +1,23 @@
-Function add-userToLocalgroup
-{
-    [cmdletbinding()]
-    param (
-        [parameter(Mandatory = $true, ValueFromPipeline = $true)]
-        [string[]] $account,
+[void][reflection.assembly]::LoadWithPartialName("Microsoft.UpdateServices.Administration")            
+$wsus = [Microsoft.UpdateServices.Administration.AdminProxy]::getUpdateServer("wsus1", $False)
+#$wsus.SearchComputerTargets("FC1XENAPPDBDEV1ww")
 
-        [parameter(Mandatory = $true, ValueFromPipeline = $true)]
-        [string[] ]$server, 
+$serv = $wsus.SearchComputerTargets("xenapp-119") 
+$serv[0].GetComputerTargetGroups()| where -FilterScript {$_.name -ne "All Computers"}
+$membGroup = $wsus.GetComputerTargetGroups() | where -FilterScript {$_.name -eq "Test"}; $membGroup
+$membGroup.AddComputerTarget($serv[0])   
+$serv[0].GetComputerTargetGroups()
 
-        [parameter(ValueFromPipeline = $true)]
-        [string[]] $groups
-    )
-                    
-    $adsigroup = [ADSI]"WinNT://$server/$groups,group" 
-    $adsigroup.Add("WinNT://$server/$account,user")
-    Write-verbose "Nalog $account dodat u grupu $group"
+$servs = gc .\pcs2.txt
+foreach ($s in $servs) {
+   try {
+        schtasks.exe /s $s /tn wsus /query /fo csv | convertfrom-csv -ErrorAction SilentlyContinue | out-null 
+        write-host "Task is present at $s"
+    }
+    catch {
+        write-host "No task on $s"
+    }
+}
+    #schtasks.exe /s xenapp-db-dev01 /tn wsus /query /fo csv | convertfrom-csv 
 }
 
-add-userToLocalgroup -account "deltabank\snow_mid_usr" -server "ict-211-5888" -groups "Administrators", "Users" -Verbose

@@ -6,9 +6,11 @@ Param (
 [Parameter(Position=0,Mandatory=$True,HelpMessage="Enter a computername")]
 [ValidateNotNullorEmpty()]
 [string[]]$Computername,
+
 [Parameter(Mandatory=$True,HelpMessage="Enter an action state")]
 [ValidateSet("LogOff","Shutdown","Restart","PowerOff")]
 [string]$Action,
+
 [Switch]$Force
 
 )
