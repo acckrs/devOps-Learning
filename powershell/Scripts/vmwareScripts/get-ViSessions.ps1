@@ -29,7 +29,7 @@ PS C:\> Get-VISession | Where { $_.IdleMinutes -gt 5 }
         Else {
             $Session | Add-Member -MemberType NoteProperty -Name Status -Value "Idle"
         }
-        $Session | Add-Member -MemberType NoteProperty -Name IdleMinutes -Value  “Idle”
+        $Session | Add-Member -MemberType NoteProperty -Name IdleMinutes -Value  "Idle"
         $AllSessions += $Session
     }
     $AllSessions
