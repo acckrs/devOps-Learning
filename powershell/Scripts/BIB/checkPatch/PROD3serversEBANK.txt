@@ -1,0 +1,12 @@
+adapter2
+adapter3
+adapter4
+adapter5
+adapter7
+adminweb
+backupebank
+ebank-node21
+hal2
+ob-gateway1
+vmailserver3
+vqtransfer11
