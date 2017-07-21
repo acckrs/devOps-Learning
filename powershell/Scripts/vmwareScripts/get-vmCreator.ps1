@@ -1,14 +1,14 @@
-﻿Connect-VIServer ict-test1
+﻿#Connect-VIServer ict-test1
 # Uncomment the next line to test this script and tell you what it would do !
 # $WhatIfPreference = $true
-if (-not (Get-PSSnapin VMware.VimAutomation.Core -ErrorAction SilentlyContinue)) {
+<#if (-not (Get-PSSnapin VMware.VimAutomation.Core -ErrorAction SilentlyContinue)) {
    Add-PSSnapin VMware.VimAutomation.Core
 }
 if (-not (Get-PSSnapin Quest.ActiveRoles.ADManagement -ErrorAction SilentlyContinue)) {
    Add-PSSnapin Quest.ActiveRoles.ADManagement
-}
+}#>
  
-$VMs = Get-VM | Sort Name
+$VMs = Get-VM 'se-bg-safeguard' | Sort Name
 $VM = $VMs | Select -First 1
 If (-not $vm.CustomFields.ContainsKey("CreatedBy")) {
    Write-Host "Creating CreatedBy Custom field for all VM's"
@@ -38,8 +38,8 @@ Foreach ($VM in $VMs){
       }
       Write "Adding info to $($VM.Name)"
       Write-Host -ForegroundColor Yellow "CreatedBy $User"
-      $VM | Set-CustomField -Name "CreatedBy" -Value $User | Out-Null
+      $VM | set-annotation -CustomAttribute  "CreatedBy" -Value $User | Out-Null
       Write-Host -ForegroundColor Yellow "CreatedOn $Created"
-      $VM | Set-CustomField -Name "CreatedOn" -Value $Created | Out-Null
+      $VM |set-annotation -CustomAttribute "CreatedOn" -Value $Created | Out-Null
    }
 }
