@@ -264,7 +264,8 @@ function get-BIBdriveSpec {
                     $Props = @{ "ComputerName" = $computer;
                         "Drive"                = $drive.name;
                         "Size"                 = [math]::round($drive.Capacity / 1GB, 2);
-                        "FreeSize"             = [math]::round($drive.FreeSpace / 1GB, 2)
+                        "FreeSize"             = [math]::round($drive.FreeSpace / 1GB, 2);
+                        "pctFree"                = [math]::round(($drive.FreeSpace)/($drive.Capacity)*100, 2)
 
                     } # created hash table for $obj properties
                     $obj = New-Object -TypeName psobject -Property $Props

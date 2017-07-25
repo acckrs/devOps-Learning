@@ -64,7 +64,7 @@ function check-datastores{
     }
     write-output ($totFree/$tot)
 }
-vms1
-#check-datastores
+#vms1
+check-datastores
 
  #get-vm  | select name,vmhost,@{n="Cluster";e={$_|get-cluster|?{$_.name -eq "type2"}}},@{n="datastore";e={$_|get-datastore}}

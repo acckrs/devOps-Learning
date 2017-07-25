@@ -1,0 +1,4 @@
+#TYPE VMware.VimAutomation.ViCore.Impl.V1.AnnotationManagement.AnnotationImpl
+"AnnotatedEntityId";"AnnotatedEntity";"Name";"Value";"Uid";"Client"
+"VirtualMachine-vm-228217";"FC1IIB";"NB_LAST_BACKUP";"Thu Jul 20 11:17:34 2017
+,bib-master,spot_vmware_noprod_be-vce-bib";"/VIServer=spimi\u390207@be-vce-bib.fbisp.eu:443/VirtualMachine=VirtualMachine-vm-228217/AnnotationValue=NB_LAST_BACKUP/";"VMware.VimAutomation.ViCore.Impl.V1.VimClient"

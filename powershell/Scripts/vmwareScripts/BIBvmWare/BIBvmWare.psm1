@@ -145,4 +145,31 @@ function get-BIBclusterPerf {
         Disconnect-VIServer -Server $global:DefaultVIServers  -Confirm:$false
     }
 } #end function get-clusterPerf
+function count-BIBesxObjects {
+    $clusters = Get-Cluster
+    $totalVMS = 0
+    $totalHosts = 0
+    $sve = @()
+    foreach ($cluster in $clusters) {
+        $props = @{
+            "cluster"    = $cluster.name;
+            "vmscount"   = ($cluster|get-vm).count
+            "hostsCount" = ($cluster|get-vmhost).count
+        }
+        $totalVMS = $totalvms + ($cluster|get-vm).count
+        $totalHosts += ($cluster|get-vmhost).count
+        $obj = New-Object -TypeName PSobject -Property $props
+        #Write-Output $obj
+        $sve += $obj
+       
+    }
+    $propTot = @{
+        "cluster"    = "Total";
+        "vmscount"   = $totalVMS;
+        "hostsCount" = $totalHosts
+    }
+    $objTot = new-object -TypeName psobject -Property $propTot
+    $sve += $objTot
+    Write-Output $sve
+}
 Export-ModuleMember -Function * -alias *
