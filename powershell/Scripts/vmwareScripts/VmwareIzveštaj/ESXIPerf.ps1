@@ -1,4 +1,4 @@
-[cmdletbinding()]
+﻿[cmdletbinding()]
 
 param 
 (
@@ -17,8 +17,8 @@ if (!(Get-Module VMware.VimAutomation.Core)) {
 } 
 Write-Progress -Activity "Connecting to VIServers" -Status "***" -PercentComplete (2 / 5 * 100) -Id 1
 
-Connect-VIServer -Server "be-vce-bib.fbisp.eu" -Credential (Get-Credential "spimi\") -ea Stop
-Connect-VIServer -Server "bib-vcentar-01.deltabank.co.yu" -Credential (Get-Credential) -ea Stop
+#Connect-VIServer -Server "be-vce-bib.fbisp.eu" -Credential (Get-Credential "spimi\") -ea Stop
+#Connect-VIServer -Server "bib-vcentar-01.deltabank.co.yu" -Credential (Get-Credential) -ea Stop
 
 if (!$global:DefaultVIServers) {
     throw "Nema veze sa vCenter serverima"
@@ -29,14 +29,12 @@ elseif ($global:DefaultVIServers.Count -lt 2) {
 
 Write-Verbose ("Konektovan na {0}" -f ($global:DefaultVIServers.name -join ', ')) 
 
-        <#$today = (Get-Date).Date
-        $lastDayOfMonth = $today.AddDays( - $today.Day)
-        $firstDayOfMonth = $lastDayOfMonth.AddDays( - $lastDayOfMonth.Day + 1)#>
-		$lastDayOfMonth="31.05.2017 00:00:00"
-		$firstDayOfMonth ="01.05.2017 00:00:00"
 
+$today = (Get-Date).Date
+$lastDayOfMonth = $today.AddDays( - $today.Day)
+$firstDayOfMonth = $lastDayOfMonth.AddDays( - $lastDayOfMonth.Day + 1)
 $clusterSum = New-Object System.Collections.ArrayList 
-$clusters = "bib-prod","security"
+$clusters = "CITRIX-PR","CITRIX-ST","TYPE2","FLEX-PR","SATELLITE-ST","BIB-PROD"
 
 Write-Progress -Activity "Getting counters" -Status "..." -PercentComplete (3 / 5 * 100) -Id 1
 

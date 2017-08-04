@@ -20,7 +20,8 @@ function get-BIBclusterPerf {
    #>
 
     param(
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, 
+                    ValueFromPipeline = $true)]
         [alias("vc")]
         [String]$vCenter,
 
@@ -34,14 +35,18 @@ function get-BIBclusterPerf {
         $today = (Get-Date).Date
         $lastDayOfMonth = $today.AddDays( - $today.Day)
         $firstDayOfMonth = $lastDayOfMonth.AddDays( - $lastDayOfMonth.Day + 1)
-
+	
+		
+		
+		
         Write-verbose "Error log is $errorLog"
         write-verbose "Connecting to vCenter $vcenter"
 
-        try {
+     foreach ($vc in $vCenter){  
+          try {
             $everythingOk = $true
-            connect-viserver $vcenter -ErrorAction Stop -ev $errmsg | where -filter {$_.name -like "ict*"} |Out-Null
-        }#end try
+            connect-viserver $vc -ErrorAction Stop -ev $errmsg
+             }#end try
         catch {
             $time = get-date -format G
             $msg = "Connecting to vCenter $vcenter failed."
@@ -56,28 +61,28 @@ function get-BIBclusterPerf {
                 "$time ERROR: $($_.exception.message)`n" | Out-File $errorLog -Append
             }
         }#end catch
-         
+      }#loop vCenters
     } #end BEGIN block
 
     PROCESS {
         
         if ($everythingOk) {
-            $clusters = VMware.VimAutomation.Core\Get-Cluster 
-            $brojClustera = $clusters.count
+            $clusters = VMware.VimAutomation.Core\Get-Cluster | ?{($_.name -ne 'extension') -and ($_.name -ne 'bib-test') -and ($_.name -ne 'Security')}
+			$brojClustera=$clusters.count
             $clustersObj = @()
 
             if ($vCenter -notlike '*fbisp*') {
-                $clusterCPUsum = 0
-                $clusterMEMsum = 0
+                $sviClustCPU = 0
+                $sviClustMEM = 0
                 foreach ($cluster in $clusters) {
                     $statsCPU = Get-Stat -Entity $cluster -Stat "cpu.usage.average" -Start $firstDayOfMonth -Finish $lastDayOfMonth | measure-object -average -Property value | select Average
                     $statsMem = Get-Stat -Entity $cluster -Stat  "mem.usage.average" -Start $firstDayOfMonth -Finish $lastDayOfMonth | Measure-Object -Average -Property Value | select Average
                 
-                    $clusterCPUsum += $statsCPU.average
-                    $clusterMEMsum += $statsMem.average
+                    $sviClustCPU += $statsCPU.average
+                    $sviClustMEM += $statsMem.average
 
                     $props = @{
-                        "vCenter"     = $vcenter
+                        "vCenter"     = $vcenter;
                         "ClusterName" = $cluster.name;
                         "avgCPU"      = "{0:N2}" -f $statsCPU.average ;
                         "avgMem"      = "{0:N2}" -f $statsMem.average
@@ -85,7 +90,8 @@ function get-BIBclusterPerf {
                     $obj = New-Object -TypeName psobject -Property $props 
                     $obj.PSObject.TypeNames.Insert(0, 'BIB.clusterPerf')
                     $clustersObj += $obj
-                }#end foreach cluster loop
+			    }#end foreach cluster loop
+				
             } #end if ako nije vcentar u Italiji, onda radi get-stat -entity cluster
             else {
                 $sviClustCPU = 0
@@ -133,8 +139,8 @@ function get-BIBclusterPerf {
         $propsCPUMEM = @{
             "vCenter"     = $vcenter
             "ClusterName" = "SVI";
-            "avgCPU"      = "{0:N2}" -f ($clusterCPUsum / $brojClustera) ;
-            "avgMem"      = "{0:N2}" -f ($clusterMEMsum / $brojClustera)
+            "avgCPU"      = "{0:N2}" -f ($sviClustCPU/$brojClustera) ;
+            "avgMem"      = "{0:N2}" -f ($sviClustMEM/$brojClustera)
         }
         $cpuMEMobj = New-Object -TypeName psobject -Property $propsCPUMEM    
         $cpuMEMobj.PSObject.TypeNames.Insert(0, 'BIB.clusterPerf')
@@ -145,6 +151,7 @@ function get-BIBclusterPerf {
         Disconnect-VIServer -Server $global:DefaultVIServers  -Confirm:$false
     }
 } #end function get-clusterPerf
+
 function count-BIBesxObjects {
     $clusters = Get-Cluster
     $totalVMS = 0
