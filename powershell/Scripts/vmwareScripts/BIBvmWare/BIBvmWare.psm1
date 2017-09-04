@@ -65,7 +65,8 @@ function get-BIBclusterPerf {
     } #end BEGIN block
 
     PROCESS {
-        
+       
+       foreach () {
         if ($everythingOk) {
             $clusters = VMware.VimAutomation.Core\Get-Cluster | ?{($_.name -ne 'extension') -and ($_.name -ne 'bib-test') -and ($_.name -ne 'Security')}
 			$brojClustera=$clusters.count
@@ -133,6 +134,7 @@ function get-BIBclusterPerf {
             }# end if ako je vcentar u Italiji, onda ne radi get-stat -entity cluster i mora da se proverava po vmhostovima
         
         }#end if $everythingOK
+    }
     }#end PROCESS block
 
     END {

@@ -1,7 +1,7 @@
  [CmdletBinding()]
 
 
-$template=Get-Template -Name 'Win2012R2Template'
+$template=Get-Template -Name 'w2k12r2_core'
 $vmhost=Get-Cluster 'Test Cluster' | Get-VMHost -State Connected | Get-Random
 
 $ip=''

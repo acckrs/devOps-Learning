@@ -2,7 +2,7 @@ cls
 Function MyLogger {
 Param(
 [string]$message = $(throw "Neophodan parametar"), 
-$logpath="C:\Users\zmilan\Desktop\VmwareIzveštaj\findOJreplace.txt", 
+$logpath="C:\Users\zmilan\Desktop\VmwareIzveï¿½taj\findOJreplace.txt", 
 $type="Info") 
 $messagetoFile='[{0:yyyy-MM-dd HH:mm:ss}] - {1}' -f [datetime]::Now,$message;
 switch ($type){
@@ -23,7 +23,7 @@ Move-Item -Path $logpath "$($logpath)_old" -Force }
 $messagetoFile | Out-File -append -FilePath $logpath -Force; }
 #parameters
 $logpath = ".\VMwareStats.log"
-[array]$cluster = ("CITRIX-PR","FLEX-PR","TYPE2","BIB-DMZ","BIB-LOCAL")
+[array]$cluster = ("CITRIX-PR","FLEX-PR","TYPE2","BIB-PROD")
 [array]$vcenters= ("be-vce-bib.fbisp.eu","bib-vcentar-01.deltabank.co.yu")
 #$numMonthsAgo = -1
 #-------------------------------------------------------------------------------------
