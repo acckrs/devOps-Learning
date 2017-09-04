@@ -1,2 +1,0 @@
-XenApp-WI-TST01
-localhost

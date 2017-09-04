@@ -1,1 +1,0 @@
-Xcopy \\citrix-fs\config\DRTestClients \\citrix-fs\config\Clients /E /O /X  /I /Y
