@@ -20,7 +20,7 @@
     .PARAMETER  IncludeArchive
         Includes certificates that have been archived
 
-    .PARAMETER  Issuer
+    .PARAMETER  Issuer\
         Filter by certificate Issuer
 
     .PARAMETER  Subject
@@ -28,7 +28,7 @@
 
     .PARAMETER  Thumbprint
         Filter by certificate Thumbprint
-
+s
     .NOTES
         Name:  Get-Certificate
         Author: Boe  Prox
