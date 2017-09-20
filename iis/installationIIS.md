@@ -25,7 +25,7 @@ Web Site mgmt
     * Umesto host-headera, mogu da radim binding po -IPAddress ili -Port
 
 Web Farm MGMT
-    * za ARR, potrebno je instalirati i to ovim redom:
+    ** za ARR, potrebno je instalirati i to ovim redom:
         1. Web PI 3.0
         2. Web Deploy 2.0
         3. Web Farm Framework 2.2
@@ -33,5 +33,5 @@ Web Farm MGMT
         5. Nakon toga se moze upgradeovati Web Deploy na 5.6
 
 
-
+Test
 
