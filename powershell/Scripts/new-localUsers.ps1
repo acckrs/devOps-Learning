@@ -30,7 +30,6 @@ function new-localUsers {
 
         [parameter(ValueFromPipeline = $true)]
         [string[]] $groupsForAccounts
-    )
 
     foreach ($server in $servernames) {
         
