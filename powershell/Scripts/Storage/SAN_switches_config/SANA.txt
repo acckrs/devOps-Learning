@@ -1,0 +1,12 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.02.23 10:42:48 =~=~=~=~=~=~=~=~=~=~=~=
+login as: admin
+admin@SANA's password: 
+SANA:FID128:admin> configupload
+Protocol (scp, ftp, sftp, local) [ftp]: 
+Server Name or IP Address [host]: 10.35.211.100
+User Name [user]: annonymous
+Path/Filename [<home dir>/config.txt]: /Acca/Powershell_local/BIB/Storage/SAN_switch_backups/SANA/config_A.txt
+Section (all|chassis|FID# [all]): 
+ Operation aborted. 
+SANA:FID128:admin> exit
+logout

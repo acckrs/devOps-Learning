@@ -1,0 +1,22 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.02.23 10:08:34 =~=~=~=~=~=~=~=~=~=~=~=
+login as: admin
+admin@NS_SANA's password: 
+NS_SANA:FID128:admin> configupload
+Protocol (scp, ftp, sftp, local) [ftp]: 
+Server Name or IP Address [host]: 10.35.211.100
+User Name [user]: annonymous
+Path/Filename [<home dir>/config.txt]: /Acca/Powershell_local/BIB/Storage/SAN_switch_backups/NS_SANA/config.txt
+Section (all|chassis|FID# [all]): 
+Password: 
+
+configUpload complete: All selected config parameters are uploaded
+NS_SANA:FID128:admin> configupload -vf
+Protocol (scp, ftp, sftp, local) [ftp]: 
+Server Name or IP Address [host]: 10.35.211.100
+User Name [user]: annonymous
+Path/Filename [<home dir>/config.txt]: /Acca/Powershell_local/BIB/Storage/SAN_switch_backups/NS_SANA/config-vf.txt
+Password: 
+
+configUpload complete: VF config parameters uploaded
+NS_SANA:FID128:admin> exit
+logout
