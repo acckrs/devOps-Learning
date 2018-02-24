@@ -1,4 +1,4 @@
-## get data from 3 different WMI classes and join them in one array of objects ($s)
+## get data from 3 different WMI classes and join them in an  array of objects ($s)
 $s = @()
 Get-WmiObject Win32_DiskDrive | ForEach-Object {
     $disk = $_
