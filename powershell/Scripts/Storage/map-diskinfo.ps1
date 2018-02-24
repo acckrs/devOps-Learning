@@ -1,7 +1,5 @@
 $3par_full_str = gc .\3par.txt
 $3par_props = $3par_full_str|select -Skip 1 -First 1
-$3parvalues_first_row = $3par_full_str|select -Skip 3 -first 1
-$3parvalues_first_row_array = $3parvalues_first_row -split '\s+'
 
 $3parvalues_rows = $3par_full_str|select -Skip 3 
 $all=@()
@@ -16,7 +14,6 @@ foreach($3parvalues_row in $3parvalues_rows){
         }
         $props_hash += $props
     }
-    
     $obj = New-Object -TypeName PSObject -Property $props_hash
     $all+=$obj
     
