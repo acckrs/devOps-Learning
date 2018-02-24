@@ -1,14 +1,14 @@
-Get-WmiObject Win32_DiskDrive | % {
+Get-WmiObject Win32_DiskDrive | ForEach-Object {
   $disk = $_
   $partitions = "ASSOCIATORS OF " +
                 "{Win32_DiskDrive.DeviceID='$($disk.DeviceID)'} " +
                 "WHERE AssocClass = Win32_DiskDriveToDiskPartition"
-  Get-WmiObject -Query $partitions | % {
+  Get-WmiObject -Query $partitions | ForEach-Object {
     $partition = $_
     $drives = "ASSOCIATORS OF " +
               "{Win32_DiskPartition.DeviceID='$($partition.DeviceID)'} " +
               "WHERE AssocClass = Win32_LogicalDiskToPartition"
-    Get-WmiObject -Query $drives | % {
+    Get-WmiObject -Query $drives | ForEach-Object {
       New-Object -Type PSCustomObject -Property @{
         Disk        = $disk.DeviceID
         DiskSize    = $disk.Size
