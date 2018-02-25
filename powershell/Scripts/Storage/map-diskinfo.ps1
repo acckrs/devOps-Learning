@@ -16,6 +16,7 @@ foreach($3parvalues_row in $3parvalues_rows){
     $obj = New-Object -TypeName PSObject -Property $props_hash
     $3parOut+=$obj
 }
+$3parout
 
 $templateWinDiskInfo = @'
 Size        : {Size*:1073738674176}
@@ -41,7 +42,7 @@ Partition   : Disk #2, Partition #0
 
 $slova = Get-Content .\associate.txt| ConvertFrom-String -TemplateContent $templateWinDiskInfo
 
-foreach ($d in $3parOut) {
+foreach ($d in $3parOuttt) {
     foreach ($slovo in $slova) {
         if ($d.PhysicalDrive -eq $slovo.Disk) {
             $props = @{

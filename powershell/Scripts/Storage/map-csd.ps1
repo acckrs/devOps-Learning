@@ -1,5 +1,24 @@
+# Kreiram niz imena propertija
+$prop_names = @("DeviceID", "SizeMB", "Tgt", "Lun", "WWN", "VVName", "Code", "Rev", "Serial")
+# Pripremam 3par output
+$3par_full_str = Get-Content .\3par.txt
+$3parvalues_rows = $3par_full_str|Select-Object -Skip 3 
+
+$3parOutTT = @() #inicijalizujem niz objekata 
+foreach ($3parvalues_row in $3parvalues_rows) {
+    # Kreiram niz vrednosti iz jednog reda - razdvojene su spejsom
+    $3parvalues_row_array = $3parvalues_row -split '\s+' 
+    
+    $obj = New-Object -TypeName PSObject
+    for ($i = 0; $i -lt $3parvalues_row_array.Count; $i++) {
+        $prop_name = $prop_names[$i]
+        $obj|add-member -membertype noteproperty -name $prop_names[$i] -value $3parvalues_row_array[$i] 
+    }
+    $3parOutTT += $obj
+}
+
 ## get data from 3 different WMI classes and join them in an  array of objects ($s)
-$s = @()
+$disks = @()
 Get-WmiObject Win32_DiskDrive | ForEach-Object {
     $disk = $_
     $partitions = "ASSOCIATORS OF " +
@@ -18,12 +37,12 @@ Get-WmiObject Win32_DiskDrive | ForEach-Object {
                 DriveLetter = $_.DeviceID
                 VolumeName  = $_.VolumeName
             }
-            $s += New-Object -Type PSCustomObject -Property $diskProps
+            $disks += New-Object -Type PSCustomObject -Property $diskProps
         }
     }
 }
+<# ## Define template for 3parinfo output parsing ---  use if WMF > 5
 
-## Define template for 3parinfo output parsing   
 $template3parInfo = @'
 Device File Name                         Size [MB]       Tgt       Lun                               LUN WWN                             VV Name          Code Rev     Serial#
 ==============================================================================================================================================================================
@@ -34,16 +53,17 @@ Device File Name                         Size [MB]       Tgt       Lun          
 '@
 ##  Apply template and create array of objects from 3par 
 $3parOut = Get-Content .\3par.txt | ConvertFrom-String -TemplateContent $template3parInfo 
+#>
 
 ##  Final mapping 
 $oall = @()
-foreach ($d in $3parOut) {
-    foreach ($slovo in $s) {
-        if ($d.PhysicalDrive -eq $slovo.Disk) {
+foreach ($d in $3parOutTT) {
+    foreach ($dd in $disks) {
+        if ($d.Deviceid -eq $dd.Disk) {
             $props = @{
-                "DriveLetter" = $slovo.DriveLetter;
+                "DriveLetter" = $dd.DriveLetter;
                 "VVName"      = $d.VVName;
-                "Disk"        = $slovo.Disk
+                "Disk"        = $dd.Disk
             }
             $obj = New-Object -TypeName psobject -Property $props
             $oall += $obj
