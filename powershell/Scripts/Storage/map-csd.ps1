@@ -41,7 +41,7 @@ Get-WmiObject Win32_DiskDrive | ForEach-Object {
         }
     }
 }
-<# ## Define template for 3parinfo output parsing ---  use if WMF > 5
+<# ## Definisem template za  3parinfo output parsing ---  use if WMF > 5 --vrlo kool feature
 
 $template3parInfo = @'
 Device File Name                         Size [MB]       Tgt       Lun                               LUN WWN                             VV Name          Code Rev     Serial#
