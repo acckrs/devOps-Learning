@@ -10,6 +10,7 @@
             "args": [],
             "cwd": "${file}"
         },
+
         {
             "type": "PowerShell",
             "request": "launch",
