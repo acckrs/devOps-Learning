@@ -1,0 +1,10 @@
+SET InPath=C:\acca\powershell_local\bib\scepanovic
+SET OutPath=C:\acca\powershell_local\bib\scepanovic\out
+
+SET FileName=%1
+ECHO %FileName% arrived at %DATE% %TIME% >> c:\fileIn\ReceiveLog\%1.log 2>&1
+ECHO Will move %FileName% from %InPath%\%1 to %OutPath%!  >> c:\fileIn\ReceiveLog\%1.log 2>&1
+SET NewName=%FileName%_"%DATE:~-4%%DATE:~4,2%%DATE:~7,2%__%TIME:~0,2%%TIME:~3,2%%TIME:~6,2%"
+echo %NewName%
+REN %FileName% %NewName%
+move /Y %InPath%\%NewName% %OutPath%

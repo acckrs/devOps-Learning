@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema targetNamespace="http://schemas.microsoft.com/office/infopath/2009/WSSList/cmeDataFields" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2009/WSSList/cmeDataFields" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:import schemaLocation="schema.xsd" namespace="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"/>
+	<xsd:import schemaLocation="schema2.xsd" namespace="http://schemas.microsoft.com/office/2009/documentManagement/types"/>
+	<xsd:import schemaLocation="schema3.xsd" namespace="http://schemas.microsoft.com/office/infopath/2007/PartnerControls"/>
+	<xsd:import schemaLocation="schema4.xsd" namespace="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields"/>
+	<xsd:element name="SharePointListItem_RW">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:ID" minOccurs="0"/>
+				<xsd:element ref="my:Title" minOccurs="0"/>
+				<xsd:element ref="my:Author" minOccurs="0"/>
+				<xsd:element ref="my:Editor" minOccurs="0"/>
+				<xsd:element ref="my:Modified" minOccurs="0"/>
+				<xsd:element ref="my:Created" minOccurs="0"/>
+				<xsd:element ref="my:SAsedenje" minOccurs="0"/>
+				<xsd:element ref="my:field7" minOccurs="0"/>
+				<xsd:element ref="my:SAkontakt" minOccurs="0"/>
+				<xsd:element ref="my:SAslusanje" minOccurs="0"/>
+				<xsd:element ref="my:SAinicijativa" minOccurs="0"/>
+				<xsd:element ref="my:SAuctivost" minOccurs="0"/>
+				<xsd:element ref="my:SAgovor" minOccurs="0"/>
+				<xsd:element ref="my:SAkontakt_ocima" minOccurs="0"/>
+				<xsd:element ref="my:SAdijalog" minOccurs="0"/>
+				<xsd:element ref="my:SAinformacije" minOccurs="0"/>
+				<xsd:element ref="my:field8" minOccurs="0"/>
+				<xsd:element ref="my:SApozdrav0" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_komunikaciione_vestine" minOccurs="0"/>
+				<xsd:element ref="my:SA_ispitivanje_potreba" minOccurs="0"/>
+				<xsd:element ref="my:SAadekvatna_pitanja" minOccurs="0"/>
+				<xsd:element ref="my:SAbenefiti_proizvoda" minOccurs="0"/>
+				<xsd:element ref="my:SApredstavljanje_troskova" minOccurs="0"/>
+				<xsd:element ref="my:SAproizvod_dobar_klijentu" minOccurs="0"/>
+				<xsd:element ref="my:SArezime" minOccurs="0"/>
+				<xsd:element ref="my:SAuspesno_zatvoren" minOccurs="0"/>
+				<xsd:element ref="my:SAneuspesno_zatvoren" minOccurs="0"/>
+				<xsd:element ref="my:SAhvala" minOccurs="0"/>
+				<xsd:element ref="my:SAzatrazio_kontakt" minOccurs="0"/>
+				<xsd:element ref="my:SArekao" minOccurs="0"/>
+				<xsd:element ref="my:SAkros_prodaja" minOccurs="0"/>
+				<xsd:element ref="my:SAopsti_utisak" minOccurs="0"/>
+				<xsd:element ref="my:SArelev_informacije" minOccurs="0"/>
+				<xsd:element ref="my:SA_interes_klijenta" minOccurs="0"/>
+				<xsd:element ref="my:SAsvrha_proizvoda" minOccurs="0"/>
+				<xsd:element ref="my:SAdogovorio_sastanak" minOccurs="0"/>
+				<xsd:element ref="my:SA_rel_informacije2" minOccurs="0"/>
+				<xsd:element ref="my:SAstruktura_sastanka" minOccurs="0"/>
+				<xsd:element ref="my:SAnaveo_kampanje" minOccurs="0"/>
+				<xsd:element ref="my:SAnabrojao_benefite" minOccurs="0"/>
+				<xsd:element ref="my:SAadekv_predstavlja" minOccurs="0"/>
+				<xsd:element ref="my:SAredovnoCrisp" minOccurs="0"/>
+				<xsd:element ref="my:SAproizv_benefiti" minOccurs="0"/>
+				<xsd:element ref="my:SAzatvara_mogucnost" minOccurs="0"/>
+				<xsd:element ref="my:SAdodatni_koment2" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_prijem_i_pozdrav" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_prijem_i_pozdrav" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_komunikacione_vestine" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_komunikacione_vestine" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_komunikacione_vestine" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_ispitivanje_potreba0" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_ispitivanje_potreba" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_ispitivanje_potreba" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_predstavljanje_proizvoda" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_predstavljanje_proizvoda" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_predstavljanje_proizvoda" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_prodajne_vestine" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_prodajne_vestine" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_prodajne_vestine" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_inicijativnost_i_zatvaran" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_inicijativnost_i_zatvaran" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_inicijativnost_i_zatvaran" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_follow_up" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_follow_up" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_follow_up" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_krosprodaja" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_krosprodaja" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_krosprodaja" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_savetodavni_razgovor" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_savetodavni_razgovor" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_savetodavni_razgovor" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_telefonski_poziv" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_telefonski_poziv" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_telefonski_poziv" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_priprema_za_sastanak" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_priprema_za_sastanak" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_priprema_za_sastanak" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_poznavanje_kampanje" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_poznavanje_kampanje" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_poznavanje_kampanje" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_poznavanje_proizvoda" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_poznavanje_proizvoda" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_poznavanje_proizvoda" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_crisp" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_crisp" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_crisp" minOccurs="0"/>
+				<xsd:element ref="my:SApravilno_unosi0" minOccurs="0"/>
+				<xsd:element ref="my:SA_SUM_ukupno" minOccurs="0"/>
+				<xsd:element ref="my:SA_MAX_ukupno" minOccurs="0"/>
+				<xsd:element ref="my:SA_PCT_ukupno" minOccurs="0"/>
+				<xsd:element ref="my:Savetnik" minOccurs="0"/>
+				<xsd:element ref="my:Kouc" minOccurs="0"/>
+				<xsd:element ref="my:Opservator" minOccurs="0"/>
+				<xsd:element ref="my:SegmentMenadzer" minOccurs="0"/>
+				<xsd:element ref="my:Ekspozitura" minOccurs="0"/>
+				<xsd:element ref="my:field11" minOccurs="0"/>
+				<xsd:element ref="my:Mesec" minOccurs="0"/>
+				<xsd:element ref="my:Godina" minOccurs="0"/>
+				<xsd:element ref="my:Adresa" minOccurs="0"/>
+				<xsd:element ref="my:SAispitivanje_potreba_ostala" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ID" ma:displayName="ID" ma:readOnly="True" ma:allowDeletion="false" nillable="true" type="dms:CounterType"/>
+	<xsd:element name="Title" ma:displayName="Title" ma:allowDeletion="false">
+		<xsd:simpleType>
+			<xsd:restriction base="dms:TextType">
+				<xsd:maxLength value="255"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Author" ma:displayName="Created By" ma:readOnly="True" ma:SharePointGroup="0" ma:SearchPeopleOnly="true" ma:allowDeletion="false" type="dms:UserType"/>
+	<xsd:element name="Editor" ma:displayName="Modified By" ma:readOnly="True" ma:SharePointGroup="0" ma:SearchPeopleOnly="true" ma:allowDeletion="false" type="dms:UserType"/>
+	<xsd:element name="Modified" ma:displayName="Modified" ma:readOnly="True" ma:formatSpec="dateFormat:Short Date;timeFormat:none;" ma:formatCategory="datetime" ma:allowDeletion="false" nillable="true" type="dms:DateTimeType"/>
+	<xsd:element name="Created" ma:displayName="Created" ma:readOnly="True" ma:formatSpec="dateFormat:Short Date;timeFormat:none;" ma:formatCategory="datetime" ma:allowDeletion="false" nillable="true" type="dms:DateTimeType"/>
+	<xsd:element name="SAsedenje" ma:displayName="SAsedenje" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="field7" ma:displayName="SApredstavljanje" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAkontakt" ma:displayName="SAkontakt" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAslusanje" ma:displayName="SAslusanje" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAinicijativa" ma:displayName="SAinicijativa" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAuctivost" ma:displayName="SAuctivost" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAgovor" ma:displayName="SAgovor" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAkontakt_ocima" ma:displayName="SAkontakt_ocima" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAdijalog" ma:displayName="SAdijalog" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAinformacije" ma:displayName="SAinformacije" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="field8" ma:displayName="SA_SUM_prijem_i_pozdrav" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SApozdrav0" ma:displayName="SApozdrav" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_komunikaciione_vestine" ma:displayName="SA_SUM_komunikaciione_vestine" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_ispitivanje_potreba" ma:displayName="SA_ispitivanje_potreba" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAadekvatna_pitanja" ma:displayName="SAadekvatna_pitanja" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAbenefiti_proizvoda" ma:displayName="SAbenefiti_proizvoda" ma:formatSpec="plainMultiline" ma:formatCategory="string" ma:allowDeletion="true" type="dms:NotePlainType"/>
+	<xsd:element name="SApredstavljanje_troskova" ma:displayName="SApredstavljanje_troskova" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAproizvod_dobar_klijentu" ma:displayName="SAproizvod_dobar_klijentu" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SArezime" ma:displayName="SArezime" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAuspesno_zatvoren" ma:displayName="SAuspesno_zatvoren" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAneuspesno_zatvoren" ma:displayName="SAneuspesno_zatvoren" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAhvala" ma:displayName="SAhvala" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAzatrazio_kontakt" ma:displayName="SAzatrazio_kontakt" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SArekao" ma:displayName="SArekao" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAkros_prodaja" ma:displayName="SAkros_prodaja" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAopsti_utisak" ma:displayName="SAopsti_utisak" ma:formatSpec="plainMultiline" ma:formatCategory="string" ma:allowDeletion="true" type="dms:NotePlainType"/>
+	<xsd:element name="SArelev_informacije" ma:displayName="SArelev_informacije" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_interes_klijenta" ma:displayName="SA_interes_klijenta" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAsvrha_proizvoda" ma:displayName="SAsvrha_proizvoda" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAdogovorio_sastanak" ma:displayName="SAdogovorio_sastanak" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_rel_informacije2" ma:displayName="SA_rel_informacije2" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAstruktura_sastanka" ma:displayName="SAstruktura_sastanka" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAnaveo_kampanje" ma:displayName="SAnaveo_kampanje" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAnabrojao_benefite" ma:displayName="SAnabrojao_benefite" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAadekv_predstavlja" ma:displayName="SAadekv_predstavlja" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAredovnoCrisp" ma:displayName="SAredovnoCrisp" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAproizv_benefiti" ma:displayName="SAproizv_benefiti" ma:formatSpec="plainMultiline" ma:formatCategory="string" ma:allowDeletion="true" type="dms:NotePlainType"/>
+	<xsd:element name="SAzatvara_mogucnost" ma:displayName="SAzatvara_mogucnost" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SAdodatni_koment2" ma:displayName="SAdodatni_koment2" ma:formatSpec="plainMultiline" ma:formatCategory="string" ma:allowDeletion="true" type="dms:NotePlainType"/>
+	<xsd:element name="SA_MAX_prijem_i_pozdrav" ma:displayName="SA_MAX_prijem_i_pozdrav" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_prijem_i_pozdrav" ma:displayName="SA_PCT_prijem_i_pozdrav" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_komunikacione_vestine" ma:displayName="SA_MAX_komunikacione_vestine" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_komunikacione_vestine" ma:displayName="SA_SUM_komunikacione_vestine" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_komunikacione_vestine" ma:displayName="SA_PCT_komunikacione_vestine" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_ispitivanje_potreba0" ma:displayName="SA_SUM_ispitivanje_potreba" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_ispitivanje_potreba" ma:displayName="SA_MAX_ispitivanje_potreba" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_ispitivanje_potreba" ma:displayName="SA_PCT_ispitivanje_potreba" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_predstavljanje_proizvoda" ma:displayName="SA_SUM_predstavljanje_proizvoda" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_predstavljanje_proizvoda" ma:displayName="SA_MAX_predstavljanje_proizvoda" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_predstavljanje_proizvoda" ma:displayName="SA_PCT_predstavljanje_proizvoda" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_prodajne_vestine" ma:displayName="SA_SUM_prodajne_vestine" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_prodajne_vestine" ma:displayName="SA_MAX_prodajne_vestine" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_prodajne_vestine" ma:displayName="SA_PCT_prodajne_vestine" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_inicijativnost_i_zatvaran" ma:displayName="SA_SUM_inicijativnost_i_zatvaranje_razgovora" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_inicijativnost_i_zatvaran" ma:displayName="SA_MAX_inicijativnost_i_zatvaranje_razgovora" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_inicijativnost_i_zatvaran" ma:displayName="SA_PCT_inicijativnost_i_zatvaranje_razgovora" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_follow_up" ma:displayName="SA_SUM_follow_up" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_follow_up" ma:displayName="SA_MAX_follow_up" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_follow_up" ma:displayName="SA_PCT_follow_up" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_krosprodaja" ma:displayName="SA_SUM_krosprodaja" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_krosprodaja" ma:displayName="SA_MAX_krosprodaja" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_krosprodaja" ma:displayName="SA_PCT_krosprodaja" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_savetodavni_razgovor" ma:displayName="SA_SUM_savetodavni_razgovor" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_savetodavni_razgovor" ma:displayName="SA_MAX_savetodavni_razgovor" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_savetodavni_razgovor" ma:displayName="SA_PCT_savetodavni_razgovor" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_telefonski_poziv" ma:displayName="SA_SUM_telefonski_poziv" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_telefonski_poziv" ma:displayName="SA_MAX_telefonski_poziv" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_telefonski_poziv" ma:displayName="SA_PCT_telefonski_poziv" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_priprema_za_sastanak" ma:displayName="SA_SUM_priprema_za_sastanak" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_priprema_za_sastanak" ma:displayName="SA_MAX_priprema_za_sastanak" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_priprema_za_sastanak" ma:displayName="SA_PCT_priprema_za_sastanak" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_poznavanje_kampanje" ma:displayName="SA_SUM_poznavanje_kampanje" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_poznavanje_kampanje" ma:displayName="SA_MAX_poznavanje_kampanje" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_poznavanje_kampanje" ma:displayName="SA_PCT_poznavanje_kampanje" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_poznavanje_proizvoda" ma:displayName="SA_SUM_poznavanje_proizvoda" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_poznavanje_proizvoda" ma:displayName="SA_MAX_poznavanje_proizvoda" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_poznavanje_proizvoda" ma:displayName="SA_PCT_poznavanje_proizvoda" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_crisp" ma:displayName="SA_SUM_crisp" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_crisp" ma:displayName="SA_MAX_crisp" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_crisp" ma:displayName="SA_PCT_crisp" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SApravilno_unosi0" ma:displayName="SApravilno_unosi" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_SUM_ukupno" ma:displayName="SA_SUM_ukupno" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_MAX_ukupno" ma:displayName="SA_MAX_ukupno" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="SA_PCT_ukupno" ma:displayName="SA_PCT_ukupno" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+	<xsd:element name="Savetnik" ma:displayName="Savetnik" ma:SharePointGroup="0" ma:SearchPeopleOnly="true" ma:allowDeletion="true" type="dms:UserType"/>
+	<xsd:element name="Kouc" ma:displayName="Kouc" ma:SharePointGroup="0" ma:SearchPeopleOnly="true" ma:allowDeletion="true" type="dms:UserType"/>
+	<xsd:element name="Opservator" ma:displayName="Opservator" ma:SharePointGroup="0" ma:SearchPeopleOnly="true" ma:allowDeletion="true" type="dms:UserType"/>
+	<xsd:element name="SegmentMenadzer" ma:displayName="SegmentMenadzer" ma:SharePointGroup="0" ma:SearchPeopleOnly="true" ma:allowDeletion="true" type="dms:UserType"/>
+	<xsd:element name="Ekspozitura" ma:displayName="Ekspozitura" ma:allowDeletion="true">
+		<xsd:simpleType>
+			<xsd:restriction base="dms:TextType">
+				<xsd:maxLength value="6"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="field11" ma:displayName="RC" ma:allowDeletion="true">
+		<xsd:simpleType>
+			<xsd:restriction base="dms:TextType">
+				<xsd:maxLength value="255"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Mesec" ma:displayName="Mesec" ma:auxDataSourceName="Choices Data Connection" ma:auxChoicesXPath="/root/Mesec/SharePointListChoice_RW" ma:auxValue="." ma:auxDisplay="@DisplayName" ma:allowDeletion="true" type="dms:ChoiceType"/>
+	<xsd:element name="Godina" ma:displayName="Godina" ma:auxDataSourceName="Choices Data Connection" ma:auxChoicesXPath="/root/Godina/SharePointListChoice_RW" ma:auxValue="." ma:auxDisplay="@DisplayName" ma:allowDeletion="true" type="dms:ChoiceType"/>
+	<xsd:element name="Adresa" ma:displayName="Adresa" ma:allowDeletion="true">
+		<xsd:simpleType>
+			<xsd:restriction base="dms:TextType">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="70"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="SAispitivanje_potreba_ostala" ma:displayName="SAispitivanje_potreba_ostala" ma:formatSpec="numDigits:auto;negativeOrder:1;" ma:formatCategory="number" ma:allowDeletion="true" nillable="true" type="dms:NumberType"/>
+</xsd:schema>

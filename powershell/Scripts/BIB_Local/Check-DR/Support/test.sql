@@ -1,0 +1,1 @@
+select * from sn.cmdb_ci

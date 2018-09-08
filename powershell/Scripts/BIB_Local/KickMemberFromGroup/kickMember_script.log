@@ -1,0 +1,5 @@
+inf:07:55:05:Prepare step kickMember start at 2018.02.28 07:55:05
+inf:07:55:05:PrintOnly=False
+inf:07:55:05:Start[powershell.exe  -File "kickMember.ps1" ]
+inf:07:55:05:Path [C:\SchTask\KickMemberFromGroup]
+inf:07:55:08:Finish with OK

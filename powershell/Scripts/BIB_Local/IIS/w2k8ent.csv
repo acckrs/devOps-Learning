@@ -1,0 +1,11 @@
+#TYPE System.Management.Automation.PSCustomObject
+"SiteName","Path","OS","server","pathContent"
+"Default Web Site","%SystemDrive%\inetpub\wwwroot","Microsoft Windows Server 2008 R2 Enterprise ","DRBACKUP-NODE1","System.Object[]"
+"Default Web Site","%SystemDrive%\inetpub\wwwroot","Microsoft Windows Server 2008 R2 Enterprise ","ALMPRO2","System.Object[]"
+"Default Web Site","%SystemDrive%\inetpub\wwwroot","Microsoft Windows Server 2008 R2 Enterprise ","DRBACKUP-NODE2","System.Object[]"
+"Default Web Site","%SystemDrive%\inetpub\wwwroot","Microsoft Windows Server 2008 R2 Enterprise ","BACKUP-NODE1","System.Object[]"
+"Default Web Site","%SystemDrive%\inetpub\wwwroot","Microsoft Windows Server 2008 R2 Enterprise ","OCR-NODE21","System.Object[]"
+"Default Web Site","%SystemDrive%\inetpub\wwwroot","Microsoft Windows Server 2008 R2 Enterprise ","BACKUP-NODE3","System.Object[]"
+"Default Web Site","%SystemDrive%\inetpub\wwwroot","Microsoft Windows Server 2008 R2 Enterprise ","OCR-NODE22","System.Object[]"
+"Default Web Site","%SystemDrive%\inetpub\wwwroot","Microsoft Windows Server 2008 R2 Enterprise ","backup-node2","System.Object[]"
+"Default Web Site","%SystemDrive%\inetpub\wwwroot","Microsoft Windows Server 2008 R2 Enterprise ","ALMPRO3","System.Object[]"

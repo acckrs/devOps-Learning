@@ -1,0 +1,57 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180117114519
+Username: DELTABANK\SYSTEM
+RunAs User: DELTABANK\SYSTEM
+Machine: OCTOPUS (Microsoft Windows NT 10.0.14393.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -file pm5.PushDB.ps1
+Process ID: 17596
+PSVersion: 5.1.14393.1944
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14393.1944
+BuildVersion: 10.0.14393.1944
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\SCHTASK\PM5\pm5.PushDB.log
+# hello at 2018-01-17 11:01:19
+obrada fajla "C:\SCHTASK\PM5\pmFile\pm5_01171130.blg"
+...cnt tm:
+...cnt tm:20180117 11:30
+...cnt tm:20180117 11:31
+...cnt tm:20180117 11:32
+...cnt tm:20180117 11:33
+...cnt tm:20180117 11:34
+...cnt tm:20180117 11:35
+...cnt tm:20180117 11:36
+...cnt tm:20180117 11:37
+...cnt tm:20180117 11:38
+...cnt tm:20180117 11:39
+...cnt tm:20180117 11:40
+...cnt tm:20180117 11:41
+...cnt tm:20180117 11:42
+...cnt tm:20180117 11:43
+# Arhive: "C:\SCHTASK\PM5\pmFile\pm5_01171130.blg"
+obrada fajla "C:\SCHTASK\PM5\pmFile\pm5_01122300.blg"
+>> TerminatingError(Import-Counter): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Unable to read counter information and data from input binary log files."
+# Arhive: "C:\SCHTASK\PM5\pmFile\pm5_01122300.blg"
+>> TerminatingError(Move-Item): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: The process cannot access the file because it is being used by another process."
+>> TerminatingError(Move-Item): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: The process cannot access the file because it is being used by another process."
+>> TerminatingError(Move-Item): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: The process cannot access the file because it is being used by another process."
+The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: The process cannot access the file because it is being used by another process.
+move : The process cannot access the file because it is being used by another
+process.
+At C:\SCHTASK\PM5\pm5.PushDB.ps1:96 char:3
++   move $pmFile $($global:cfg.root.pmArhPath) -Force;
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\SCHTASK\PM5\pmFile\pm5_01122300.
+   blg:FileInfo) [Move-Item], IOException
+    + FullyQualifiedErrorId : MoveFileInfoItemIOError,Microsoft.PowerShell.Com
+   mands.MoveItemCommand
+
+**********************
+Windows PowerShell transcript end
+End time: 20180117114521
+**********************

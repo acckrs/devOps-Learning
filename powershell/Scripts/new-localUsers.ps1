@@ -30,6 +30,7 @@ function new-localUsers {
 
         [parameter(ValueFromPipeline = $true)]
         [string[]] $groupsForAccounts
+    )
 
     foreach ($server in $servernames) {
         
@@ -109,13 +110,13 @@ function add-DomainUsersToLocalGroup {
         if ($serverOnline) {
             Write-Verbose "$server is online."
             foreach ($account in $accounts) {
-                foreach ($group in $groupsForAccounts) {
-                    $adsigroup = [ADSI]"WinNT://$server/$group,group" 
+                foreach ($localgroup in $groupsForAccounts) {
+                    $adsigroup = [ADSI]"WinNT://$server/$localgroup,group" 
                     $adsigroup.Add("WinNT://$server/deltabank/$account,user")
-                        Write-verbose "Nalog $account dodat u grupu $group"
+                        Write-verbose "Nalog $account dodat u grupu $localgroup na serveru $server"
                     foreach ($domainGroup in $domainGroups) {
                         $adsigroup.Add("WinNT://$server/deltabank/$domainGroup,group")
-                        Write-verbose "Domenska grupa $domainGroup dodata u grupu $group"
+                        Write-verbose "Domenska grupa $domainGroup dodata u grupu $localgroup"
                     }#endforeach domainGroup loop
                 } #end foreach group loop
             }#end foreach account loop
@@ -127,4 +128,66 @@ function add-DomainUsersToLocalGroup {
 
 }
 
-new-localUsers -accounts "SMARTBranislavZuber" -serverName "localhost"  -groupsForAccounts Administrators,Users -verbose
+function remove-DomainUsersFromLocalGroup {
+    <#
+        .SYNOPSIS 
+        Funkcija koja izbacuje domenske naloge iz lokalne grupe na kompjuterima
+        .DESCRIPTION
+        Funkcija koja izbacuje domenske naloge iz lokalne grupe na kompjuterima. Imena naloga, kompjutera i grupa se mogu predati iz txt fajla ili navodjenjem vrednosti za parametre
+        .PARAMETER accounts
+        domenski nalozi koji se izbacuju iz lokalne grupe. 
+        .PARAMETER domainGroups
+        Domenske grupe koje ce se izbaciti iz lokalne grupe. 
+        .PARAMETER serverNames
+        Kompjuteri iz cije lokalne grupe izbacujemo domenske naloge
+        .PARAMETER groupsForAccounts
+        Lokalne grupe iz kojih izbacujemo domenske naloge
+        .NOTES
+                    Version:        1.0
+                    Author:         Aleksandar Krstic
+                    Creation Date:  January 05, 2018
+                    Purpose/Change: Initial script development
+        .EXAMPLE
+                    remove-DomainUsersFromLocalGroup -accounts (get-contents names.txt) -serverNames Server1,Server2 -groupsForAccounts Administrators,Users
+        .EXAMPLE
+                    Remove-DomainUsersFromLocalGroup -serverNames Server1,server2 -accounts account1 -domainGroups srv_admins -groupsForAccounts Administrators,Users
+#>
+    [cmdletbinding()]
+    param (
+        [parameter(Mandatory = $true, ValueFromPipeline = $true)]
+        [string[]] $accounts,
+
+        [parameter(Mandatory = $true, ValueFromPipeline = $true)]
+        [string[] ]$serverNames, 
+
+        [parameter(ValueFromPipeline = $true)]
+        [string[]] $groupsForAccounts,
+        
+        [parameter(ValueFromPipeline = $true)]
+        [string[]] $domainGroups
+    )
+
+    foreach ($server in $servernames) {
+        $serverOnline = Test-Connection -ComputerName $server -count 1 -quiet
+        if ($serverOnline) {
+            Write-Verbose "$server is online."
+            foreach ($account in $accounts) {
+                foreach ($localgroup in $groupsForAccounts) {
+                    $adsigroup = [ADSI]"WinNT://$server/$localgroup,group" 
+                    $adsigroup.remove("WinNT://$server/deltabank/$account,user")
+                        Write-verbose "Nalog $account izbrisan iz grupe $localgroup sa servera $server"
+               <# foreach ($domainGroup in $domainGroups) {
+                    $adsigroup.Add("WinNT://$server/deltabank/$domainGroup,group")
+                        Write-verbose "Domenska grupa $domainGroup dodata u grupu $localgroup"
+                    }#endforeach domainGroup loop#>
+                } #end foreach group loop
+            }#end foreach account loop
+        }
+        else {
+            Write-Warning "$server is not online."
+        } #end if $serverOnline question
+    } #end foreach server loop
+
+}
+#remove-DomainUsersfromLocalGroup -accounts "oracledevelopers" -serverNames (gc .\fc2vms.txt) -groupsForAccounts "administrators"  -Verbose
+add-DomainUsersToLocalGroup -serverNames poc-cis -accounts srv_admins -groupsForAccounts "Administrators"

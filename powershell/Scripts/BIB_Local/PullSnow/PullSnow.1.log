@@ -1,0 +1,114 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180130081216
+Username: DELTABANK\SYSTEM
+RunAs User: DELTABANK\SYSTEM
+Machine: SNOW-MID (Microsoft Windows NT 6.3.9600.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -file PullSnow.ps1 1
+Process ID: 6816
+PSVersion: 5.1.14409.1012
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14409.1012
+BuildVersion: 10.0.14409.1012
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is PullSnow.1.log
+08:12:16 Connect to sql
+08:12:17 Start pull cmdb_ci_aix_server
+Transcript started, output file is .\log\cmdb_ci_aix_server.log
+08:12:17 Connect to sql
+08:12:17 Start pull cmdb_ci_aix_server
+08:12:28 Create #cmdb_ci_aix_server
+08:12:28 pull data into #cmdb_ci_aix_server
+08:12:28 Prepis is #cmdb_ci_aix_server u odredišnu tabelu sn.cmdb_ci_aix_server
+08:12:29 bye
+Transcript stopped, output file is C:\SCHTASK\PullSnow\log\cmdb_ci_aix_server.log
+08:12:29 Start pull cmdb_ci_db_ora_catalog
+Transcript started, output file is .\log\cmdb_ci_db_ora_catalog.log
+08:12:29 Connect to sql
+08:12:29 Start pull cmdb_ci_db_ora_catalog
+08:12:30 Create #cmdb_ci_db_ora_catalog
+08:12:30 pull data into #cmdb_ci_db_ora_catalog
+08:12:30 Prepis is #cmdb_ci_db_ora_catalog u odredišnu tabelu sn.cmdb_ci_db_ora_catalog
+08:12:30 bye
+Transcript stopped, output file is C:\SCHTASK\PullSnow\log\cmdb_ci_db_ora_catalog.log
+08:12:30 Start pull cmdb_ci_db_mssql_instance
+Transcript started, output file is .\log\cmdb_ci_db_mssql_instance.log
+08:12:30 Connect to sql
+08:12:30 Start pull cmdb_ci_db_mssql_instance
+08:12:34 Create #cmdb_ci_db_mssql_instance
+08:12:34 pull data into #cmdb_ci_db_mssql_instance
+08:12:35 Prepis is #cmdb_ci_db_mssql_instance u odredišnu tabelu sn.cmdb_ci_db_mssql_instance
+08:12:35 bye
+Transcript stopped, output file is C:\SCHTASK\PullSnow\log\cmdb_ci_db_mssql_instance.log
+08:12:35 Start pull cmdb_ci_linux_server
+Transcript started, output file is .\log\cmdb_ci_linux_server.log
+08:12:35 Connect to sql
+08:12:35 Start pull cmdb_ci_linux_server
+08:12:39 Create #cmdb_ci_linux_server
+08:12:39 pull data into #cmdb_ci_linux_server
+08:12:39 Prepis is #cmdb_ci_linux_server u odredišnu tabelu sn.cmdb_ci_linux_server
+08:12:39 bye
+Transcript stopped, output file is C:\SCHTASK\PullSnow\log\cmdb_ci_linux_server.log
+08:12:39 Start pull cmdb_ci_server
+Transcript started, output file is .\log\cmdb_ci_server.log
+08:12:39 Connect to sql
+08:12:39 Start pull cmdb_ci_server
+08:13:13 Create #cmdb_ci_server
+08:13:13 pull data into #cmdb_ci_server
+08:13:14 Prepis is #cmdb_ci_server u odredišnu tabelu sn.cmdb_ci_server
+08:13:14 bye
+Transcript stopped, output file is C:\SCHTASK\PullSnow\log\cmdb_ci_server.log
+08:13:14 Start pull cmdb_ci_storage_disk
+Transcript started, output file is .\log\cmdb_ci_storage_disk.log
+08:13:14 Connect to sql
+08:13:14 Start pull cmdb_ci_storage_disk
+08:13:15 Create #cmdb_ci_storage_disk
+08:13:15 pull data into #cmdb_ci_storage_disk
+08:13:15 Prepis is #cmdb_ci_storage_disk u odredišnu tabelu sn.cmdb_ci_storage_disk
+08:13:15 bye
+Transcript stopped, output file is C:\SCHTASK\PullSnow\log\cmdb_ci_storage_disk.log
+08:13:15 Start pull cmdb_ci_storage_server
+Transcript started, output file is .\log\cmdb_ci_storage_server.log
+08:13:15 Connect to sql
+08:13:15 Start pull cmdb_ci_storage_server
+08:13:16 Create #cmdb_ci_storage_server
+08:13:16 pull data into #cmdb_ci_storage_server
+08:13:16 Prepis is #cmdb_ci_storage_server u odredišnu tabelu sn.cmdb_ci_storage_server
+08:13:17 bye
+Transcript stopped, output file is C:\SCHTASK\PullSnow\log\cmdb_ci_storage_server.log
+08:13:17 Start pull cmdb_ci_win_cluster
+Transcript started, output file is .\log\cmdb_ci_win_cluster.log
+08:13:17 Connect to sql
+08:13:17 Start pull cmdb_ci_win_cluster
+08:13:17 Create #cmdb_ci_win_cluster
+08:13:18 pull data into #cmdb_ci_win_cluster
+08:13:18 Prepis is #cmdb_ci_win_cluster u odredišnu tabelu sn.cmdb_ci_win_cluster
+08:13:18 bye
+Transcript stopped, output file is C:\SCHTASK\PullSnow\log\cmdb_ci_win_cluster.log
+08:13:18 Start pull cmdb_ci_esx_server
+Transcript started, output file is .\log\cmdb_ci_esx_server.log
+08:13:18 Connect to sql
+08:13:18 Start pull cmdb_ci_esx_server
+08:13:20 Create #cmdb_ci_esx_server
+08:13:20 pull data into #cmdb_ci_esx_server
+08:13:20 Prepis is #cmdb_ci_esx_server u odredišnu tabelu sn.cmdb_ci_esx_server
+08:13:21 bye
+Transcript stopped, output file is C:\SCHTASK\PullSnow\log\cmdb_ci_esx_server.log
+08:13:21 Start pull cmdb_ci_win_server
+Transcript started, output file is .\log\cmdb_ci_win_server.log
+08:13:21 Connect to sql
+08:13:21 Start pull cmdb_ci_win_server
+08:13:44 Create #cmdb_ci_win_server
+08:13:44 pull data into #cmdb_ci_win_server
+08:13:44 Prepis is #cmdb_ci_win_server u odredišnu tabelu sn.cmdb_ci_win_server
+08:13:44 bye
+Transcript stopped, output file is C:\SCHTASK\PullSnow\log\cmdb_ci_win_server.log
+08:13:44 bye
+**********************
+Windows PowerShell transcript end
+End time: 20180130081344
+**********************

@@ -1,0 +1,44 @@
+﻿<HA>
+  <SqlConnectionString> Server=SYSSQL; Database=dcInfo; Trusted_connection=yes; Application Name=AD-HR-Sync; </SqlConnectionString>
+
+  <SqlQuery TimeOut="4000"/>
+
+  <LogFile TTL="3"  />
+
+  <AD MaxChangePerSession="200"/>
+
+  <Properties>
+    <Properety Name="adspath"                     Type="NVarChar" />
+    <Properety Name="distinguishedname"           Type="NVarChar" />
+    <Properety Name="cn"                          Type="NVarChar" />
+    <Properety Name="Displayname"                 Type="NVarChar" />
+    <Properety Name="sAMAccountName"              Type="NVarChar" />
+    <Properety Name="givenName"                   Type="NVarChar" />
+    <Properety Name="sn"                          Type="NVarChar" />
+    <Properety Name="company"                     Type="NVarChar" />
+    <Properety Name="department"                  Type="NVarChar" />
+    <Properety Name="description"                 Type="NVarChar" />
+    <Properety Name="title"                       Type="NVarChar" />
+    <Properety Name="telephoneNumber"             Type="NVarChar" />
+    <Properety Name="streetAddress"               Type="NVarChar" />
+    <Properety Name="manager"                     Type="NVarChar" />
+    <Properety Name="physicalDeliveryOfficeName"  Type="NVarChar" />
+    <Properety Name="mobile"                      Type="NVarChar" />
+    <Properety Name="ipphone"                     Type="NVarChar" />
+    <Properety Name="mail"                        Type="NVarChar" />
+    <Properety Name="l"                           Type="NVarChar" />
+    <Properety Name="otherTelephone"              Type="NVarChar" />
+    <Properety Name="c"                           Type="NVarChar" />
+    <Properety Name="whencreated"                 Type="NVarChar" />
+    <Properety Name="whenchanged"                 Type="NVarChar" />
+    <Properety Name="userAccountControl"          Type="NVarChar" />
+    <Properety Name="thumbnailPhoto"              Type="Image" />
+  </Properties>
+
+  <Photo 
+    MaxPixels="10000"
+    MaxSize="10000"
+    ExportPath=""
+  />
+
+</HA>

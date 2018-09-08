@@ -1,0 +1,17 @@
+inv-web-01
+DLP-MAIL1
+DLP-MAIL2
+JUNIPER-FS
+B2B-FE-01
+Berza2
+Broker
+DMZ-APP-01
+ecawebenroll2
+EGAIN-WEB
+EXnlb1
+EXnlb2
+MTSCoBrand
+UBS-KIB
+WWW-APP-01
+WWW-APP-02
+WWW-SQL-01

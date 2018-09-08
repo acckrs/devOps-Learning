@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema targetNamespace="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls">
+	<xsd:import namespace="http://schemas.microsoft.com/office/2009/documentManagement/types" schemaLocation="schema2.xsd"/>
+	<xsd:element name="SharePointListItem_RW">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="q:ID" minOccurs="0"/>
+				<xsd:element ref="q:Title" minOccurs="0"/>
+				<xsd:element ref="q:Author" minOccurs="0"/>
+				<xsd:element ref="q:Editor" minOccurs="0"/>
+				<xsd:element ref="q:Modified" minOccurs="0"/>
+				<xsd:element ref="q:Created" minOccurs="0"/>
+				<xsd:element ref="q:SAsedenje" minOccurs="0"/>
+				<xsd:element ref="q:field7" minOccurs="0"/>
+				<xsd:element ref="q:SAkontakt" minOccurs="0"/>
+				<xsd:element ref="q:SAslusanje" minOccurs="0"/>
+				<xsd:element ref="q:SAinicijativa" minOccurs="0"/>
+				<xsd:element ref="q:SAuctivost" minOccurs="0"/>
+				<xsd:element ref="q:SAgovor" minOccurs="0"/>
+				<xsd:element ref="q:SAkontakt_ocima" minOccurs="0"/>
+				<xsd:element ref="q:SAdijalog" minOccurs="0"/>
+				<xsd:element ref="q:SAinformacije" minOccurs="0"/>
+				<xsd:element ref="q:field8" minOccurs="0"/>
+				<xsd:element ref="q:SApozdrav0" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_komunikaciione_vestine" minOccurs="0"/>
+				<xsd:element ref="q:SA_ispitivanje_potreba" minOccurs="0"/>
+				<xsd:element ref="q:SAadekvatna_pitanja" minOccurs="0"/>
+				<xsd:element ref="q:SApredstavljanje_troskova" minOccurs="0"/>
+				<xsd:element ref="q:SAproizvod_dobar_klijentu" minOccurs="0"/>
+				<xsd:element ref="q:SArezime" minOccurs="0"/>
+				<xsd:element ref="q:SAuspesno_zatvoren" minOccurs="0"/>
+				<xsd:element ref="q:SAneuspesno_zatvoren" minOccurs="0"/>
+				<xsd:element ref="q:SAhvala" minOccurs="0"/>
+				<xsd:element ref="q:SAzatrazio_kontakt" minOccurs="0"/>
+				<xsd:element ref="q:SArekao" minOccurs="0"/>
+				<xsd:element ref="q:SAkros_prodaja" minOccurs="0"/>
+				<xsd:element ref="q:SArelev_informacije" minOccurs="0"/>
+				<xsd:element ref="q:SA_interes_klijenta" minOccurs="0"/>
+				<xsd:element ref="q:SAsvrha_proizvoda" minOccurs="0"/>
+				<xsd:element ref="q:SAdogovorio_sastanak" minOccurs="0"/>
+				<xsd:element ref="q:SA_rel_informacije2" minOccurs="0"/>
+				<xsd:element ref="q:SAstruktura_sastanka" minOccurs="0"/>
+				<xsd:element ref="q:SAnaveo_kampanje" minOccurs="0"/>
+				<xsd:element ref="q:SAnabrojao_benefite" minOccurs="0"/>
+				<xsd:element ref="q:SAadekv_predstavlja" minOccurs="0"/>
+				<xsd:element ref="q:SAredovnoCrisp" minOccurs="0"/>
+				<xsd:element ref="q:SAzatvara_mogucnost" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_prijem_i_pozdrav" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_prijem_i_pozdrav" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_komunikacione_vestine" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_komunikacione_vestine" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_komunikacione_vestine" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_ispitivanje_potreba0" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_ispitivanje_potreba" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_ispitivanje_potreba" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_predstavljanje_proizvoda" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_predstavljanje_proizvoda" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_predstavljanje_proizvoda" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_prodajne_vestine" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_prodajne_vestine" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_prodajne_vestine" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_inicijativnost_i_zatvaran" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_inicijativnost_i_zatvaran" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_inicijativnost_i_zatvaran" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_follow_up" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_follow_up" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_follow_up" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_krosprodaja" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_krosprodaja" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_krosprodaja" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_savetodavni_razgovor" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_savetodavni_razgovor" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_savetodavni_razgovor" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_telefonski_poziv" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_telefonski_poziv" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_telefonski_poziv" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_priprema_za_sastanak" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_priprema_za_sastanak" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_priprema_za_sastanak" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_poznavanje_kampanje" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_poznavanje_kampanje" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_poznavanje_kampanje" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_poznavanje_proizvoda" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_poznavanje_proizvoda" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_poznavanje_proizvoda" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_crisp" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_crisp" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_crisp" minOccurs="0"/>
+				<xsd:element ref="q:SApravilno_unosi0" minOccurs="0"/>
+				<xsd:element ref="q:SA_SUM_ukupno" minOccurs="0"/>
+				<xsd:element ref="q:SA_MAX_ukupno" minOccurs="0"/>
+				<xsd:element ref="q:SA_PCT_ukupno" minOccurs="0"/>
+				<xsd:element ref="q:Savetnik" minOccurs="0"/>
+				<xsd:element ref="q:Kouc" minOccurs="0"/>
+				<xsd:element ref="q:Opservator" minOccurs="0"/>
+				<xsd:element ref="q:SegmentMenadzer" minOccurs="0"/>
+				<xsd:element ref="q:Ekspozitura" minOccurs="0"/>
+				<xsd:element ref="q:field11" minOccurs="0"/>
+				<xsd:element ref="q:Mesec" minOccurs="0"/>
+				<xsd:element ref="q:Godina" minOccurs="0"/>
+				<xsd:element ref="q:Adresa" minOccurs="0"/>
+				<xsd:element ref="q:SAispitivanje_potreba_ostala" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ID" type="dms:CounterType" ma:displayName="ID" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Title" type="dms:TextType" ma:displayName="Title" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Author" type="dms:TextType" ma:displayName="Created By" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Editor" type="dms:TextType" ma:displayName="Modified By" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Modified" type="dms:DateOnlyType" ma:displayName="Modified" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Created" type="dms:DateOnlyType" ma:displayName="Created" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAsedenje" type="dms:NumberType" ma:displayName="SAsedenje" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="field7" type="dms:NumberType" ma:displayName="SApredstavljanje" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAkontakt" type="dms:NumberType" ma:displayName="SAkontakt" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAslusanje" type="dms:NumberType" ma:displayName="SAslusanje" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAinicijativa" type="dms:NumberType" ma:displayName="SAinicijativa" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAuctivost" type="dms:NumberType" ma:displayName="SAuctivost" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAgovor" type="dms:NumberType" ma:displayName="SAgovor" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAkontakt_ocima" type="dms:NumberType" ma:displayName="SAkontakt_ocima" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAdijalog" type="dms:NumberType" ma:displayName="SAdijalog" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAinformacije" type="dms:NumberType" ma:displayName="SAinformacije" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="field8" type="dms:NumberType" ma:displayName="SA_SUM_prijem_i_pozdrav" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SApozdrav0" type="dms:NumberType" ma:displayName="SApozdrav" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_komunikaciione_vestine" type="dms:NumberType" ma:displayName="SA_SUM_komunikaciione_vestine" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_ispitivanje_potreba" type="dms:NumberType" ma:displayName="SA_ispitivanje_potreba" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAadekvatna_pitanja" type="dms:NumberType" ma:displayName="SAadekvatna_pitanja" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SApredstavljanje_troskova" type="dms:NumberType" ma:displayName="SApredstavljanje_troskova" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAproizvod_dobar_klijentu" type="dms:NumberType" ma:displayName="SAproizvod_dobar_klijentu" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SArezime" type="dms:NumberType" ma:displayName="SArezime" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAuspesno_zatvoren" type="dms:NumberType" ma:displayName="SAuspesno_zatvoren" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAneuspesno_zatvoren" type="dms:NumberType" ma:displayName="SAneuspesno_zatvoren" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAhvala" type="dms:NumberType" ma:displayName="SAhvala" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAzatrazio_kontakt" type="dms:NumberType" ma:displayName="SAzatrazio_kontakt" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SArekao" type="dms:NumberType" ma:displayName="SArekao" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAkros_prodaja" type="dms:NumberType" ma:displayName="SAkros_prodaja" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SArelev_informacije" type="dms:NumberType" ma:displayName="SArelev_informacije" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_interes_klijenta" type="dms:NumberType" ma:displayName="SA_interes_klijenta" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAsvrha_proizvoda" type="dms:NumberType" ma:displayName="SAsvrha_proizvoda" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAdogovorio_sastanak" type="dms:NumberType" ma:displayName="SAdogovorio_sastanak" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_rel_informacije2" type="dms:NumberType" ma:displayName="SA_rel_informacije2" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAstruktura_sastanka" type="dms:NumberType" ma:displayName="SAstruktura_sastanka" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAnaveo_kampanje" type="dms:NumberType" ma:displayName="SAnaveo_kampanje" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAnabrojao_benefite" type="dms:NumberType" ma:displayName="SAnabrojao_benefite" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAadekv_predstavlja" type="dms:NumberType" ma:displayName="SAadekv_predstavlja" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAredovnoCrisp" type="dms:NumberType" ma:displayName="SAredovnoCrisp" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAzatvara_mogucnost" type="dms:NumberType" ma:displayName="SAzatvara_mogucnost" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_prijem_i_pozdrav" type="dms:NumberType" ma:displayName="SA_MAX_prijem_i_pozdrav" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_prijem_i_pozdrav" type="dms:NumberType" ma:displayName="SA_PCT_prijem_i_pozdrav" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_komunikacione_vestine" type="dms:NumberType" ma:displayName="SA_MAX_komunikacione_vestine" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_komunikacione_vestine" type="dms:NumberType" ma:displayName="SA_SUM_komunikacione_vestine" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_komunikacione_vestine" type="dms:NumberType" ma:displayName="SA_PCT_komunikacione_vestine" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_ispitivanje_potreba0" type="dms:NumberType" ma:displayName="SA_SUM_ispitivanje_potreba" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_ispitivanje_potreba" type="dms:NumberType" ma:displayName="SA_MAX_ispitivanje_potreba" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_ispitivanje_potreba" type="dms:NumberType" ma:displayName="SA_PCT_ispitivanje_potreba" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_predstavljanje_proizvoda" type="dms:NumberType" ma:displayName="SA_SUM_predstavljanje_proizvoda" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_predstavljanje_proizvoda" type="dms:NumberType" ma:displayName="SA_MAX_predstavljanje_proizvoda" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_predstavljanje_proizvoda" type="dms:NumberType" ma:displayName="SA_PCT_predstavljanje_proizvoda" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_prodajne_vestine" type="dms:NumberType" ma:displayName="SA_SUM_prodajne_vestine" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_prodajne_vestine" type="dms:NumberType" ma:displayName="SA_MAX_prodajne_vestine" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_prodajne_vestine" type="dms:NumberType" ma:displayName="SA_PCT_prodajne_vestine" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_inicijativnost_i_zatvaran" type="dms:NumberType" ma:displayName="SA_SUM_inicijativnost_i_zatvaranje_razgovora" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_inicijativnost_i_zatvaran" type="dms:NumberType" ma:displayName="SA_MAX_inicijativnost_i_zatvaranje_razgovora" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_inicijativnost_i_zatvaran" type="dms:NumberType" ma:displayName="SA_PCT_inicijativnost_i_zatvaranje_razgovora" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_follow_up" type="dms:NumberType" ma:displayName="SA_SUM_follow_up" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_follow_up" type="dms:NumberType" ma:displayName="SA_MAX_follow_up" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_follow_up" type="dms:NumberType" ma:displayName="SA_PCT_follow_up" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_krosprodaja" type="dms:NumberType" ma:displayName="SA_SUM_krosprodaja" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_krosprodaja" type="dms:NumberType" ma:displayName="SA_MAX_krosprodaja" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_krosprodaja" type="dms:NumberType" ma:displayName="SA_PCT_krosprodaja" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_savetodavni_razgovor" type="dms:NumberType" ma:displayName="SA_SUM_savetodavni_razgovor" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_savetodavni_razgovor" type="dms:NumberType" ma:displayName="SA_MAX_savetodavni_razgovor" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_savetodavni_razgovor" type="dms:NumberType" ma:displayName="SA_PCT_savetodavni_razgovor" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_telefonski_poziv" type="dms:NumberType" ma:displayName="SA_SUM_telefonski_poziv" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_telefonski_poziv" type="dms:NumberType" ma:displayName="SA_MAX_telefonski_poziv" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_telefonski_poziv" type="dms:NumberType" ma:displayName="SA_PCT_telefonski_poziv" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_priprema_za_sastanak" type="dms:NumberType" ma:displayName="SA_SUM_priprema_za_sastanak" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_priprema_za_sastanak" type="dms:NumberType" ma:displayName="SA_MAX_priprema_za_sastanak" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_priprema_za_sastanak" type="dms:NumberType" ma:displayName="SA_PCT_priprema_za_sastanak" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_poznavanje_kampanje" type="dms:NumberType" ma:displayName="SA_SUM_poznavanje_kampanje" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_poznavanje_kampanje" type="dms:NumberType" ma:displayName="SA_MAX_poznavanje_kampanje" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_poznavanje_kampanje" type="dms:NumberType" ma:displayName="SA_PCT_poznavanje_kampanje" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_poznavanje_proizvoda" type="dms:NumberType" ma:displayName="SA_SUM_poznavanje_proizvoda" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_poznavanje_proizvoda" type="dms:NumberType" ma:displayName="SA_MAX_poznavanje_proizvoda" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_poznavanje_proizvoda" type="dms:NumberType" ma:displayName="SA_PCT_poznavanje_proizvoda" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_crisp" type="dms:NumberType" ma:displayName="SA_SUM_crisp" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_crisp" type="dms:NumberType" ma:displayName="SA_MAX_crisp" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_crisp" type="dms:NumberType" ma:displayName="SA_PCT_crisp" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SApravilno_unosi0" type="dms:NumberType" ma:displayName="SApravilno_unosi" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_SUM_ukupno" type="dms:NumberType" ma:displayName="SA_SUM_ukupno" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_MAX_ukupno" type="dms:NumberType" ma:displayName="SA_MAX_ukupno" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SA_PCT_ukupno" type="dms:NumberType" ma:displayName="SA_PCT_ukupno" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Savetnik" type="dms:TextType" ma:displayName="Savetnik" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Kouc" type="dms:TextType" ma:displayName="Kouc" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Opservator" type="dms:TextType" ma:displayName="Opservator" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SegmentMenadzer" type="dms:TextType" ma:displayName="SegmentMenadzer" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Ekspozitura" type="dms:TextType" ma:displayName="Ekspozitura" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="field11" type="dms:TextType" ma:displayName="RC" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Mesec" type="dms:TextType" ma:displayName="Mesec" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Godina" type="dms:TextType" ma:displayName="Godina" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="Adresa" type="dms:TextType" ma:displayName="Adresa" ma:readOnly="false" nillable="true"/>
+	<xsd:element name="SAispitivanje_potreba_ostala" type="dms:NumberType" ma:displayName="SAispitivanje_potreba_ostala" ma:readOnly="false" nillable="true"/>
+</xsd:schema>
