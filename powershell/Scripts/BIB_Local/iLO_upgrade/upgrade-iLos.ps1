@@ -4,19 +4,17 @@ param (
     #Imena servera razdvojena ','
     [String[]] $servers,
     #Putanja do bin-a
-    [String] $binPath = "\\fsi\putanja\do\bin\fajla\ilo4_255.bin",
+    [String] $binPath = "ilo4_255.bin",
     #Funkcija koju pokrecemo - Check proverava, Upgrade azurira firmware
     [parameter(Mandatory = $true)]
     [ValidateSet("Check", "Upgrade")]
     [String]$funkcija
 )
- 
+$SecurePassword = Read-Host -Prompt "iLO password (nalazi se u pwd manageru)" -AsSecureString
+$BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($SecurePassword)
+$PlainPassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
+
 function find-HPiLOversions {
-    $SecurePassword = Read-Host -Prompt "iLO password (nalazi se u pwd manageru)" -AsSecureString
-    $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($SecurePassword)
-    $PlainPassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
-
-
     $ilos = @()
     foreach ($server in $servers) {
         $ilo = Get-HPiLOFirmwareVersion -Server $Server -Username Administrator -Password $PlainPassword -DisableCertificateAuthentication
@@ -36,7 +34,7 @@ function find-HPiLOversions {
 function update-HPiLO {
     foreach ($server in $servers) {
         write-host "Radim upgrade iLO firmwera na serveru $server"
-        Update-HPiLOFirmware -Server $Server -Username Administrator -Password Simfuj5! -TPMEnabled -Location $binPath -DisableCertificateAuthentication
+        Update-HPiLOFirmware -Server $Server -Username Administrator -Password $PlainPassword -TPMEnabled -Location $binPath -DisableCertificateAuthentication
     }
 }
 
