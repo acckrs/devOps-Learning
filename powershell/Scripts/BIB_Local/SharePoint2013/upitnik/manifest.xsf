@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file is automatically created and modified by Microsoft InfoPath.
+Changes made to the file outside of InfoPath might be lost if the form template is modified in InfoPath.
+-->
+<xsf:xDocumentClass solutionFormatVersion="3.0.0.0" solutionVersion="1.0.0.29" productVersion="15.0.0" publishUrl="C:\Acca\Powershell_local\BIB\SharePoint2013\upitnik\manifest.xsf" name="urn:schemas-microsoft-com:office:infopath:upitnik:-dataFormSolution" xmlns:xsf="http://schemas.microsoft.com/office/infopath/2003/solutionDefinition" xmlns:xsf2="http://schemas.microsoft.com/office/infopath/2006/solutionDefinition/extensions" xmlns:xsf3="http://schemas.microsoft.com/office/infopath/2009/solutionDefinition/extensions" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xdUtil="http://schemas.microsoft.com/office/infopath/2003/xslt/Util" xmlns:xdXDocument="http://schemas.microsoft.com/office/infopath/2003/xslt/xDocument" xmlns:xdMath="http://schemas.microsoft.com/office/infopath/2003/xslt/Math" xmlns:xdDate="http://schemas.microsoft.com/office/infopath/2003/xslt/Date" xmlns:xdExtension="http://schemas.microsoft.com/office/infopath/2003/xslt/extension" xmlns:xdEnvironment="http://schemas.microsoft.com/office/infopath/2006/xslt/environment" xmlns:xdUser="http://schemas.microsoft.com/office/infopath/2006/xslt/User" xmlns:my="http://schemas.microsoft.com/office/infopath/2009/WSSList/cmeDataFields" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:xdServerInfo="http://schemas.microsoft.com/office/infopath/2009/xslt/ServerInfo" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<xsf:package>
+		<xsf:files>
+			<xsf:file name="template.xml"></xsf:file>
+			<xsf:file name="sampledata.xml">
+				<xsf:fileProperties>
+					<xsf:property name="fileType" type="string" value="sampleData"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="view1.xsl">
+				<xsf:fileProperties>
+					<xsf:property name="lang" type="string" value="9242"></xsf:property>
+					<xsf:property name="mode" type="string" value="1"></xsf:property>
+					<xsf:property name="componentId" type="string" value="278"></xsf:property>
+					<xsf:property name="xmlToEditName" type="string" value="1427"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="schema.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="editability" type="string" value="none"></xsf:property>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"></xsf:property>
+					<xsf:property name="rootElement" type="string" value="myFields"></xsf:property>
+					<xsf:property name="useOnDemandAlgorithm" type="string" value="yes"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="schema1.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/cmeDataFields"></xsf:property>
+					<xsf:property name="editability" type="string" value="full"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="schema2.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/2009/documentManagement/types"></xsf:property>
+					<xsf:property name="editability" type="string" value="none"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="schema3.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2007/PartnerControls"></xsf:property>
+					<xsf:property name="editability" type="string" value="none"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="schema4.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields"></xsf:property>
+					<xsf:property name="editability" type="string" value="none"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="upgrade.xsl"></xsf:file>
+			<xsf:file name="choices.xml">
+				<xsf:fileProperties>
+					<xsf:property name="fileType" type="string" value="resource"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Choices Data Connection5.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="dataObject" type="string" value="Choices Data Connection"></xsf:property>
+					<xsf:property name="rootElement" type="string" value="root"></xsf:property>
+					<xsf:property name="useOnDemandAlgorithm" type="string" value="yes"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Branches.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Branches"></xsf:property>
+					<xsf:property name="rootElement" type="string" value="myFields"></xsf:property>
+					<xsf:property name="useOnDemandAlgorithm" type="string" value="yes"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Branches1.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2007/PartnerControls"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Branches"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Branches2.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/2009/documentManagement/types"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Branches"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Branches3.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Branches"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+			<xsf:file name="Branches4.xsd">
+				<xsf:fileProperties>
+					<xsf:property name="namespace" type="string" value="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields"></xsf:property>
+					<xsf:property name="dataObject" type="string" value="Branches"></xsf:property>
+				</xsf:fileProperties>
+			</xsf:file>
+		</xsf:files>
+	</xsf:package>
+	<xsf:importParameters enabled="yes"></xsf:importParameters>
+	<xsf:documentVersionUpgrade>
+		<xsf:useTransform transform="upgrade.xsl" minVersionToUpgrade="0.0.0.0" maxVersionToUpgrade="1.0.0.26"></xsf:useTransform>
+	</xsf:documentVersionUpgrade>
+	<xsf:extensions>
+		<xsf:extension name="SolutionDefinitionExtensions">
+			<xsf2:solutionDefinition runtimeCompatibility="client server" runtimeCompatibilityURL="http://portal/sites/SFE/_vti_bin/FormsServices.asmx" verifyOnServer="yes" allowClientOnlyCode="no">
+				<xsf2:offline openIfQueryFails="yes" cacheQueries="yes"></xsf2:offline>
+				<xsf2:server isPreSubmitPostBackEnabled="no" isMobileEnabled="no" formLocale="sr-Latn-RS"></xsf2:server>
+				<xsf2:solutionPropertiesExtension branch="list">
+					<xsf2:list path="http://portal/sites/SFE/"></xsf2:list>
+				</xsf2:solutionPropertiesExtension>
+				<xsf2:viewsExtension>
+					<xsf2:viewExtension ref="Edit item" clientOnly="no"></xsf2:viewExtension>
+				</xsf2:viewsExtension>
+			</xsf2:solutionDefinition>
+			<xsf3:solutionPropertiesExtension2009>
+				<xsf3:solutionMode mode="list" originalPublishUrl="http://portal/sites/SFE/" isListEditForm="yes"></xsf3:solutionMode>
+			</xsf3:solutionPropertiesExtension2009>
+			<xsf3:solutionDefinition>
+				<xsf3:viewsExtension>
+					<xsf3:viewExtension ref="Edit item"></xsf3:viewExtension>
+				</xsf3:viewsExtension>
+			</xsf3:solutionDefinition>
+		</xsf:extension>
+	</xsf:extensions>
+	<xsf:applicationParameters application="InfoPath Design Mode">
+		<xsf:solutionProperties fullyEditableNamespace="http://schemas.microsoft.com/office/infopath/2009/WSSList/cmeDataFields" lastOpenView="view1.xsl" lastVersionNeedingTransform="1.0.0.26"></xsf:solutionProperties>
+	</xsf:applicationParameters>
+	<xsf:documentSchemas>
+		<xsf:documentSchema rootSchema="yes" location="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution schema.xsd"></xsf:documentSchema>
+		<xsf:documentSchema location="http://schemas.microsoft.com/office/infopath/2009/WSSList/cmeDataFields schema1.xsd"></xsf:documentSchema>
+		<xsf:documentSchema location="http://schemas.microsoft.com/office/2009/documentManagement/types schema2.xsd"></xsf:documentSchema>
+		<xsf:documentSchema location="http://schemas.microsoft.com/office/infopath/2007/PartnerControls schema3.xsd"></xsf:documentSchema>
+		<xsf:documentSchema location="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields schema4.xsd"></xsf:documentSchema>
+	</xsf:documentSchemas>
+	<xsf:fileNew>
+		<xsf:initialXmlDocument caption="upitnik" href="template.xml"></xsf:initialXmlDocument>
+	</xsf:fileNew>
+	<xsf:calculations>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:field8" expression="xdMath:Nz(../my:SAsedenje) + xdMath:Nz(../my:field7) + xdMath:Nz(../my:SAkontakt) + xdMath:Nz(../my:SApozdrav0)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_komunikaciione_vestine" expression="xdMath:Nz(../my:SAslusanje) + xdMath:Nz(../my:SAinicijativa) + xdMath:Nz(../my:SAuctivost) + xdMath:Nz(../my:SAgovor) + xdMath:Nz(../my:SAkontakt_ocima) + xdMath:Nz(../my:SAdijalog) + xdMath:Nz(../my:SAinformacije)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_prijem_i_pozdrav" expression="(xdMath:Nz(../my:SAsedenje) + xdMath:Nz(../my:field7) + xdMath:Nz(../my:SAkontakt) + xdMath:Nz(../my:SApozdrav0)) div xdMath:Nz(../my:SA_MAX_prijem_i_pozdrav) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_komunikacione_vestine" expression="xdMath:Nz(../my:SAslusanje) + xdMath:Nz(../my:SAinicijativa) + xdMath:Nz(../my:SAuctivost) + xdMath:Nz(../my:SAgovor) + xdMath:Nz(../my:SAkontakt_ocima) + xdMath:Nz(../my:SAdijalog) + xdMath:Nz(../my:SAinformacije)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_komunikacione_vestine" expression="(xdMath:Nz(../my:SAslusanje) + xdMath:Nz(../my:SAinicijativa) + xdMath:Nz(../my:SAuctivost) + xdMath:Nz(../my:SAgovor) + xdMath:Nz(../my:SAkontakt_ocima) + xdMath:Nz(../my:SAdijalog) + xdMath:Nz(../my:SAinformacije)) div xdMath:Nz(../my:SA_MAX_komunikacione_vestine) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_ispitivanje_potreba0" expression="xdMath:Nz(../my:SA_ispitivanje_potreba) + xdMath:Nz(../my:SAispitivanje_potreba_ostala)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_ispitivanje_potreba" expression="xdMath:Nz(../my:SA_SUM_ispitivanje_potreba0) div xdMath:Nz(../my:SA_MAX_ispitivanje_potreba) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_predstavljanje_proizvoda" expression="xdMath:Nz(../my:SAadekvatna_pitanja) + xdMath:Nz(../my:SApredstavljanje_troskova)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_predstavljanje_proizvoda" expression="xdMath:Nz(../my:SA_SUM_predstavljanje_proizvoda) div xdMath:Nz(../my:SA_MAX_predstavljanje_proizvoda) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_prodajne_vestine" expression="xdMath:Nz(../my:SAproizvod_dobar_klijentu) + xdMath:Nz(../my:SArezime)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_prodajne_vestine" expression="xdMath:Nz(../my:SA_SUM_prodajne_vestine) div xdMath:Nz(../my:SA_MAX_prodajne_vestine) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_inicijativnost_i_zatvaran" expression="xdMath:Nz(../my:SAuspesno_zatvoren) + xdMath:Nz(../my:SAneuspesno_zatvoren) + xdMath:Nz(../my:SAhvala)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_inicijativnost_i_zatvaran" expression="xdMath:Nz(../my:SA_SUM_inicijativnost_i_zatvaran) div xdMath:Nz(../my:SA_MAX_inicijativnost_i_zatvaran) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_follow_up" expression="xdMath:Nz(../my:SAzatrazio_kontakt) + xdMath:Nz(../my:SArekao)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_follow_up" expression="xdMath:Nz(../my:SA_SUM_follow_up) div xdMath:Nz(../my:SA_MAX_follow_up) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_krosprodaja" expression="xdMath:Nz(../my:SA_SUM_krosprodaja) div xdMath:Nz(../my:SA_MAX_krosprodaja) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_savetodavni_razgovor" expression="xdMath:Nz(../my:field8) + xdMath:Nz(../my:SA_SUM_komunikacione_vestine) + xdMath:Nz(../my:SA_SUM_ispitivanje_potreba0) + xdMath:Nz(../my:SA_SUM_predstavljanje_proizvoda) + xdMath:Nz(../my:SA_SUM_prodajne_vestine) + xdMath:Nz(../my:SA_SUM_inicijativnost_i_zatvaran) + xdMath:Nz(../my:SA_SUM_follow_up) + xdMath:Nz(../my:SA_SUM_krosprodaja)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_savetodavni_razgovor" expression="(xdMath:Nz(../my:field8) + xdMath:Nz(../my:SA_SUM_komunikacione_vestine) + xdMath:Nz(../my:SA_SUM_ispitivanje_potreba0) + xdMath:Nz(../my:SA_SUM_predstavljanje_proizvoda) + xdMath:Nz(../my:SA_SUM_prodajne_vestine) + xdMath:Nz(../my:SA_SUM_inicijativnost_i_zatvaran) + xdMath:Nz(../my:SA_SUM_follow_up) + xdMath:Nz(../my:SA_SUM_krosprodaja)) div (xdMath:Nz(../my:SA_MAX_prijem_i_pozdrav) + xdMath:Nz(../my:SA_MAX_komunikacione_vestine) + xdMath:Nz(../my:SA_MAX_ispitivanje_potreba) + xdMath:Nz(../my:SA_MAX_predstavljanje_proizvoda) + xdMath:Nz(../my:SA_MAX_prodajne_vestine) + xdMath:Nz(../my:SA_MAX_inicijativnost_i_zatvaran) + xdMath:Nz(../my:SA_MAX_follow_up) + xdMath:Nz(../my:SA_MAX_krosprodaja)) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_telefonski_poziv" expression="xdMath:Nz(../my:SArelev_informacije) + xdMath:Nz(../my:SA_interes_klijenta) + xdMath:Nz(../my:SAsvrha_proizvoda) + xdMath:Nz(../my:SAdogovorio_sastanak)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_telefonski_poziv" expression="xdMath:Nz(../my:SA_SUM_telefonski_poziv) div xdMath:Nz(../my:SA_MAX_telefonski_poziv) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_priprema_za_sastanak" expression="xdMath:Nz(../my:SA_rel_informacije2) + xdMath:Nz(../my:SAstruktura_sastanka)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_priprema_za_sastanak" expression="xdMath:Nz(../my:SA_SUM_priprema_za_sastanak) div xdMath:Nz(../my:SA_MAX_priprema_za_sastanak) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_poznavanje_kampanje" expression="xdMath:Nz(../my:SAnaveo_kampanje) + xdMath:Nz(../my:SAnabrojao_benefite)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_poznavanje_kampanje" expression="xdMath:Nz(../my:SA_SUM_poznavanje_kampanje) div xdMath:Nz(../my:SA_MAX_poznavanje_kampanje) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_poznavanje_proizvoda" expression="../my:SAadekv_predstavlja" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_poznavanje_proizvoda" expression="xdMath:Nz(../my:SA_SUM_poznavanje_proizvoda) div xdMath:Nz(../my:SA_MAX_poznavanje_proizvoda) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_crisp" expression="xdMath:Nz(../my:SAredovnoCrisp) + xdMath:Nz(../my:SAzatvara_mogucnost) + xdMath:Nz(../my:SApravilno_unosi0)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_crisp" expression="xdMath:Nz(../my:SA_SUM_crisp) div xdMath:Nz(../my:SA_MAX_crisp) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_krosprodaja" expression="../my:SAkros_prodaja" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_SUM_ukupno" expression="xdMath:Nz(../my:SA_SUM_savetodavni_razgovor) + xdMath:Nz(../my:SA_SUM_telefonski_poziv) + xdMath:Nz(../my:SA_SUM_priprema_za_sastanak) + xdMath:Nz(../my:SA_SUM_poznavanje_kampanje) + xdMath:Nz(../my:SA_SUM_poznavanje_proizvoda) + xdMath:Nz(../my:SA_SUM_crisp)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_MAX_ukupno" expression="xdMath:Nz(../my:SA_MAX_savetodavni_razgovor) + xdMath:Nz(../my:SA_MAX_telefonski_poziv) + xdMath:Nz(../my:SA_MAX_priprema_za_sastanak) + xdMath:Nz(../my:SA_MAX_poznavanje_kampanje) + xdMath:Nz(../my:SA_MAX_poznavanje_proizvoda) + xdMath:Nz(../my:SA_MAX_crisp)" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:SA_PCT_ukupno" expression="xdMath:Nz(../my:SA_SUM_ukupno) div xdMath:Nz(../my:SA_MAX_ukupno) * 100" refresh="onChange"></xsf:calculatedField>
+		<xsf:calculatedField target="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:Title" expression="concat(../my:Godina, ../my:Mesec, &quot;-&quot;, ../my:Savetnik/pc:Person/pc:DisplayName)" refresh="onChange"></xsf:calculatedField>
+	</xsf:calculations>
+	<xsf:views default="Edit item">
+		<xsf:view name="Edit item" caption="Edit item">
+			<xsf:mainpane transform="view1.xsl"></xsf:mainpane>
+			<xsf:editing></xsf:editing>
+			<xsf:unboundControls>
+				<xsf:button name="CTRL269_4"></xsf:button>
+				<xsf:button name="CTRL270_4"></xsf:button>
+				<xsf:button name="CTRL277_4"></xsf:button>
+			</xsf:unboundControls>
+		</xsf:view>
+	</xsf:views>
+	<xsf:submit onAfterSubmit="close" showStatusDialog="no" disableMenuItem="no" caption="Submit">
+		<xsf:errorMessage>The form cannot be submitted because of an error.</xsf:errorMessage>
+		<xsf:useQueryAdapter></xsf:useQueryAdapter>
+	</xsf:submit>
+	<xsf:dataObjects>
+		<xsf:dataObject name="Choices Data Connection" schema="Choices Data Connection5.xsd" initOnLoad="yes">
+			<xsf:query>
+				<xsf:xmlFileAdapter fileUrl="x-soln:///choices.xml" name="Choices Data Connection"></xsf:xmlFileAdapter>
+			</xsf:query>
+		</xsf:dataObject>
+		<xsf:dataObject name="Branches" schema="Branches.xsd" initOnLoad="no">
+			<xsf:query>
+				<xsf:sharepointListAdapterRW queryAllowed="yes" submitAllowed="no" siteURL="http://my.deltabank.co.yu/personal/kaleksandar/" sharePointListID="{DC9D65AD-13DA-45AC-8B1E-92856028658A}" name="Branches" contentTypeID="" sortBy="Title" sortAscending="yes" relativeListUrl="Lists/Branches">
+					<xsf:field internalName="Title" required="no" type="Text"></xsf:field>
+					<xsf:field internalName="ADDRESS" required="no" type="Text"></xsf:field>
+					<xsf:field internalName="ID" required="no" type="Counter"></xsf:field>
+				</xsf:sharepointListAdapterRW>
+			</xsf:query>
+		</xsf:dataObject>
+	</xsf:dataObjects>
+	<xsf:permissions>
+		<xsf:allowedControl clsid="{61E40D31-993D-4777-8FA0-19CA59B6D0BB}"></xsf:allowedControl>
+	</xsf:permissions>
+	<xsf:ruleSets>
+		<xsf:ruleSet name="ruleSet_1">
+			<xsf:rule caption="Rule 1" condition="starts-with(., &quot;0051&quot;) and xdUtil:Match(string(.), &quot;0051\d\d&quot;) and . != &quot;&quot;" isEnabled="yes">
+				<xsf:assignmentAction targetField="../my:field11" expression="&quot;Beograd&quot;"></xsf:assignmentAction>
+			</xsf:rule>
+			<xsf:rule caption="Rule 6" condition=". = xdXDocument:GetDOM(&quot;Branches&quot;)/dfs:myFields/dfs:queryFields/q:SharePointListItem_RW/q:Title" isEnabled="yes">
+				<xsf:assignmentAction targetField="xdXDocument:GetDOM(&quot;Branches&quot;)/dfs:myFields/dfs:queryFields/q:SharePointListItem_RW/q:Title" expression="../my:Adresa"></xsf:assignmentAction>
+				<xsf:queryAction adapter="Branches"></xsf:queryAction>
+				<xsf:assignmentAction targetField="../my:Adresa" expression="xdXDocument:GetDOM(&quot;Branches&quot;)/dfs:myFields/dfs:queryFields/q:SharePointListItem_RW/q:ADDRESS"></xsf:assignmentAction>
+			</xsf:rule>
+			<xsf:rule caption="Rule 2" condition="starts-with(., &quot;0058&quot;) and xdUtil:Match(string(.), &quot;0058\d\d&quot;) and . != &quot;&quot;" isEnabled="yes">
+				<xsf:assignmentAction targetField="../my:field11" expression="&quot;Novi Sad&quot;"></xsf:assignmentAction>
+			</xsf:rule>
+			<xsf:rule caption="Rule 3" condition="starts-with(., &quot;0054&quot;) and xdUtil:Match(string(.), &quot;0054\d\d&quot;) and . != &quot;&quot;" isEnabled="yes">
+				<xsf:assignmentAction targetField="../my:field11" expression="&quot;Niš&quot;"></xsf:assignmentAction>
+			</xsf:rule>
+			<xsf:rule caption="Rule 4" condition="starts-with(., &quot;0053&quot;) and xdUtil:Match(string(.), &quot;0053\d\d&quot;) and . != &quot;&quot;" isEnabled="yes">
+				<xsf:assignmentAction targetField="../my:field11" expression="&quot;Kragujevac&quot;"></xsf:assignmentAction>
+			</xsf:rule>
+			<xsf:rule caption="Rule 5" condition="not(starts-with(., &quot;0053&quot;)) and not(contains(., &quot;0058&quot;)) and not(starts-with(., &quot;0054&quot;)) and not(starts-with(., &quot;0051&quot;))" isEnabled="yes">
+				<xsf:assignmentAction targetField="../my:field11" expression="'&quot;N/A&quot;'"></xsf:assignmentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_2">
+			<xsf:rule caption="Rule 2" isEnabled="yes">
+				<xsf:assignmentAction targetField="dfs:dataFields/my:SharePointListItem_RW/my:Ekspozitura" expression="xdXDocument:GetDOM(&quot;Branches&quot;)/dfs:myFields/dfs:dataFields/d:SharePointListItem_RW/d:Title[. = xdXDocument:get-DOM()/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:Ekspozitura]"></xsf:assignmentAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+		<xsf:ruleSet name="ruleSet_3">
+			<xsf:rule caption="Rule 1" isEnabled="yes">
+				<xsf:queryAction adapter="Branches"></xsf:queryAction>
+			</xsf:rule>
+		</xsf:ruleSet>
+	</xsf:ruleSets>
+	<xsf:domEventHandlers>
+		<xsf:domEventHandler match="/dfs:myFields/dfs:dataFields/my:SharePointListItem_RW/my:Ekspozitura">
+			<xsf:ruleSetAction ruleSet="ruleSet_1"></xsf:ruleSetAction>
+		</xsf:domEventHandler>
+	</xsf:domEventHandlers>
+	<xsf:onLoad>
+		<xsf:ruleSetAction ruleSet="ruleSet_3"></xsf:ruleSetAction>
+	</xsf:onLoad>
+	<xsf:query>
+		<xsf:sharepointListAdapterRW queryAllowed="yes" submitAllowed="yes" siteURL="http://portal/sites/SFE/" sharePointListID="{aa030688-75a2-43dc-849c-fc1a1bcec8f0}" name="Main Data Connection" contentTypeID="0x010045E5CF7BDEFC0342B426782CD75B6417" relativeListUrl="Lists/Mali%20biznis_upitnik%20za%20opservaciju/" version="f4615840e7fa6aa7" queryOneItemOnly="yes" sharePointListChoices="Choices Data Connection">
+			<xsf:field internalName="ID" required="no" type="Counter"></xsf:field>
+			<xsf:field internalName="Title" required="no" type="Text"></xsf:field>
+			<xsf:field internalName="Author" required="no" type="User"></xsf:field>
+			<xsf:field internalName="Editor" required="no" type="User"></xsf:field>
+			<xsf:field internalName="Modified" required="no" type="DateTime"></xsf:field>
+			<xsf:field internalName="Created" required="no" type="DateTime"></xsf:field>
+			<xsf:field internalName="SAsedenje" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="field7" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAkontakt" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAslusanje" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAinicijativa" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAuctivost" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAgovor" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAkontakt_ocima" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAdijalog" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAinformacije" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="field8" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SApozdrav0" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_komunikaciione_vestine" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_ispitivanje_potreba" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAadekvatna_pitanja" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAbenefiti_proizvoda" required="no" type="Plain"></xsf:field>
+			<xsf:field internalName="SApredstavljanje_troskova" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAproizvod_dobar_klijentu" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SArezime" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAuspesno_zatvoren" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAneuspesno_zatvoren" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAhvala" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAzatrazio_kontakt" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SArekao" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAkros_prodaja" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAopsti_utisak" required="no" type="Plain"></xsf:field>
+			<xsf:field internalName="SArelev_informacije" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_interes_klijenta" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAsvrha_proizvoda" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAdogovorio_sastanak" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_rel_informacije2" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAstruktura_sastanka" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAnaveo_kampanje" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAnabrojao_benefite" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAadekv_predstavlja" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAredovnoCrisp" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAproizv_benefiti" required="no" type="Plain"></xsf:field>
+			<xsf:field internalName="SAzatvara_mogucnost" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SAdodatni_koment2" required="no" type="Plain"></xsf:field>
+			<xsf:field internalName="SA_MAX_prijem_i_pozdrav" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_prijem_i_pozdrav" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_komunikacione_vestine" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_komunikacione_vestine" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_komunikacione_vestine" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_ispitivanje_potreba0" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_ispitivanje_potreba" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_ispitivanje_potreba" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_predstavljanje_proizvoda" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_predstavljanje_proizvoda" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_predstavljanje_proizvoda" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_prodajne_vestine" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_prodajne_vestine" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_prodajne_vestine" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_inicijativnost_i_zatvaran" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_inicijativnost_i_zatvaran" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_inicijativnost_i_zatvaran" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_follow_up" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_follow_up" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_follow_up" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_krosprodaja" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_krosprodaja" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_krosprodaja" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_savetodavni_razgovor" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_savetodavni_razgovor" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_savetodavni_razgovor" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_telefonski_poziv" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_telefonski_poziv" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_telefonski_poziv" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_priprema_za_sastanak" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_priprema_za_sastanak" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_priprema_za_sastanak" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_poznavanje_kampanje" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_poznavanje_kampanje" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_poznavanje_kampanje" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_poznavanje_proizvoda" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_poznavanje_proizvoda" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_poznavanje_proizvoda" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_crisp" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_crisp" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_crisp" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SApravilno_unosi0" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_SUM_ukupno" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_MAX_ukupno" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="SA_PCT_ukupno" required="no" type="Number"></xsf:field>
+			<xsf:field internalName="Savetnik" required="no" type="User"></xsf:field>
+			<xsf:field internalName="Kouc" required="no" type="User"></xsf:field>
+			<xsf:field internalName="Opservator" required="no" type="User"></xsf:field>
+			<xsf:field internalName="SegmentMenadzer" required="no" type="User"></xsf:field>
+			<xsf:field internalName="Ekspozitura" required="no" type="Text"></xsf:field>
+			<xsf:field internalName="field11" required="no" type="Text"></xsf:field>
+			<xsf:field internalName="Mesec" required="no" type="Choice"></xsf:field>
+			<xsf:field internalName="Godina" required="no" type="Choice"></xsf:field>
+			<xsf:field internalName="Adresa" required="yes" type="Text"></xsf:field>
+			<xsf:field internalName="SAispitivanje_potreba_ostala" required="no" type="Number"></xsf:field>
+		</xsf:sharepointListAdapterRW>
+	</xsf:query>
+</xsf:xDocumentClass>

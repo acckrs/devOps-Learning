@@ -1,0 +1,9 @@
+ob-adapter1
+ob-adapter-vip
+cw-web-gateway
+ssebank2
+ob-gateway
+mb-app-2
+vmailserver2
+dcebank82
+ebank-node22

@@ -1,0 +1,15 @@
+ADMINWEB
+CW-ADAPTER-01
+CW-WEB-GATEWAY
+dcebank81
+dcebank82
+HAL2
+MB-APP-1
+MB-APP-2
+ob-adapter1
+OB-ADAPTER2
+ob-adapter-arch
+ob-adapter-vip
+ob-gateway
+Ob-gateway1
+VPNEBANK1

@@ -1,0 +1,29 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180111094514
+Username: DELTABANK\SYSTEM
+RunAs User: DELTABANK\SYSTEM
+Machine: OCTOPUS (Microsoft Windows NT 10.0.14393.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -file pm5.Restart.ps1
+Process ID: 28512
+PSVersion: 5.1.14393.1770
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14393.1770
+BuildVersion: 10.0.14393.1770
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\SCHTASK\PM5\pm5.Restart.log
+# provera quorum resursa c:
+# restart perfmon countera PM5
+The command completed successfully.
+The command completed successfully.
+# prebaci u arhivu sve starije od 7 dana.
+# uklanjanjanje stare arhive, starije od 31 dana.
+# bye at 2018-01-11 09:01
+**********************
+Windows PowerShell transcript end
+End time: 20180111094517
+**********************

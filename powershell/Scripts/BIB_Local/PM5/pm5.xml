@@ -1,0 +1,15 @@
+﻿<root 
+  Quorum="c:"
+  HostName="default"
+  SqlConnectionString="Server=octopus; Database=PerfMonDB;User ID=pmBase;Password=pmBase2.; Application name=pm5"
+  LogFile=".\pm5.log"
+  pmToAthTTL="7"
+  pmDelArhTTL="31"
+  pmFileMask="pm*.blg"
+  pmFilePath=".\pmFile"
+  pmArhPath=".\pmfile\Arhiv"  
+  PerfCounterName="PM5"
+/>
+
+  
+  

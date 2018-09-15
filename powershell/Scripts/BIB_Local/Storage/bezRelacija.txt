@@ -1,0 +1,24 @@
+AIX/Linux
+AML
+Antivirus
+ARHIVA
+Backup
+DHCP
+DNS
+DR-disaster recovery
+ESX
+FlexCube
+HW
+IIB
+IIS
+ILMT
+kms
+MDM (Mobile Device Mng)
+MSCS
+NLB
+NTP
+PROXY
+SCCM
+Share
+Storage
+TestnoOkruzenjeNS

@@ -1,0 +1,2178 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180116141813
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1516042216-0538cba4-1475-48c6-ba54-06ef12d1d58b1516042210129\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-15132-604399' -FeatureFlags @()
+Process ID: 8424
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\acca\Powershell_local\BIB\pm5\radno\distribute-PM5.ps1.log
+[16.01.2018 14:18:13] Pocinjem...
+VERBOSE: [16.01.2018 14:18:13] Okruzenje na serveru almpro2 vec postoji
+VERBOSE: [16.01.2018 14:18:31] Data Counter PM5 na serveru almpro2 vec postoji
+VERBOSE: [16.01.2018 14:18:33] Task PM5 vec postoji na serveru almpro2
+[16.01.2018 14:18:33] Bye...
+**********************
+Windows PowerShell transcript end
+End time: 20180116141833
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20180116143916
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1516042216-0538cba4-1475-48c6-ba54-06ef12d1d58b1516042210129\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-15132-604399' -FeatureFlags @()
+Process ID: 8424
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\acca\Powershell_local\BIB\pm5\radno\distribute-PM5.ps1.log
+[16.01.2018 14:39:16] Pocinjem...
+VERBOSE: [16.01.2018 14:39:53] Okruzenje na serveru erasernew2 ne postoji, kreiram foldere i kopiram fajlove...
+PS>TerminatingError(New-Item): "The network path was not found"
+>> TerminatingError(New-Item): "The network path was not found"
+>> TerminatingError(New-Item): "The network path was not found"
+>> TerminatingError(New-Item): "The network path was not found"
+The network path was not found
+>> @{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local\BIB\pm5\radno>
+
+PS>cd  \\erasernew2\c$\schtask
+cd : Cannot find path '\\erasernew2\c$\schtask' because it does not exist.
+At line:1 char:1
++ cd  \\erasernew2\c$\schtask
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\\erasernew2\c$\schtask:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : Cannot find path '\\erasernew2\c$\schtask' because it does not exist.
+At line:1 char:1
++ cd  \\erasernew2\c$\schtask
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\\erasernew2\c$\schtask:String) [Set-Location], I
+   temNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local\BIB\pm5\radno>
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="add-DomainUsersToLocalGroup"
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="add-DomainUsersToLocalGroup"
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="add-DomainUsersToLocalGroup"
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="add-DomainUsersToLocalGroup"
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="remove-DomainUsersfromLocalGroup"
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="remove-DomainUsersfromLocalGroup"
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="add-DomainUsersToLocalGroup"
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="add-DomainUsersToLocalGroup"
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="add-DomainUsersToLocalGroup"
+PS>get-vm foglight
+
+Name                 PowerState Num CPUs MemoryGB
+----                 ---------- -------- --------
+FogLight             PoweredOff 2        8.000
+
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local\BIB\pm5\radno>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+
+
+PS>get-vm foglight*
+
+Name                 PowerState Num CPUs MemoryGB
+----                 ---------- -------- --------
+FogLight             PoweredOff 2        8.000
+FoglightPI           PoweredOn  2        8.000
+Foglight12           PoweredOn  4        8.000
+
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local\BIB\pm5\radno>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+
+
+PS>get-vm hobit*
+
+Name                 PowerState Num CPUs MemoryGB
+----                 ---------- -------- --------
+HobitDB              PoweredOn  8        16.000
+
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local\BIB\pm5\radno>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+
+
+PS>get-vm homer*\
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local\BIB\pm5\radno>
+
+PS C:\acca\Powershell_local\BIB\pm5\radno>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+
+
+PS>get-vm homer*
+
+Name                 PowerState Num CPUs MemoryGB
+----                 ---------- -------- --------
+HomerDB              PoweredOn  4        8.000
+
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local\BIB\pm5\radno>
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="add-DomainUsersToLocalGroup"
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="add-DomainUsersToLocalGroup"
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="add-DomainUsersToLocalGroup"
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="add-DomainUsersToLocalGroup"
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="add-DomainUsersToLocalGroup"
+PS>cd ..\..\
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local\BIB>
+
+PS>cd ..
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>.\new-localUsers.ps1
+Exception calling "Add" with "1" argument(s): "The specified account name is already a member of the group.
+"
+At C:\acca\Powershell_local\new-localUsers.ps1:115 char:21
++ ...             $adsigroup.Add("WinNT://$server/deltabank/$account,user") ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : CatchFromBaseAdapterMethodInvokeTI
+Exception calling "Add" with "1" argument(s): "The specified account name is already a member of the group.
+"
+At C:\acca\Powershell_local\new-localUsers.ps1:115 char:21
++ ...             $adsigroup.Add("WinNT://$server/deltabank/$account,user") ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : CatchFromBaseAdapterMethodInvokeTI
+
+Exception calling "Add" with "1" argument(s): "The specified account name is already a member of the group.
+"
+At C:\acca\Powershell_local\new-localUsers.ps1:115 char:21
++ ...             $adsigroup.Add("WinNT://$server/deltabank/$account,user") ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : CatchFromBaseAdapterMethodInvokeTI
+Exception calling "Add" with "1" argument(s): "The specified account name is already a member of the group.
+"
+At C:\acca\Powershell_local\new-localUsers.ps1:115 char:21
++ ...             $adsigroup.Add("WinNT://$server/deltabank/$account,user") ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : CatchFromBaseAdapterMethodInvokeTI
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>compmgmt
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+
+
+PS>compmgmt.msc
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>cd \\erasernew2\c$
+cd : Cannot find path '\\erasernew2\c$' because it does not exist.
+At line:1 char:1
++ cd \\erasernew2\c$
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\\erasernew2\c$:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : Cannot find path '\\erasernew2\c$' because it does not exist.
+At line:1 char:1
++ cd \\erasernew2\c$
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\\erasernew2\c$:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+
+
+PS>cd \\erasernew2\e$
+cd : Cannot find path '\\erasernew2\e$' because it does not exist.
+At line:1 char:1
++ cd \\erasernew2\e$
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\\erasernew2\e$:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : Cannot find path '\\erasernew2\e$' because it does not exist.
+At line:1 char:1
++ cd \\erasernew2\e$
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\\erasernew2\e$:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+
+
+PS>cd \\erasernew2.deltabank.co.yu\c$
+cd : Cannot find path '\\erasernew2.deltabank.co.yu\c$' because it does not exist.
+At line:1 char:1
++ cd \\erasernew2.deltabank.co.yu\c$
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\\erasernew2.deltabank.co.yu\c$:String) [Set-Location], ItemNotFoundExcep
+tion
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : Cannot find path '\\erasernew2.deltabank.co.yu\c$' because it does not exist.
+At line:1 char:1
++ cd \\erasernew2.deltabank.co.yu\c$
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\\erasernew2.deltabank.co.yu\c$:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="Get-Acl"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Get-Acl                                            3.0.0.0    Microsoft.PowerShell.Security
+
+
+PS>CommandInvocation(Get-Help): "Get-Help"
+>> ParameterBinding(Get-Help): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Help): name="Name"; value="Get-Acl"
+
+NAME
+    Get-Acl
+
+SYNOPSIS
+    Gets the security descriptor for a resource, such as a file or registry key.
+
+
+SYNTAX
+    Get-Acl [-AllCentralAccessPolicies] [-Audit] [-Exclude <String[]>] [-Filter <String>] [-Include <String[]>] -InputObject <PSObject> [-UseTransaction] [<CommonParameters>]
+
+    Get-Acl [-AllCentralAccessPolicies] [-Audit] [-Exclude <String[]>] [-Filter <String>] [-Include <String[]>] [-LiteralPath <String[]>] [-UseTransaction] [<CommonParameters>]
+
+    Get-Acl [[-Path] <String[]>] [-AllCentralAccessPolicies] [-Audit] [-Exclude <String[]>] [-Filter <String>] [-Include <String[]>] [-UseTransaction] [<CommonParameters>]
+
+
+DESCRIPTION
+    The Get-Acl cmdlet gets objects that represent the security descriptor of a file or resource. The security descriptor contains the access control lists (ACLs) of the resource. The ACL specifies the permissions that users a
+    nd user groups have to access the resource.
+
+    Beginning with Windows PowerShell 3.0, you can use the InputObject parameter of Get-Acl to get the security descriptor of objects that do not have a path.
+
+
+RELATED LINKS
+    Online Version: http://go.microsoft.com/fwlink/?LinkId=821710
+    Set-Acl
+
+REMARKS
+    To see the examples, type: "get-help Get-Acl -examples".
+    For more information, type: "get-help Get-Acl -detailed".
+    For technical information, type: "get-help Get-Acl -full".
+    For online help, type: "get-help Get-Acl -online"
+
+
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="Get-VAIOFilter"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Get-VAIOFilter                                     6.5.4.7... VMware.VimAutomation.Storage
+
+
+PS>CommandInvocation(Get-Help): "Get-Help"
+>> ParameterBinding(Get-Help): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Help): name="Name"; value="Get-VAIOFilter"
+
+NAME
+    Get-VAIOFilter
+
+SYNOPSIS
+    This cmdlet returns a list of VAIOFilter objects filtered by the specified parameters.
+
+
+SYNTAX
+    Get-VAIOFilter [[-Name] <String[]>] [-Cluster <Cluster[]>] [-Server <VIServer[]>] [<CommonParameters>]
+
+    Get-VAIOFilter -Id <String[]> [-Server <VIServer[]>] [<CommonParameters>]
+
+
+DESCRIPTION
+    This cmdlet returns a list of VAIOFilter objects filtered by the specified parameters. If no parameters are specified, the cmdlet returns all filters installed on all default servers.
+
+
+RELATED LINKS
+    Online version: https://code.vmware.com/doc/preview?id=5975#/doc/Get-VAIOFilter.html
+    New-VAIOFilter
+    Remove-VAIOFilter
+    Set-VAIOFilter
+
+REMARKS
+    To see the examples, type: "get-help Get-VAIOFilter -examples".
+    For more information, type: "get-help Get-VAIOFilter -detailed".
+    For technical information, type: "get-help Get-VAIOFilter -full".
+    For online help, type: "get-help Get-VAIOFilter -online"
+
+
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="Get-VmcService"
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Get-VmcService                                     6.5.4.7... VMware.VimAutomation.Vmc
+
+
+PS>CommandInvocation(Get-Help): "Get-Help"
+>> ParameterBinding(Get-Help): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Help): name="Name"; value="Get-VmcService"
+
+NAME
+    Get-VmcService
+
+SYNOPSIS
+    This cmdlet retrieves PSObject objects that represent a proxy to a VMware Cloud on AWS API service.
+
+
+SYNTAX
+    Get-VmcService [[-Name] <String[]>] [-Server <CisServer[]>] [<CommonParameters>]
+
+
+DESCRIPTION
+    This cmdlet retrieves PSObject objects that represent a proxy to a VMware Cloud on AWS API service and can be used to invoke the operations of the VMware Cloud on AWS API service.
+
+
+RELATED LINKS
+    Online version: https://code.vmware.com/doc/preview?id=5975#/doc/Get-VmcService.html
+
+REMARKS
+    To see the examples, type: "get-help Get-VmcService -examples".
+    For more information, type: "get-help Get-VmcService -detailed".
+    For technical information, type: "get-help Get-VmcService -full".
+    For online help, type: "get-help Get-VmcService -online"
+
+
+
+PS>CommandInvocation(Get-Command): "Get-Command"
+>> ParameterBinding(Get-Command): name="ErrorAction"; value="Ignore"
+>> ParameterBinding(Get-Command): name="Name"; value="add-DomainUsersToLocalGroup"
+PS>get-vm *tfs*
+
+Name                 PowerState Num CPUs MemoryGB
+----                 ---------- -------- --------
+TFS-Build2           PoweredOn  4        8.000
+TFS-Build1           PoweredOn  4        8.000
+tfserver2015         PoweredOff 2        8.000
+DEVTFSERVER          PoweredOn  2        8.000
+TFSERVER             PoweredOn  2        8.000
+DEVTFserverSQL       PoweredOn  4        8.000
+TFSERVERSQL          PoweredOn  2        4.000
+
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>.\new-localUsers.ps1
+WARNING: e-gain is not online.
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>Open-VMConsoleWindow *gain*
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+  39 cd \\erasernew2.deltabank.co.yu\c$
+  40 get-vm *tfs*
+  41 .\new-localUsers.ps1
+  42 Open-VMConsoleWindow *gain*
+
+
+PS>.\new-localUsers.ps1
+The following exception occurred while retrieving member "Add": "The network path was not found.
+"
+At C:\acca\Powershell_local\new-localUsers.ps1:115 char:21
++ ...             $adsigroup.Add("WinNT://$server/deltabank/$account,user") ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], ExtendedTypeSystemException
+    + FullyQualifiedErrorId : CatchFromBaseGetMember
+The following exception occurred while retrieving member "Add": "The network path was not found.
+"
+At C:\acca\Powershell_local\new-localUsers.ps1:115 char:21
++ ...             $adsigroup.Add("WinNT://$server/deltabank/$account,user") ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], ExtendedTypeSystemException
+    + FullyQualifiedErrorId : CatchFromBaseGetMember
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+  39 cd \\erasernew2.deltabank.co.yu\c$
+  40 get-vm *tfs*
+  41 .\new-localUsers.ps1
+  42 Open-VMConsoleWindow *gain*
+  43 .\new-localUsers.ps1
+
+
+PS>Open-VMConsoleWindow *gain-web*
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>get-vm *www*
+
+Name                 PowerState Num CPUs MemoryGB
+----                 ---------- -------- --------
+www-app-02           PoweredOn  4        8.000
+www-app-01           PoweredOn  4        8.000
+www-sql-01           PoweredOn  4        4.000
+WWW-TEST             PoweredOn  2        8.000
+
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>Open-VMConsoleWindow www-app-01
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>get-vm airb
+get-vm : 16.01.2018 17:10:57    Get-VM        VM with name 'airb' was not found using the specified filter(s).    
+At line:1 char:1
++ get-vm airb
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (:) [Get-VM], VimException
+    + FullyQualifiedErrorId : Core_OutputHelper_WriteNotFoundError,VMware.VimAutomation.ViCore.Cmdlets.Commands.GetVM
+get-vm : 16.01.2018 17:10:57    Get-VM        VM with name 'airb' was not found using the specified filter(s).
+At line:1 char:1
++ get-vm airb
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (:) [Get-VM], VimException
+    + FullyQualifiedErrorId : Core_OutputHelper_WriteNotFoundError,VMware.VimAutomation.ViCore.Cmdlets.Commands.GetVM
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>mstsc /v airb
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>get-vm mail-in-01
+
+Name                 PowerState Num CPUs MemoryGB
+----                 ---------- -------- --------
+MAIL-IN-01           PoweredOn  4        4.000
+
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+  39 cd \\erasernew2.deltabank.co.yu\c$
+  40 get-vm *tfs*
+  41 .\new-localUsers.ps1
+  42 Open-VMConsoleWindow *gain*
+  43 .\new-localUsers.ps1
+  44 Open-VMConsoleWindow *gain-web*
+  45 get-vm *www*
+  46 Open-VMConsoleWindow www-app-01
+  47 get-vm airb
+  48 mstsc /v airb
+  49 get-vm mail-in-01
+
+
+PS>get-vm mail-in-01|Get-NetworkAdapter
+
+Name                 Type       NetworkName  MacAddress         WakeOnLan
+                                                                  Enabled
+----                 ----       -----------  ----------         ---------
+Network adapter 1    Vmxnet3    VLAN 15      00:50:56:ac:27:55       True
+
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+  39 cd \\erasernew2.deltabank.co.yu\c$
+  40 get-vm *tfs*
+  41 .\new-localUsers.ps1
+  42 Open-VMConsoleWindow *gain*
+  43 .\new-localUsers.ps1
+  44 Open-VMConsoleWindow *gain-web*
+  45 get-vm *www*
+  46 Open-VMConsoleWindow www-app-01
+  47 get-vm airb
+  48 mstsc /v airb
+  49 get-vm mail-in-01
+  50 get-vm mail-in-01|Get-NetworkAdapter
+
+
+PS>get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}
+
+Name                 Type       NetworkName  MacAddress         WakeOnLan
+                                                                  Enabled
+----                 ----       -----------  ----------         ---------
+Network adapter 1    Vmxnet3    VLAN 15      00:50:56:ac:a5:b8       True
+Network adapter 2    e1000e     VLAN 15      00:50:56:ac:e2:30      False
+Network adapter 1    Vmxnet3    VLAN 15      00:50:56:ac:1f:21       True
+Network adapter 2    e1000      VLAN 15      00:50:56:ac:bd:76       True
+Network adapter 1    e1000      VLAN 15      00:50:56:ba:1b:d5       True
+Network adapter 2    e1000      VLAN 15      00:50:56:ac:92:98       True
+Network adapter 1    e1000e     VLAN 15      00:50:56:ac:71:bf       True
+Network adapter 1    Vmxnet3    VLAN 15      00:50:56:ac:46:c8       True
+Network adapter 1    Vmxnet3    VLAN 15      00:50:56:ac:9a:f4      False
+Network adapter 3    Vmxnet3    VLAN 15      00:50:56:ac:81:1f      False
+Network adapter 2    Vmxnet3    VLAN 15      00:50:56:ac:7c:b9      False
+Network adapter 4    Vmxnet3    VLAN 15      00:50:56:ac:35:1b      False
+Network adapter 1    Vmxnet3    VLAN 15      00:50:56:ba:75:54       True
+Network adapter 2    e1000e     VLAN 15      00:50:56:ac:8d:4d       True
+Network adapter 1    e1000e     VLAN 15      00:50:56:ac:94:17       True
+Network adapter 1    Vmxnet3    VLAN 15      00:50:56:8a:00:27       True
+Network adapter 1    Vmxnet3    VLAN 15      00:50:56:ac:27:55       True
+Network adapter 1    Vmxnet3    VLAN 15      00:50:56:ac:bf:1e       True
+Network adapter 1    e1000      VLAN 15      00:50:56:ba:7a:e2       True
+Network adapter 1    e1000      VLAN 15      00:50:56:ac:11:21       True
+Network adapter 1    Vmxnet3    VLAN 15      00:50:56:ac:31:64       True
+Network adapter 1    Vmxnet3    VLAN 15      00:50:56:ac:7d:ad       True
+Network adapter 1    Vmxnet3    VLAN 15      00:50:56:ba:54:36       True
+Network adapter 1    e1000e     VLAN 15      00:50:56:ac:a7:b9       True
+Network adapter 1    Vmxnet3    VLAN 15      00:50:56:ac:9b:b8       True
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> @{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS C:\acca\Powershell_local>
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+  39 cd \\erasernew2.deltabank.co.yu\c$
+  40 get-vm *tfs*
+  41 .\new-localUsers.ps1
+  42 Open-VMConsoleWindow *gain*
+  43 .\new-localUsers.ps1
+  44 Open-VMConsoleWindow *gain-web*
+  45 get-vm *www*
+  46 Open-VMConsoleWindow www-app-01
+  47 get-vm airb
+  48 mstsc /v airb
+  49 get-vm mail-in-01
+  50 get-vm mail-in-01|Get-NetworkAdapter
+  51 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}
+
+
+PS>get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}|select parent
+
+Parent
+------
+ubs-kib-test
+mobi-corp-test
+Berza2
+MWG-RP2
+NTP-DMZ2
+MWG-RP1
+JUNIPER-FS
+dlp-mail2
+DMZ-BG-Nessus
+DMZ-BG-Nessus
+DMZ-BG-Nessus
+DMZ-BG-Nessus
+Dns-Dmz2
+sfb-edge
+Ecawebenroll2
+sftp-01
+MAIL-IN-01
+MAIL-IN-02
+Dns-Dmz1
+Leasing-calc
+MAIL-OUT-01
+MAIL-OUT-02
+PRX-DMZ3
+UBS-KIB
+dlp-mail1
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> @{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+  39 cd \\erasernew2.deltabank.co.yu\c$
+  40 get-vm *tfs*
+  41 .\new-localUsers.ps1
+  42 Open-VMConsoleWindow *gain*
+  43 .\new-localUsers.ps1
+  44 Open-VMConsoleWindow *gain-web*
+  45 get-vm *www*
+  46 Open-VMConsoleWindow www-app-01
+  47 get-vm airb
+  48 mstsc /v airb
+  49 get-vm mail-in-01
+  50 get-vm mail-in-01|Get-NetworkAdapter
+  51 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}
+  52 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}|select parent
+
+
+PS>get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}
+
+Name                 Type       NetworkName  MacAddress         WakeOnLan
+                                                                  Enabled
+----                 ----       -----------  ----------         ---------
+Network adapter 1    Flexible   DMZ_101      00:50:56:8d:42:6a       True
+Network adapter 2    Vmxnet3    DMZ_101      00:50:56:9d:64:65       True
+Network adapter 1    Vmxnet3    DMZ_101      00:50:56:9d:7c:28       True
+Network adapter 1    Vmxnet3    DMZ_101      00:50:56:9d:7c:29       True
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> @{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+  39 cd \\erasernew2.deltabank.co.yu\c$
+  40 get-vm *tfs*
+  41 .\new-localUsers.ps1
+  42 Open-VMConsoleWindow *gain*
+  43 .\new-localUsers.ps1
+  44 Open-VMConsoleWindow *gain-web*
+  45 get-vm *www*
+  46 Open-VMConsoleWindow www-app-01
+  47 get-vm airb
+  48 mstsc /v airb
+  49 get-vm mail-in-01
+  50 get-vm mail-in-01|Get-NetworkAdapter
+  51 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}
+  52 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}|select parent
+  53 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}
+
+
+PS>Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+>> TerminatingError(Get-NetworkAdapter): "16.01.2018 17:30:02	Get-NetworkAdapter		Please specify at least one of the following: VirtualMachine, Template or Snapshot.	"
+Get-NetworkAdapter : 16.01.2018 17:30:02    Get-NetworkAdapter        Please specify at least one of the following: Virt
+ualMachine, Template or Snapshot.    
+At line:1 char:1
++ Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-NetworkAdapter], ViError
+    + FullyQualifiedErrorId : Core_VirtualDeviceGetter_GetMoListFromCmdletParameter_InsufficientParameters,VMware.VimAut
+omation.ViCore.Cmdlets.Commands.VirtualDevice.GetNetworkAdapter
+Get-NetworkAdapter : 16.01.2018 17:30:02    Get-NetworkAdapter        Please specify at least one of the following: VirtualMachine, Template or Snapshot.
+At line:1 char:1
++ Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-NetworkAdapter], ViError
+    + FullyQualifiedErrorId : Core_VirtualDeviceGetter_GetMoListFromCmdletParameter_InsufficientParameters,VMware.VimAutomation.ViCore.Cmdlets.Commands.VirtualDevice.GetNetworkAdapter
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+  39 cd \\erasernew2.deltabank.co.yu\c$
+  40 get-vm *tfs*
+  41 .\new-localUsers.ps1
+  42 Open-VMConsoleWindow *gain*
+  43 .\new-localUsers.ps1
+  44 Open-VMConsoleWindow *gain-web*
+  45 get-vm *www*
+  46 Open-VMConsoleWindow www-app-01
+  47 get-vm airb
+  48 mstsc /v airb
+  49 get-vm mail-in-01
+  50 get-vm mail-in-01|Get-NetworkAdapter
+  51 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}
+  52 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}|select parent
+  53 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}
+  54 Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+
+
+PS>get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+
+Parent
+------
+DMZ-DEVELOPER
+mx-out-01
+ns3
+ns4
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> @{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+  39 cd \\erasernew2.deltabank.co.yu\c$
+  40 get-vm *tfs*
+  41 .\new-localUsers.ps1
+  42 Open-VMConsoleWindow *gain*
+  43 .\new-localUsers.ps1
+  44 Open-VMConsoleWindow *gain-web*
+  45 get-vm *www*
+  46 Open-VMConsoleWindow www-app-01
+  47 get-vm airb
+  48 mstsc /v airb
+  49 get-vm mail-in-01
+  50 get-vm mail-in-01|Get-NetworkAdapter
+  51 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}
+  52 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}|select parent
+  53 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}
+  54 Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+  55 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+
+
+PS>$vms=get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>get-vm *pp_nlb*
+
+Name                 PowerState Num CPUs MemoryGB
+----                 ---------- -------- --------
+pp_nlb13             PoweredOn  1        4.000
+pp_nlb12             PoweredOn  1        4.000
+pp_nlb11             PoweredOn  1        4.000
+NEW_PP_NLB12         PoweredOn  2        4.000
+NEW_PP_NLB13         PoweredOn  2        4.000
+NEW_PP_NLB11         PoweredOn  2        4.000
+pp_nlb121            PoweredOff 2        4.000
+
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>nslookup
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>nslookup
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+  39 cd \\erasernew2.deltabank.co.yu\c$
+  40 get-vm *tfs*
+  41 .\new-localUsers.ps1
+  42 Open-VMConsoleWindow *gain*
+  43 .\new-localUsers.ps1
+  44 Open-VMConsoleWindow *gain-web*
+  45 get-vm *www*
+  46 Open-VMConsoleWindow www-app-01
+  47 get-vm airb
+  48 mstsc /v airb
+  49 get-vm mail-in-01
+  50 get-vm mail-in-01|Get-NetworkAdapter
+  51 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}
+  52 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}|select parent
+  53 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}
+  54 Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+  55 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+  56 $vms=get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+  57 get-vm *pp_nlb*
+  58 nslookup
+  59 nslookup
+
+
+PS>nslookup
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>mstsc /v ict-211-0205
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>ping 10.34.3.166
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>ping ict-211-0205
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+  39 cd \\erasernew2.deltabank.co.yu\c$
+  40 get-vm *tfs*
+  41 .\new-localUsers.ps1
+  42 Open-VMConsoleWindow *gain*
+  43 .\new-localUsers.ps1
+  44 Open-VMConsoleWindow *gain-web*
+  45 get-vm *www*
+  46 Open-VMConsoleWindow www-app-01
+  47 get-vm airb
+  48 mstsc /v airb
+  49 get-vm mail-in-01
+  50 get-vm mail-in-01|Get-NetworkAdapter
+  51 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}
+  52 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}|select parent
+  53 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}
+  54 Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+  55 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+  56 $vms=get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+  57 get-vm *pp_nlb*
+  58 nslookup
+  59 nslookup
+  60 nslookup
+  61 mstsc /v ict-211-0205
+  62 ping 10.34.3.166
+  63 ping ict-211-0205
+
+
+PS>ping ict-211-0205
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>mstsc /v ict-211-0205
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+  39 cd \\erasernew2.deltabank.co.yu\c$
+  40 get-vm *tfs*
+  41 .\new-localUsers.ps1
+  42 Open-VMConsoleWindow *gain*
+  43 .\new-localUsers.ps1
+  44 Open-VMConsoleWindow *gain-web*
+  45 get-vm *www*
+  46 Open-VMConsoleWindow www-app-01
+  47 get-vm airb
+  48 mstsc /v airb
+  49 get-vm mail-in-01
+  50 get-vm mail-in-01|Get-NetworkAdapter
+  51 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}
+  52 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}|select parent
+  53 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}
+  54 Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+  55 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+  56 $vms=get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+  57 get-vm *pp_nlb*
+  58 nslookup
+  59 nslookup
+  60 nslookup
+  61 mstsc /v ict-211-0205
+  62 ping 10.34.3.166
+  63 ping ict-211-0205
+  64 ping ict-211-0205
+  65 mstsc /v ict-211-0205
+
+
+PS>mstsc /v ict-211-0205
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>import-module test-connectionasync
+import-module : The specified module 'test-connectionasync' was not loaded because no valid module file was found in any
+ module directory.
+At line:1 char:1
++ import-module test-connectionasync
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (test-connectionasync:String) [Import-Module], FileNotFoundException
+    + FullyQualifiedErrorId : Modules_ModuleNotFound,Microsoft.PowerShell.Commands.ImportModuleCommand
+import-module : The specified module 'test-connectionasync' was not loaded because no valid module file was found in any module directory.
+At line:1 char:1
++ import-module test-connectionasync
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (test-connectionasync:String) [Import-Module], FileNotFoundException
+    + FullyQualifiedErrorId : Modules_ModuleNotFound,Microsoft.PowerShell.Commands.ImportModuleCommand
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>Install-Module -Name TestConnectionAsync
+PackageManagement\Install-Package : No match was found for the specified search criteria and module name 'TestConnection
+Async'. Try Get-PSRepository to see all available registered module repositories.
+At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.5.0.0\PSModule.psm1:1877 char:21
++ ...          $null = PackageManagement\Install-Package @PSBoundParameters
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power....InstallPackage:InstallPackage) [Install-Package], Exce
+ption
+    + FullyQualifiedErrorId : NoMatchFoundForCriteria,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
+PackageManagement\Install-Package : No match was found for the specified search criteria and module name 'TestConnectionAsync'. Try Get-PSRepository to see all available registered module repositories.
+At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.5.0.0\PSModule.psm1:1877 char:21
++ ...          $null = PackageManagement\Install-Package @PSBoundParameters
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power....InstallPackage:InstallPackage) [Install-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFoundForCriteria,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+PS>CommandInvocation(Get-History): "Get-History"
+
+  Id CommandLine
+  -- -----------
+   1 Connect-VIServer be-vce-bib.fbisp.eu
+   2 Open-VMConsoleWindow inv-web-01
+   3 mstsc /v octopus
+   4 cd ../../..
+   5 cd .\Powershell_local\BIB\pm5\radno
+   6 notepad dmz.txt
+   7 foreach ($ime in (gc .\dmz.txt)){...
+   8 foreach ($ime in (gc .\dmz.txt)){...
+   9
+  10 foreach ($ime in (gc .\dmz.txt)){...
+  11 foreach ($ime in (gc .\dmz.txt)){...
+  12 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  13 foreach ($ime in (gc .\dmz2008r2.txt)){...
+  14 get-vm egain-app
+  15 Open-VMConsoleWindow egain-app
+  16 code
+  17 vscode
+  18 .\distribute-PM5.ps1 -ComputerName almpro2 -Verbose
+  19 get-vm erasernew2
+  20 $global:defaultviservers
+  21 connect--viserver bib-vcentar-01
+  22 Connect-VIServer bib-vcentar-01
+  23 get-vm erasernew2
+  24 Open-VMConsoleWindow erasernew2
+  25 .\distribute-PM5.ps1 -ComputerName erasernew2 -verbose
+  26 cd  \\erasernew2\c$\schtask
+  27 get-vm foglight
+  28 get-vm foglight*
+  29 get-vm hobit*
+  30 get-vm homer*\
+  31 get-vm homer*
+  32 cd ..\..\
+  33 cd ..
+  34 .\new-localUsers.ps1
+  35 compmgmt
+  36 compmgmt.msc
+  37 cd \\erasernew2\c$
+  38 cd \\erasernew2\e$
+  39 cd \\erasernew2.deltabank.co.yu\c$
+  40 get-vm *tfs*
+  41 .\new-localUsers.ps1
+  42 Open-VMConsoleWindow *gain*
+  43 .\new-localUsers.ps1
+  44 Open-VMConsoleWindow *gain-web*
+  45 get-vm *www*
+  46 Open-VMConsoleWindow www-app-01
+  47 get-vm airb
+  48 mstsc /v airb
+  49 get-vm mail-in-01
+  50 get-vm mail-in-01|Get-NetworkAdapter
+  51 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}
+  52 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "VLAN 15"}|select parent
+  53 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}
+  54 Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+  55 get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+  56 $vms=get-vm|Get-NetworkAdapter|?{$_.networkname -eq "dmz_101"}|select parent
+  57 get-vm *pp_nlb*
+  58 nslookup
+  59 nslookup
+  60 nslookup
+  61 mstsc /v ict-211-0205
+  62 ping 10.34.3.166
+  63 ping ict-211-0205
+  64 ping ict-211-0205
+  65 mstsc /v ict-211-0205
+  66 mstsc /v ict-211-0205
+  67 import-module test-connectionasync
+  68 Install-Module -Name TestConnectionAsync
+
+
+PS>Install-Module -Name TestConnectionAsync
+PackageManagement\Install-Package : No match was found for the specified search criteria and module name 'TestConnection
+Async'. Try Get-PSRepository to see all available registered module repositories.
+At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.5.0.0\PSModule.psm1:1877 char:21
++ ...          $null = PackageManagement\Install-Package @PSBoundParameters
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power....InstallPackage:InstallPackage) [Install-Package], Exce
+ption
+    + FullyQualifiedErrorId : NoMatchFoundForCriteria,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
+PackageManagement\Install-Package : No match was found for the specified search criteria and module name 'TestConnectionAsync'. Try Get-PSRepository to see all available registered module repositories.
+At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.5.0.0\PSModule.psm1:1877 char:21
++ ...          $null = PackageManagement\Install-Package @PSBoundParameters
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power....InstallPackage:InstallPackage) [Install-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFoundForCriteria,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
+
+PS>@{ 'computerName' = $env:ComputerName; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      8424
+computerName                   ICT-211-5888
+instanceId                     a0499410-28d8-4de8-b39e-62856b2059ee
+
+
+PS C:\acca\Powershell_local>
+
+**********************
+Windows PowerShell transcript start
+Start time: 20180117092236
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1516176763-982f3b06-c728-4462-b32f-a6066f8056e61516176756712\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-18576-546245' -FeatureFlags @()
+Process ID: 15220
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Acca\Powershell_local\BIB\PM5\radno\distribute-PM5.ps1.log
+[17.01.2018 09:22:36] Pocinjem...
+VERBOSE: [17.01.2018 09:22:36] Okruzenje na serveru cc-app vec postoji
+VERBOSE: [17.01.2018 09:22:49] Data Counter PM5 na serveru cc-app vec postoji
+VERBOSE: [17.01.2018 09:22:50] Kreiram task PM5  na cc-app
+SUCCESS: The scheduled task "PM5" has successfully been created.
+VERBOSE: [17.01.2018 09:22:50] Startujem task PM5  na cc-app
+SUCCESS: Attempted to run the scheduled task "PM5".
+[17.01.2018 09:22:50] Bye...
+**********************
+Windows PowerShell transcript end
+End time: 20180117092250
+**********************

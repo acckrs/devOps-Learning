@@ -1,0 +1,25 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180906153432
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1536172781-06471b5d-6e2c-41f2-beb5-cde33885b2811536172776541\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-10060-312723' -FeatureFlags @()
+Process ID: 5452
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Acca\Powershell_local\bib\okruzenja\StartEnvironment.ps1.log
+Login time 2018.09.06 15:34:32 for user admin_kaleksandar
+Okruzenje=FC2
+net use x: \\FC2Ctxfsdev1\config\Clients\ICT-211-5888 /PERSISTENT:NO
+
+**********************
+Windows PowerShell transcript end
+End time: 20180906153436
+**********************

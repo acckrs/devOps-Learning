@@ -8,8 +8,7 @@
  )
 
 #izlistaj sve terminal sesije na serveru $servername
-rwinsta /SERVER:inexnlb1 1
-
+#qwinsta /SERVER:$servername
 
 #Ubij terminal sesiju sa id-jem sesije $sessionID na serveru $servername 
 rwinsta /server:$servername $sessionID

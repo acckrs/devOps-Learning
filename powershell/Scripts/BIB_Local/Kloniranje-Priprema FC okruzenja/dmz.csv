@@ -1,0 +1,4 @@
+"oCiType","oName","Scope","DOMAIN","ServerRole","CpuNumber","RamSizeMb","TotLocDiskSizeGB","LocId","vLan","Comment","gdejan  potrebno","gDejanComment","OPERATING_SYSTEM","isNeeded","commentFC","1.Step Activity {DSI}"
+"OS.VM","mpayment","Test","DMZ","Application","1","2048","12","PRM.CED","[10.15.1.0/24]","Test for Mpayment",,,"Microsoft(R) Windows(R) Server 2003, Standard Edition","?",,"CLONE VM"
+"OS.VM","ob-test","Test","DMZ","Application","1","2000","25","PRM.CED","[10.15.1.0/24]","DMZ",,,"Microsoft? Windows Server? 2008 Standard","Y",,"CLONE VM"
+"OS.VM","OnlineWebTest","Test","DMZ","Application.WS","2","2048","40","PRM.CED",,,,,"Microsoft? Windows Server? 2008 R2 Standard","Y",,"CLONE VM"

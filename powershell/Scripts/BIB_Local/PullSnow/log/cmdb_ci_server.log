@@ -1,0 +1,28 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180130081239
+Username: DELTABANK\SYSTEM
+RunAs User: DELTABANK\SYSTEM
+Machine: SNOW-MID (Microsoft Windows NT 6.3.9600.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -file PullSnow.ps1 1
+Process ID: 6816
+PSVersion: 5.1.14409.1012
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14409.1012
+BuildVersion: 10.0.14409.1012
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\log\cmdb_ci_server.log
+08:12:39 Connect to sql
+08:12:39 Start pull cmdb_ci_server
+08:13:13 Create #cmdb_ci_server
+08:13:13 pull data into #cmdb_ci_server
+08:13:14 Prepis is #cmdb_ci_server u odredišnu tabelu sn.cmdb_ci_server
+08:13:14 bye
+**********************
+Windows PowerShell transcript end
+End time: 20180130081314
+**********************

@@ -1,0 +1,41 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180111094518
+Username: DELTABANK\SYSTEM
+RunAs User: DELTABANK\SYSTEM
+Machine: OCTOPUS (Microsoft Windows NT 10.0.14393.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -file pm5.PushDB.ps1
+Process ID: 69780
+PSVersion: 5.1.14393.1770
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14393.1770
+BuildVersion: 10.0.14393.1770
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\SCHTASK\PM5\pm5.PushDB.log
+# hello at 2018-01-11 09:01:18
+obrada fajla "C:\SCHTASK\PM5\pmFile\pm5_01110930.blg"
+...cnt tm:
+...cnt tm:20180111 09:30
+...cnt tm:20180111 09:31
+...cnt tm:20180111 09:32
+...cnt tm:20180111 09:33
+...cnt tm:20180111 09:34
+...cnt tm:20180111 09:35
+...cnt tm:20180111 09:36
+...cnt tm:20180111 09:37
+...cnt tm:20180111 09:38
+...cnt tm:20180111 09:39
+...cnt tm:20180111 09:40
+...cnt tm:20180111 09:41
+...cnt tm:20180111 09:42
+...cnt tm:20180111 09:43
+# Arhive: "C:\SCHTASK\PM5\pmFile\pm5_01110930.blg"
+# bye at 2018-01-11 09:01:22
+**********************
+Windows PowerShell transcript end
+End time: 20180111094522
+**********************

@@ -1,0 +1,17 @@
+AD
+ADFS
+CITRIX
+CMDB
+CRISP
+DLOBackup
+EDMS
+EnterpriseVault
+EXCHANGE
+Mail
+MBAM
+Nagios
+Office365
+Portal
+SECURITY
+SkypeforBusiness
+Spazio

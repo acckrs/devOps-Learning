@@ -1,0 +1,92 @@
+﻿#Brisanje log fajla
+
+Remove-Item C:\windows\BIB\Pst_oversize\Pst_oversize.log -Force -ErrorAction Continue
+
+Function MyLogger {
+
+Param(
+[string]$message = $(throw "Neophodan parametar"), 
+$logpath="c:\users\admin_zamir\desktop\findOJreplace.txt", 
+$type="Info"
+) 
+$messagetoFile='[{0:yyyy-MM-dd HH:mm:ss}] - {1}' -f [datetime]::Now,$message;
+
+switch ($type)
+{
+"Info" {
+	Write-Host ("[{0:yyyy-MM-dd HH:mm:ss}] " -f [datetime]::Now) -NoNewline
+	Write-Host "[-INFO-]" -BackgroundColor White -ForegroundColor DarkBlue -NoNewline
+	Write-Host (" {0}" -f $message)
+	   }
+"Warning" {
+	Write-Host ("[{0:yyyy-MM-dd HH:mm:ss}] " -f [datetime]::Now) -NoNewline
+	Write-Host "[-WARNING-]" -BackgroundColor DarkGray -ForegroundColor Yellow -NoNewline
+	Write-Host (" {0}" -f $message)
+		  }
+"Error" {
+	Write-Host ("[{0:yyyy-MM-dd HH:mm:ss}] " -f [datetime]::Now) -NoNewline
+	Write-Host "[-ERROR-]" -BackgroundColor Black -ForegroundColor Red -NoNewline
+	Write-Host (" {0}" -f $message) -BackgroundColor Black -ForegroundColor RED
+		  }
+}
+
+if ((Test-Path $logpath) -and (Get-Item $logpath).length -gt 2mb) { 
+
+Move-Item -Path $logpath "$($logpath)_old" -Force
+
+}
+$messagetoFile | Out-File -append -FilePath $logpath -Force;
+}
+
+$logpath = "C:\windows\BIB\Pst_oversize\Pst_oversize.log";
+
+#region SQL konekcija i komande
+
+$ErrorActionPreference = "Continue"
+
+#Konektovanje na SQL
+mylogger -logpath $logpath -type info -message "Script PST info started"
+mylogger -logpath $logpath -type info -message "-----------------------------------------------------------"
+
+mylogger -logpath $logpath -type info -message "Connecting to SQL"
+$sqlSrv=New-Object System.Data.SqlClient.SqlConnection 
+$sqlSrv.ConnectionString='Server=syssql; Database=dcInfo;User ID=SmsHost;Password=sh1234.;';
+try {
+$sqlSrv.Open()}
+catch {
+mylogger -logpath $logpath -type info -message "Connecting to SQL failed EXITING!!!"
+exit
+}
+
+#Insert komanda
+$sqlCmd=$sqlSrv.CreateCommand();
+$sqlCmd.CommandText='[dbo].[ws.SavePstInfo]';
+$sqlCmd.CommandType='StoredProcedure';
+  
+$sqlCmd.Parameters.Clear();
+ 
+$sqlCmd.Parameters.Add('@Workstation', [System.Data.SqlDbType]::VarChar, 256) | Out-Null;
+$sqlCmd.Parameters.Add('@Username', [System.Data.SqlDbType]::VarChar, 256) | Out-Null;
+$sqlCmd.Parameters.Add('@FullName', [System.Data.SqlDbType]::VarChar, 256) | Out-Null;
+$sqlCmd.Parameters.Add('@Size', [System.Data.SqlDbType]::Float) | Out-Null;
+$sqlCmd.Parameters.Add('@LastAccessTime', [System.Data.SqlDbType]::DateTime) | Out-Null;
+  
+#endregion
+
+gci -Path c:\Users\ -Recurse -Include *.pst -Force | ?{$_.FullName -match 'C:\\Users\\([[a-z\. _]+)'  } |
+select @{Expression={$Matches[1]};Label="Username"},`
+		@{Expression={$_.Length / 1GB};Label="Size"},`
+		FullName,`
+		LastAccessTime |
+			%{$m=$_; $Matches.Clear();
+				$sqlCmd.Parameters.Item('@Workstation').Value=$env:COMPUTERNAME;
+        		$sqlCmd.Parameters.Item('@Username').Value=$m.Username;
+        		$sqlCmd.Parameters.Item('@FullName').Value=$m.FullName;
+				$sqlCmd.Parameters.Item('@Size').Value=$m.Size;
+				$sqlCmd.Parameters.Item('@LastAccessTime').Value=$m.LastAccessTime;
+				$sqlCmd.ExecuteNonQuery()|Out-Null;
+			
+				}
+				
+mylogger -logpath $logpath -type info -message ""
+mylogger -logpath $logpath -type info -message "Script PST Info Finished"

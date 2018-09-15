@@ -1,0 +1,6 @@
+#TYPE BIB.DiskInfo
+"Drive","ComputerName","pctFree","Size","FreeSize"
+"\\?\Volume{445595f7-de3b-11e0-ae69-806e6f6e6963}\","bi-report1","70.29","0.1","0.07"
+"C:\","bi-report1","8.32","29.9","2.49"
+"\\?\Volume{fc2f4c69-de3a-11e0-8d53-806e6f6e6963}\","bi-report2","70.29","0.1","0.07"
+"C:\","bi-report2","11.29","29.9","3.38"

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:upitnik:-dataFormSolution" href="manifest.xsf" solutionVersion="1.0.0.29" productVersion="15.0.0" PIVersion="1.0.0.0" ?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.3"?>
+<dfs:myFields xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2009/WSSList/cmeDataFields" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<dfs:queryFields>
+		<q:SharePointListItem_RW>
+			<q:ID xsi:nil="true"></q:ID>
+			<q:Title xsi:nil="true"></q:Title>
+			<q:Author xsi:nil="true"></q:Author>
+			<q:Editor xsi:nil="true"></q:Editor>
+			<q:Modified xsi:nil="true"></q:Modified>
+			<q:Created xsi:nil="true"></q:Created>
+			<q:SAsedenje xsi:nil="true"></q:SAsedenje>
+			<q:field7 xsi:nil="true"></q:field7>
+			<q:SAkontakt xsi:nil="true"></q:SAkontakt>
+			<q:SAslusanje xsi:nil="true"></q:SAslusanje>
+			<q:SAinicijativa xsi:nil="true"></q:SAinicijativa>
+			<q:SAuctivost xsi:nil="true"></q:SAuctivost>
+			<q:SAgovor xsi:nil="true"></q:SAgovor>
+			<q:SAkontakt_ocima xsi:nil="true"></q:SAkontakt_ocima>
+			<q:SAdijalog xsi:nil="true"></q:SAdijalog>
+			<q:SAinformacije xsi:nil="true"></q:SAinformacije>
+			<q:field8 xsi:nil="true"></q:field8>
+			<q:SApozdrav0 xsi:nil="true"></q:SApozdrav0>
+			<q:SA_SUM_komunikaciione_vestine xsi:nil="true"></q:SA_SUM_komunikaciione_vestine>
+			<q:SA_ispitivanje_potreba xsi:nil="true"></q:SA_ispitivanje_potreba>
+			<q:SAadekvatna_pitanja xsi:nil="true"></q:SAadekvatna_pitanja>
+			<q:SApredstavljanje_troskova xsi:nil="true"></q:SApredstavljanje_troskova>
+			<q:SAproizvod_dobar_klijentu xsi:nil="true"></q:SAproizvod_dobar_klijentu>
+			<q:SArezime xsi:nil="true"></q:SArezime>
+			<q:SAuspesno_zatvoren xsi:nil="true"></q:SAuspesno_zatvoren>
+			<q:SAneuspesno_zatvoren xsi:nil="true"></q:SAneuspesno_zatvoren>
+			<q:SAhvala xsi:nil="true"></q:SAhvala>
+			<q:SAzatrazio_kontakt xsi:nil="true"></q:SAzatrazio_kontakt>
+			<q:SArekao xsi:nil="true"></q:SArekao>
+			<q:SAkros_prodaja xsi:nil="true"></q:SAkros_prodaja>
+			<q:SArelev_informacije xsi:nil="true"></q:SArelev_informacije>
+			<q:SA_interes_klijenta xsi:nil="true"></q:SA_interes_klijenta>
+			<q:SAsvrha_proizvoda xsi:nil="true"></q:SAsvrha_proizvoda>
+			<q:SAdogovorio_sastanak xsi:nil="true"></q:SAdogovorio_sastanak>
+			<q:SA_rel_informacije2 xsi:nil="true"></q:SA_rel_informacije2>
+			<q:SAstruktura_sastanka xsi:nil="true"></q:SAstruktura_sastanka>
+			<q:SAnaveo_kampanje xsi:nil="true"></q:SAnaveo_kampanje>
+			<q:SAnabrojao_benefite xsi:nil="true"></q:SAnabrojao_benefite>
+			<q:SAadekv_predstavlja xsi:nil="true"></q:SAadekv_predstavlja>
+			<q:SAredovnoCrisp xsi:nil="true"></q:SAredovnoCrisp>
+			<q:SAzatvara_mogucnost xsi:nil="true"></q:SAzatvara_mogucnost>
+			<q:SA_MAX_prijem_i_pozdrav xsi:nil="true"></q:SA_MAX_prijem_i_pozdrav>
+			<q:SA_PCT_prijem_i_pozdrav xsi:nil="true"></q:SA_PCT_prijem_i_pozdrav>
+			<q:SA_MAX_komunikacione_vestine xsi:nil="true"></q:SA_MAX_komunikacione_vestine>
+			<q:SA_SUM_komunikacione_vestine xsi:nil="true"></q:SA_SUM_komunikacione_vestine>
+			<q:SA_PCT_komunikacione_vestine xsi:nil="true"></q:SA_PCT_komunikacione_vestine>
+			<q:SA_SUM_ispitivanje_potreba0 xsi:nil="true"></q:SA_SUM_ispitivanje_potreba0>
+			<q:SA_MAX_ispitivanje_potreba xsi:nil="true"></q:SA_MAX_ispitivanje_potreba>
+			<q:SA_PCT_ispitivanje_potreba xsi:nil="true"></q:SA_PCT_ispitivanje_potreba>
+			<q:SA_SUM_predstavljanje_proizvoda xsi:nil="true"></q:SA_SUM_predstavljanje_proizvoda>
+			<q:SA_MAX_predstavljanje_proizvoda xsi:nil="true"></q:SA_MAX_predstavljanje_proizvoda>
+			<q:SA_PCT_predstavljanje_proizvoda xsi:nil="true"></q:SA_PCT_predstavljanje_proizvoda>
+			<q:SA_SUM_prodajne_vestine xsi:nil="true"></q:SA_SUM_prodajne_vestine>
+			<q:SA_MAX_prodajne_vestine xsi:nil="true"></q:SA_MAX_prodajne_vestine>
+			<q:SA_PCT_prodajne_vestine xsi:nil="true"></q:SA_PCT_prodajne_vestine>
+			<q:SA_SUM_inicijativnost_i_zatvaran xsi:nil="true"></q:SA_SUM_inicijativnost_i_zatvaran>
+			<q:SA_MAX_inicijativnost_i_zatvaran xsi:nil="true"></q:SA_MAX_inicijativnost_i_zatvaran>
+			<q:SA_PCT_inicijativnost_i_zatvaran xsi:nil="true"></q:SA_PCT_inicijativnost_i_zatvaran>
+			<q:SA_SUM_follow_up xsi:nil="true"></q:SA_SUM_follow_up>
+			<q:SA_MAX_follow_up xsi:nil="true"></q:SA_MAX_follow_up>
+			<q:SA_PCT_follow_up xsi:nil="true"></q:SA_PCT_follow_up>
+			<q:SA_SUM_krosprodaja xsi:nil="true"></q:SA_SUM_krosprodaja>
+			<q:SA_MAX_krosprodaja xsi:nil="true"></q:SA_MAX_krosprodaja>
+			<q:SA_PCT_krosprodaja xsi:nil="true"></q:SA_PCT_krosprodaja>
+			<q:SA_SUM_savetodavni_razgovor xsi:nil="true"></q:SA_SUM_savetodavni_razgovor>
+			<q:SA_MAX_savetodavni_razgovor xsi:nil="true"></q:SA_MAX_savetodavni_razgovor>
+			<q:SA_PCT_savetodavni_razgovor xsi:nil="true"></q:SA_PCT_savetodavni_razgovor>
+			<q:SA_SUM_telefonski_poziv xsi:nil="true"></q:SA_SUM_telefonski_poziv>
+			<q:SA_MAX_telefonski_poziv xsi:nil="true"></q:SA_MAX_telefonski_poziv>
+			<q:SA_PCT_telefonski_poziv xsi:nil="true"></q:SA_PCT_telefonski_poziv>
+			<q:SA_SUM_priprema_za_sastanak xsi:nil="true"></q:SA_SUM_priprema_za_sastanak>
+			<q:SA_MAX_priprema_za_sastanak xsi:nil="true"></q:SA_MAX_priprema_za_sastanak>
+			<q:SA_PCT_priprema_za_sastanak xsi:nil="true"></q:SA_PCT_priprema_za_sastanak>
+			<q:SA_SUM_poznavanje_kampanje xsi:nil="true"></q:SA_SUM_poznavanje_kampanje>
+			<q:SA_MAX_poznavanje_kampanje xsi:nil="true"></q:SA_MAX_poznavanje_kampanje>
+			<q:SA_PCT_poznavanje_kampanje xsi:nil="true"></q:SA_PCT_poznavanje_kampanje>
+			<q:SA_SUM_poznavanje_proizvoda xsi:nil="true"></q:SA_SUM_poznavanje_proizvoda>
+			<q:SA_MAX_poznavanje_proizvoda xsi:nil="true"></q:SA_MAX_poznavanje_proizvoda>
+			<q:SA_PCT_poznavanje_proizvoda xsi:nil="true"></q:SA_PCT_poznavanje_proizvoda>
+			<q:SA_SUM_crisp xsi:nil="true"></q:SA_SUM_crisp>
+			<q:SA_MAX_crisp xsi:nil="true"></q:SA_MAX_crisp>
+			<q:SA_PCT_crisp xsi:nil="true"></q:SA_PCT_crisp>
+			<q:SApravilno_unosi0 xsi:nil="true"></q:SApravilno_unosi0>
+			<q:SA_SUM_ukupno xsi:nil="true"></q:SA_SUM_ukupno>
+			<q:SA_MAX_ukupno xsi:nil="true"></q:SA_MAX_ukupno>
+			<q:SA_PCT_ukupno xsi:nil="true"></q:SA_PCT_ukupno>
+			<q:Savetnik xsi:nil="true"></q:Savetnik>
+			<q:Kouc xsi:nil="true"></q:Kouc>
+			<q:Opservator xsi:nil="true"></q:Opservator>
+			<q:SegmentMenadzer xsi:nil="true"></q:SegmentMenadzer>
+			<q:Ekspozitura xsi:nil="true"></q:Ekspozitura>
+			<q:field11 xsi:nil="true"></q:field11>
+			<q:Mesec xsi:nil="true"></q:Mesec>
+			<q:Godina xsi:nil="true"></q:Godina>
+			<q:Adresa xsi:nil="true"></q:Adresa>
+			<q:SAispitivanje_potreba_ostala xsi:nil="true"></q:SAispitivanje_potreba_ostala>
+		</q:SharePointListItem_RW>
+	</dfs:queryFields>
+	<dfs:dataFields>
+		<my:SharePointListItem_RW>
+			<my:ID xsi:nil="true"></my:ID>
+			<my:Title></my:Title>
+			<my:Author>
+				<pc:Person>
+					<pc:DisplayName></pc:DisplayName>
+					<pc:AccountId></pc:AccountId>
+					<pc:AccountType></pc:AccountType>
+				</pc:Person>
+			</my:Author>
+			<my:Editor>
+				<pc:Person>
+					<pc:DisplayName></pc:DisplayName>
+					<pc:AccountId></pc:AccountId>
+					<pc:AccountType></pc:AccountType>
+				</pc:Person>
+			</my:Editor>
+			<my:Modified xsi:nil="true"></my:Modified>
+			<my:Created xsi:nil="true"></my:Created>
+			<my:SAsedenje xsi:nil="true"></my:SAsedenje>
+			<my:field7 xsi:nil="true"></my:field7>
+			<my:SAkontakt xsi:nil="true"></my:SAkontakt>
+			<my:SAslusanje xsi:nil="true"></my:SAslusanje>
+			<my:SAinicijativa xsi:nil="true"></my:SAinicijativa>
+			<my:SAuctivost xsi:nil="true"></my:SAuctivost>
+			<my:SAgovor xsi:nil="true"></my:SAgovor>
+			<my:SAkontakt_ocima xsi:nil="true"></my:SAkontakt_ocima>
+			<my:SAdijalog xsi:nil="true"></my:SAdijalog>
+			<my:SAinformacije xsi:nil="true"></my:SAinformacije>
+			<my:field8 xsi:nil="true"></my:field8>
+			<my:SApozdrav0 xsi:nil="true"></my:SApozdrav0>
+			<my:SA_SUM_komunikaciione_vestine xsi:nil="true"></my:SA_SUM_komunikaciione_vestine>
+			<my:SA_ispitivanje_potreba xsi:nil="true"></my:SA_ispitivanje_potreba>
+			<my:SAadekvatna_pitanja xsi:nil="true"></my:SAadekvatna_pitanja>
+			<my:SAbenefiti_proizvoda></my:SAbenefiti_proizvoda>
+			<my:SApredstavljanje_troskova xsi:nil="true"></my:SApredstavljanje_troskova>
+			<my:SAproizvod_dobar_klijentu xsi:nil="true"></my:SAproizvod_dobar_klijentu>
+			<my:SArezime xsi:nil="true"></my:SArezime>
+			<my:SAuspesno_zatvoren xsi:nil="true"></my:SAuspesno_zatvoren>
+			<my:SAneuspesno_zatvoren xsi:nil="true"></my:SAneuspesno_zatvoren>
+			<my:SAhvala xsi:nil="true"></my:SAhvala>
+			<my:SAzatrazio_kontakt xsi:nil="true"></my:SAzatrazio_kontakt>
+			<my:SArekao xsi:nil="true"></my:SArekao>
+			<my:SAkros_prodaja xsi:nil="true"></my:SAkros_prodaja>
+			<my:SAopsti_utisak></my:SAopsti_utisak>
+			<my:SArelev_informacije xsi:nil="true"></my:SArelev_informacije>
+			<my:SA_interes_klijenta xsi:nil="true"></my:SA_interes_klijenta>
+			<my:SAsvrha_proizvoda xsi:nil="true"></my:SAsvrha_proizvoda>
+			<my:SAdogovorio_sastanak xsi:nil="true"></my:SAdogovorio_sastanak>
+			<my:SA_rel_informacije2 xsi:nil="true"></my:SA_rel_informacije2>
+			<my:SAstruktura_sastanka xsi:nil="true"></my:SAstruktura_sastanka>
+			<my:SAnaveo_kampanje xsi:nil="true"></my:SAnaveo_kampanje>
+			<my:SAnabrojao_benefite xsi:nil="true"></my:SAnabrojao_benefite>
+			<my:SAadekv_predstavlja xsi:nil="true"></my:SAadekv_predstavlja>
+			<my:SAredovnoCrisp xsi:nil="true"></my:SAredovnoCrisp>
+			<my:SAproizv_benefiti></my:SAproizv_benefiti>
+			<my:SAzatvara_mogucnost xsi:nil="true"></my:SAzatvara_mogucnost>
+			<my:SAdodatni_koment2></my:SAdodatni_koment2>
+			<my:SA_MAX_prijem_i_pozdrav>4</my:SA_MAX_prijem_i_pozdrav>
+			<my:SA_PCT_prijem_i_pozdrav xsi:nil="true"></my:SA_PCT_prijem_i_pozdrav>
+			<my:SA_MAX_komunikacione_vestine>7</my:SA_MAX_komunikacione_vestine>
+			<my:SA_SUM_komunikacione_vestine xsi:nil="true"></my:SA_SUM_komunikacione_vestine>
+			<my:SA_PCT_komunikacione_vestine xsi:nil="true"></my:SA_PCT_komunikacione_vestine>
+			<my:SA_SUM_ispitivanje_potreba0 xsi:nil="true"></my:SA_SUM_ispitivanje_potreba0>
+			<my:SA_MAX_ispitivanje_potreba>2</my:SA_MAX_ispitivanje_potreba>
+			<my:SA_PCT_ispitivanje_potreba xsi:nil="true"></my:SA_PCT_ispitivanje_potreba>
+			<my:SA_SUM_predstavljanje_proizvoda xsi:nil="true"></my:SA_SUM_predstavljanje_proizvoda>
+			<my:SA_MAX_predstavljanje_proizvoda>2</my:SA_MAX_predstavljanje_proizvoda>
+			<my:SA_PCT_predstavljanje_proizvoda xsi:nil="true"></my:SA_PCT_predstavljanje_proizvoda>
+			<my:SA_SUM_prodajne_vestine xsi:nil="true"></my:SA_SUM_prodajne_vestine>
+			<my:SA_MAX_prodajne_vestine>2</my:SA_MAX_prodajne_vestine>
+			<my:SA_PCT_prodajne_vestine xsi:nil="true"></my:SA_PCT_prodajne_vestine>
+			<my:SA_SUM_inicijativnost_i_zatvaran xsi:nil="true"></my:SA_SUM_inicijativnost_i_zatvaran>
+			<my:SA_MAX_inicijativnost_i_zatvaran>3</my:SA_MAX_inicijativnost_i_zatvaran>
+			<my:SA_PCT_inicijativnost_i_zatvaran xsi:nil="true"></my:SA_PCT_inicijativnost_i_zatvaran>
+			<my:SA_SUM_follow_up xsi:nil="true"></my:SA_SUM_follow_up>
+			<my:SA_MAX_follow_up>2</my:SA_MAX_follow_up>
+			<my:SA_PCT_follow_up xsi:nil="true"></my:SA_PCT_follow_up>
+			<my:SA_SUM_krosprodaja xsi:nil="true"></my:SA_SUM_krosprodaja>
+			<my:SA_MAX_krosprodaja>1</my:SA_MAX_krosprodaja>
+			<my:SA_PCT_krosprodaja xsi:nil="true"></my:SA_PCT_krosprodaja>
+			<my:SA_SUM_savetodavni_razgovor xsi:nil="true"></my:SA_SUM_savetodavni_razgovor>
+			<my:SA_MAX_savetodavni_razgovor>23</my:SA_MAX_savetodavni_razgovor>
+			<my:SA_PCT_savetodavni_razgovor xsi:nil="true"></my:SA_PCT_savetodavni_razgovor>
+			<my:SA_SUM_telefonski_poziv xsi:nil="true"></my:SA_SUM_telefonski_poziv>
+			<my:SA_MAX_telefonski_poziv>4</my:SA_MAX_telefonski_poziv>
+			<my:SA_PCT_telefonski_poziv xsi:nil="true"></my:SA_PCT_telefonski_poziv>
+			<my:SA_SUM_priprema_za_sastanak xsi:nil="true"></my:SA_SUM_priprema_za_sastanak>
+			<my:SA_MAX_priprema_za_sastanak>2</my:SA_MAX_priprema_za_sastanak>
+			<my:SA_PCT_priprema_za_sastanak xsi:nil="true"></my:SA_PCT_priprema_za_sastanak>
+			<my:SA_SUM_poznavanje_kampanje xsi:nil="true"></my:SA_SUM_poznavanje_kampanje>
+			<my:SA_MAX_poznavanje_kampanje>2</my:SA_MAX_poznavanje_kampanje>
+			<my:SA_PCT_poznavanje_kampanje xsi:nil="true"></my:SA_PCT_poznavanje_kampanje>
+			<my:SA_SUM_poznavanje_proizvoda xsi:nil="true"></my:SA_SUM_poznavanje_proizvoda>
+			<my:SA_MAX_poznavanje_proizvoda>1</my:SA_MAX_poznavanje_proizvoda>
+			<my:SA_PCT_poznavanje_proizvoda xsi:nil="true"></my:SA_PCT_poznavanje_proizvoda>
+			<my:SA_SUM_crisp xsi:nil="true"></my:SA_SUM_crisp>
+			<my:SA_MAX_crisp>3</my:SA_MAX_crisp>
+			<my:SA_PCT_crisp xsi:nil="true"></my:SA_PCT_crisp>
+			<my:SApravilno_unosi0 xsi:nil="true"></my:SApravilno_unosi0>
+			<my:SA_SUM_ukupno xsi:nil="true"></my:SA_SUM_ukupno>
+			<my:SA_MAX_ukupno xsi:nil="true"></my:SA_MAX_ukupno>
+			<my:SA_PCT_ukupno xsi:nil="true"></my:SA_PCT_ukupno>
+			<my:Savetnik>
+				<pc:Person>
+					<pc:DisplayName></pc:DisplayName>
+					<pc:AccountId></pc:AccountId>
+					<pc:AccountType></pc:AccountType>
+				</pc:Person>
+			</my:Savetnik>
+			<my:Kouc>
+				<pc:Person>
+					<pc:DisplayName></pc:DisplayName>
+					<pc:AccountId></pc:AccountId>
+					<pc:AccountType></pc:AccountType>
+				</pc:Person>
+			</my:Kouc>
+			<my:Opservator>
+				<pc:Person>
+					<pc:DisplayName></pc:DisplayName>
+					<pc:AccountId></pc:AccountId>
+					<pc:AccountType></pc:AccountType>
+				</pc:Person>
+			</my:Opservator>
+			<my:SegmentMenadzer>
+				<pc:Person>
+					<pc:DisplayName></pc:DisplayName>
+					<pc:AccountId></pc:AccountId>
+					<pc:AccountType></pc:AccountType>
+				</pc:Person>
+			</my:SegmentMenadzer>
+			<my:Ekspozitura>005</my:Ekspozitura>
+			<my:field11></my:field11>
+			<my:Mesec>JAN</my:Mesec>
+			<my:Godina>2016</my:Godina>
+			<my:Adresa></my:Adresa>
+			<my:SAispitivanje_potreba_ostala xsi:nil="true"></my:SAispitivanje_potreba_ostala>
+		</my:SharePointListItem_RW>
+	</dfs:dataFields>
+</dfs:myFields>

@@ -1,0 +1,36 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.03.06 15:02:43 =~=~=~=~=~=~=~=~=~=~=~=
+login as: admin
+admin@NS_SANA's password: 
+Access denied
+admin@NS_SANA's password: 
+NS_SANA:FID128:admin> nodefind 50:02:18:82:08:A0:46:7E
+Local:
+ Type Pid    COS     PortName                NodeName                 SCR
+ N    6e1700;      3;50:02:18:82:08:a0:46:7e;50:02:18:80:08:a0:46:7e; 0x00000000
+    FC4s: FCP 
+    NodeSymb: [22] "Data Domain FC Adapter"
+    Fabric Port Name: 20:17:00:27:f8:b6:5d:81 
+    Permanent Port Name: 50:02:18:82:08:a0:46:7e
+    Device type: Physical Target
+    Port Index: 23
+    Share Area: No
+    Device Shared in Other AD: No
+    Redirect: No 
+    Partial: No
+    LSAN: No
+    Aliases:
+NS_SANA:FID128:admin> nodefind 20:01:00:11:0A:05:3F:15
+Local:
+ Type Pid    COS     PortName                NodeName                 SCR
+ N    6e0f00;    2,3;20:01:00:11:0a:05:3f:15;10:00:00:11:0a:05:3f:15; 0x00000000
+    Fabric Port Name: 20:0f:00:27:f8:b6:5d:81 
+    Permanent Port Name: 20:01:00:11:0a:05:3f:15
+    Device type: Physical Unknown(initiator/target)
+    Port Index: 15
+    Share Area: No
+    Device Shared in Other AD: No
+    Redirect: No 
+    Partial: No
+    LSAN: No
+    Aliases:
+NS_SANA:FID128:admin> timed out waiting for input: auto-logout

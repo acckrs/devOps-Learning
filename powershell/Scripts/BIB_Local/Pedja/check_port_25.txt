@@ -1,0 +1,15 @@
+ param(
+   [String]$ComputerName-$env:COMPUTERNAME
+) 
+
+
+$PortResult = (Test-NetConnection fc2sqldev1node1 -Port 25 -InformationLevel Quiet).TcpTestSucceeded
+if ($PortResult -eq $True) {
+    Write-Host "servis radi"
+    exit 0
+    }
+        else {
+        Write-Host "ne radi"
+        exit 2
+        }
+  

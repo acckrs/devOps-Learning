@@ -1,0 +1,59 @@
+$cred = Get-Credential -message "Unesite Spimi kredencijale"
+connect-viserver co-vc-bib-p01.fbisp.eu, co-vc-mb-p01.fbisp.eu -Credential $cred 
+connect-viserver bib-vcentar-02 
+
+set-powercliconfiguration -WebOperationTimeoutSeconds 900 -Scope AllUsers -Confirm:$false
+
+$today = (Get-Date).Date
+$lastDayOfMonth = $today.AddDays( - $today.Day)
+$firstDayOfMonth = $lastDayOfMonth.AddDays( - $lastDayOfMonth.Day + 1) 
+
+function get-datastoreInfo {
+    $datastores = Get-Datastore | where-object {($_.Name -notmatch "parking") -and ($_.Name -notmatch "temp") -and ($_.Name -notmatch "local") -and ($_.Name -notmatch "boot")}
+    $measures = $datastores | measure -sum   freespacegb, capacitygb
+    $v = @{}
+    foreach ($item in $measures) {
+        $v[$item.property] = '{0:N0}' -f $item.Sum
+    }
+    $v["Datastore count"] = $datastores.count
+    $v["Datastore pctFree"] = ($v["FreeSpaceGB"] / $v["CapacityGB"]).ToString("P")
+    $v |ft -a
+}
+function get-cpuMemInfo {
+    $clusters = get-cluster 
+    $c = @()
+    foreach ($cluster in $clusters) {
+        $hosts = get-cluster $cluster| get-vmhost 
+        $clustAvgCpuSum = 0
+        $clustAvgmemSum = 0
+        foreach ($hst in $hosts) {
+            $cpuStats = get-stat -entity $hst -stat cpu.usage.average -Start $firstDayOfMonth -Finish $lastDayOfMonth -MaxSamples 100
+            $memStats = get-stat -entity $hst -stat mem.usage.average -Start $firstDayOfMonth -Finish $lastDayOfMonth -MaxSamples 100
+       
+            $cpu = $cpustats|measure -Property Value -Average
+            $mem = $memstats|measure -Property Value -Average
+        }
+     
+        $clustStatProps = @{
+            "ClusterName" = $cluster.name;
+            "AvgCpu %"    = '{0:N2}' -f ($cpu.average);
+            "AvgMem %"    = '{0:N2}' -f ($mem.average);
+        }
+        $obj = new-object -TypeName psCustomObject -Property $ClustStatProps
+        $c += $obj
+    }
+    $avgClustCpu = $c |measure -average 'AvgCpu %'
+    $avgClustMem = $c |measure -average 'Avgmem %'
+    $avgProps = @{
+        "ClusterName" = "Svi";
+        "AvgCpu %"    = '{0:N2}' -f ($avgClustCpu.average);
+        "AvgMem %"    = '{0:N2}' -f ($avgClustmem.average)
+    }
+    $obj = new-object -TypeName psCustomObject -Property $avgProps
+    $c += $obj
+    $c |sort clusterName|ft -a 
+}
+
+get-datastoreInfo
+get-cpuMemInfo 
+Disconnect-VIServer * -Force -Confirm:$false

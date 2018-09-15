@@ -1,0 +1,15 @@
+inc[Wednesday, February 28, 2018] Start job kickMember at Wednesday, February 28, 2018
+inf[Wednesday, February 28, 2018] ExecJob2, Version=1.0.0.4, Culture=neutral, PublicKeyToken=null
+inf[Wednesday, February 28, 2018] Load config file kickMember.cfg
+inf[Wednesday, February 28, 2018] Load step kickMember
+inf[Wednesday, February 28, 2018] PrintOnly=False
+inf[Wednesday, February 28, 2018] HbCount/HbMail = 10/20
+inf[Wednesday, February 28, 2018] Save config file kickMember.cfg
+inf[Wednesday, February 28, 2018] 
+inf[Wednesday, February 28, 2018] *** Prepare oparative command for step :kickMember
+inf[Wednesday, February 28, 2018] Try start:powershell.exe  -File "kickMember.ps1" 
+inf[Wednesday, February 28, 2018] On path  :C:\SchTask\KickMemberFromGroup
+inf[Wednesday, February 28, 2018] Log file :kickMember_script.log
+inf[Wednesday, February 28, 2018] *** Step [kickMember] Exit status=OK ***
+inf[Wednesday, February 28, 2018] 
+inf[Wednesday, February 28, 2018] ### Job kickMember Exit=kickMember[OK]

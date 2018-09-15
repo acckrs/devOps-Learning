@@ -1,0 +1,16 @@
+#TYPE System.Collections.DictionaryEntry
+"Name","Key","Value"
+"TCRSRV","TCRSRV","TCRSrv.deltabank.co.yu"
+"PERFMONBGD","PERFMONBGD","perfmonbgd.deltabank.co.yu"
+"CC-CBA","CC-CBA","cc-cba.deltabank.co.yu"
+"SEC-222-5636","SEC-222-5636","SEC-222-5636.deltabank.co.yu"
+"CISCO","CISCO",
+"CISCOWORKS01","CISCOWORKS01","ciscoworks01.deltabank.co.yu"
+"MWG-DR","MWG-DR","mwg-dr"
+"ACS-ASA2","ACS-ASA2","acs-asa2"
+"ACS","ACS","ACS"
+"NTP-DMZ12","NTP-DMZ12","ntp-dmz12.deltabank.co.yu"
+"JUNOSSPACE","JUNOSSPACE","space-005056ac5afe"
+"CC-MPP71","CC-MPP71","cc-mpp71.deltabank.co.yu"
+"ACS2","ACS2","acs2"
+"TFS-BUILD2","TFS-BUILD2","TFS-Build2.deltabank.co.yu"

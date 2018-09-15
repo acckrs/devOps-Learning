@@ -1,0 +1,8 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.03.07 09:57:22 =~=~=~=~=~=~=~=~=~=~=~=
+login as: admin
+admin@SANB's password: 
+SANB:FID128:admin> nodefind 50:06:0B:00:00:C2:27:0c
+No device found
+SANB:FID128:admin> nodefind 50:06:0B:00:00:C2:27:0c C
+No device found
+SANB:FID128:admin> timed out waiting for input: auto-logout

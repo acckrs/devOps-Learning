@@ -1,0 +1,53 @@
+Computer Name   User Name                     Last Access Time
+-------------   ---------                     ----------------
+DEV-IAM-SQL     DEV-IAM-SQL\Lokalni nalog     22.01.2018 15:23:59
+SSDEV1C01       DELTABANK\SAS.SONJA.TICA      23.12.2017 18:06:06
+DEVTFSERVER     DELTABANK\TFSInstall          22.01.2018 15:23:49
+CTXFSDEV1       DELTABANK\ADMIN_GPREDRAG      19.01.2018 18:11:17
+SPAZIO-DEV      DELTABANK\GVLADIMIR_PRF       22.01.2018 15:24:06
+kdp-test2       N/A                           N/A
+SSDEV1F-01      DELTABANK\NMILAN_PRF          22.01.2018 15:21:25
+SSDEV1F-02      DELTABANK\tojelena_prf        11.12.2017 17:16:38
+SSRAZVOJ2       DELTABANK\admin_zmilan        15.12.2017 14:48:22
+DEV-IAM-APP     DEV-IAM-APP\Lokalni nalog     22.01.2018 13:46:59
+devProcur       N/A                           N/A
+ONLINEAPPTEST2  DELTABANK\NDRAGOJEVIC_PRF     22.01.2018 14:56:24
+CTX-MNG-TST     CTX-MNG-TST\Lokalni nalog     08.09.2017 13:20:02
+DEVPRGWS01      DELTABANK\ADMIN_NMILENKO      06.01.2018 13:30:41
+DEVTFSERVERSQL  DELTABANK\sqUsrRazvoj         22.01.2018 15:24:43
+XenApp-DEV02    N/A                           N/A
+DEV-IAM-WEB     DELTABANK\IAMusr              22.01.2018 15:25:09
+QABIBCOAPP      DELTABANK\SEAVUS.MALEKSANDAR  14.01.2018 17:20:10
+TSPARMADEV      DELTABANK\SU.STEFANS_PRF      22.01.2018 15:24:05
+XenApp-DEV04    N/A                           N/A
+XenApp-DEV03    N/A                           N/A
+MobiCorpDev     N/A                           N/A
+DEV-BIBCOISS    DEV-BIBCOISS\Lokalni nalog    21.01.2018 16:56:36
+DEVCRISPWEB2    DELTABANK\PBZ.KIVA            22.01.2018 15:02:36
+XenApp-PF-DEV01 N/A                           N/A
+CTX-DB1-TST     DELTABANK\ADMIN_RADUVLADIMIR  05.10.2017 16:43:51
+DEVTICATAURORA  DELTABANK\ALGOTECH.ZIVAN      19.01.2018 12:22:19
+SNOW-MID-DEV    DELTABANK\ivicas_prf          22.01.2018 15:21:28
+XenApp-DEV01    N/A                           N/A
+CTX-TST-003     DELTABANK\ADMIN_GPREDRAG      16.10.2017 09:09:05
+CTX-TST-002     CTX-TST-002\Lokalni nalog     11.12.2017 10:31:28
+EBOARD-DEV      DELTABANK\eBoardUsr           22.01.2018 15:21:38
+CTX-TST-001     CTX-TST-001\Lokalni nalog     03.12.2017 04:12:07
+ALMPROTEST02    DELTABANK\ADMIN_GPREDRAG      15.01.2018 12:00:41
+ALMPROTEST01    DELTABANK\PROMETEIA.LGABRIELE 22.01.2018 14:28:17
+SSRAZVOJ2A      DELTABANK\BIBCoSvcUsr         03.12.2017 04:12:32
+SASTEST01       DELTABANK\milmilos            22.01.2018 14:19:01
+DEVBIBCOAPP     DEVBIBCOAPP\Lokalni nalog     08.09.2017 13:20:45
+XenApp-DB-DEV01 N/A                           N/A
+XenApp-WI-DEV01 N/A                           N/A
+EDMS-DEV        DELTABANK\edms_backup         22.01.2018 15:22:36
+XenApp-WI-DEV02 N/A                           N/A
+WWW-TEST        WWW-TEST\Lokalni nalog        22.01.2018 15:22:51
+fxservicetest   N/A                           N/A
+CTX-WI1-TST     CTX-WI1-TST\Lokalni nalog     08.09.2017 13:18:37
+SSDEV1F-05      DELTABANK\OP.SGORAN           22.01.2018 15:22:05
+DEVSQL8         DELTABANK\sqUsrRazvoj         22.01.2018 15:21:58
+LIBRATST        DELTABANK\admin_kaleksandar   19.01.2018 15:06:32
+ARISDEV         DELTABANK\admin_rbojan        20.01.2018 19:01:52
+SSDEV1F-03      DELTABANK\KDPCalculationUser  03.12.2017 04:11:38
+SSDEV1F-04      DELTABANK\procurement         22.01.2018 15:22:12
