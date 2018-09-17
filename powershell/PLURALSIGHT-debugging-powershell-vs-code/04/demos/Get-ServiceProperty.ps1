@@ -1,5 +1,5 @@
 function Get-ServiceProperty {
-<#
+    <#
 .SYNOPSIS
 Returns a list of specified properties about a service.
 .DESCRIPTION
@@ -9,36 +9,38 @@ Specifies the name of the service
 .PARAMETER Property
 Specifies the property or properties to return, accepts wildcards.
 .EXAMPLE
-Get-Service -Name RemoteRegistry
+Get-ServiceProperty -Name RemoteRegistry
 .EXAMPLE
-Get-Service -Name RemoteRegistry -Property *
+Get-ServiceProperty -Name RemoteRegistry -Property *
 .EXAMPLE
-Get-Service -Name RemoteRegistry -Property StartName,DelayedAutoStart,PathName
+Get-ServiceProperty -Name RemoteRegistry -Property StartName,DelayedAutoStart,PathName
 .Example
 Get-Service RemoteRegistry | Get-ServiceProperty
 #>
-[CmdletBinding()]
-param(
-[Parameter(Mandatory=$true,ValueFromPipeline=$true,ValueFromPipelineByPropertyName=$true)]
-[string]$Name,
-[string[]]$Property    )
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory = $true, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]
+        [string]$Name,
+        [string[]]$Property    )
 
-begin {
-$filter = "Name = '$Name'"
+    begin {
 
-if ($null -eq $Property -or '*' -ne $Property){
-$Property = 'ExitCode','Name','ProcessID','StartMode','State','Status'
-} else {
-$Property + 'ExitCode','Name','ProcessID','StartMode','State','Status'
-}
-}
+        if ($null -eq $Property ) {
+            $Property = 'ExitCode', 'Name', 'ProcessID', 'StartMode', 'State', 'Status'
+        }
+        elseif ('*' -ne $Property)
+        {
+            $Property += 'ExitCode', 'Name', 'ProcessID', 'StartMode', 'State', 'Status'
+        }
+    }
 
-process {
-$return = Get-WmiObject -Class Win32_Service -Filter $filter | Select-Object $Property
+    process {
+        $filter = "Name = '$Name'"
+        $return = Get-WmiObject -Class Win32_Service -Filter $filter | Select-Object $Property
 
-}
+    }
 
-end {
-$return
-}
+    end {
+        $return
+    }
 }
