@@ -1,0 +1,37 @@
+Monitoring with Microsoft Monitoring Agent-Log Analytics
+https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12)
+
+Connect Windows computers to the Log Analytics service in Azure-Log Analytics
+https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-agent-windows#install-the-agent-using-setup
+
+Tools to simulate higher workloads
+https://blogs.msdn.microsoft.com/vijaysk/2012/10/26/tools-to-simulate-cpu-memory-disk-load/
+
+Configure Service Map in Azure-Service Map
+https://docs.microsoft.com/en-us/azure/monitoring/monitoring-service-map-configure#installation
+
+Dependency Visualization
+https://docs.microsoft.com/en-us/azure/migrate/concepts-dependency-visualization
+
+Visualization of Machine dependencies ***Linux Installation documentation***
+https://docs.microsoft.com/en-us/azure/migrate/how-to-create-group-machine-dependencies
+
+Installation Script Examples
+https://docs.microsoft.com/en-us/azure/monitoring/monitoring-service-map-configure#installation-script-examples
+
+Discover and assess a large VMware environment->VCenter Statistics levels
+https://docs.microsoft.com/en-us/azure/migrate/how-to-scale-assessment
+
+Assessment Calculation
+https://docs.microsoft.com/en-us/azure/migrate/concepts-assessment-calculation
+
+Example Contoso Migration Assessment
+https://docs.microsoft.com/en-us/azure/migrate/contoso-migration-assessment
+
+#install linux MMA agent
+sudo sh ./omsagent-<version>.universal.x64.sh --install -w <workspace id> -s <workspace key>
+
+sudo sh ./omsagent-1.6.0-163.universal.x64.sh --install -w db0eb101-ad25-4349-86d3-a6733708fc9c -s w3ibCMCTtTmfr6e+6B42h/+w8poK8JBpWXSsy43CMH0hRSBe/uMlEdmj4nFzckSHe6p9JYa0bN9tYIfkXcuZ4g==
+
+#install dependency agent
+sh InstallDependencyAgent-Linux64.bin

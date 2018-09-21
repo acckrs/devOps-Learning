@@ -1,0 +1,11 @@
+About the Collector
+https://docs.microsoft.com/en-us/azure/migrate/concepts-collector
+
+Discover and assess a large VMware environment->VCenter Statistics levels
+https://docs.microsoft.com/en-us/azure/migrate/how-to-scale-assessment
+
+Assessment Calculation
+https://docs.microsoft.com/en-us/azure/migrate/concepts-assessment-calculation
+
+Example Contoso Migration Assessment
+https://docs.microsoft.com/en-us/azure/migrate/contoso-migration-assessment

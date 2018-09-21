@@ -1,0 +1,78 @@
+Create an Azure SQL database in the Azure portal
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal
+
+Database Migration Service
+https://docs.microsoft.com/en-us/azure/dms/dms-overview
+
+Create a Single SQL instance using PowerShell
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-powershell
+
+Choosing your database migration path
+https://azure.microsoft.com/en-us/resources/choosing-your-database-migration-path-to-azure/
+
+SQL Database migration
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-cloud-migrate
+
+Migrate SQL using Data Migration Service
+https://docs.microsoft.com/en-us/azure/dms/tutorial-sql-server-to-azure-sql
+
+Migrate SQL to a managed Instance
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-migrate
+
+What is the Azure Database Migration Service?
+https://docs.microsoft.com/en-us/azure/dms/dms-overview
+
+Create a Single Azure SQL database using PowerShell-RAN
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-powershell
+
+Create a Single Azure SQL database using Azure CLI
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-cli
+
+Overview of Data Migration Assistant
+https://docs.microsoft.com/en-us/sql/dma/dma-overview?view=sql-server-2017
+
+Azure Database Migration Guide-resources based on your source workloads
+https://datamigration.microsoft.com/
+
+Best practices for running Data Migration Assistant
+https://docs.microsoft.com/en-us/sql/dma/dma-bestpractices?view=sql-server-2017
+
+Perform a SQL Server migration assessment with Data Migration Assistant
+https://docs.microsoft.com/en-us/sql/dma/dma-assesssqlonprem?view=sql-server-2017
+
+Download Microsoft Data Migration Assistant v4.0
+https://www.microsoft.com/en-us/download/details.aspx?id=53595
+
+Create a Single Azure SQL database using the Azure portal
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal
+
+Migrate SQL Server to Azure SQL Database using DMS
+https://docs.microsoft.com/en-us/azure/dms/tutorial-sql-server-to-azure-sql
+
+Migrate SQL Server to Azure SQL Database Managed Instance using DMS
+https://docs.microsoft.com/en-us/azure/dms/tutorial-sql-server-to-managed-instance
+
+Migrate on-premises SQL Server to SQL Server or SQL Server on Azure VMs using the Data Migration Assistant
+https://docs.microsoft.com/en-us/sql/dma/dma-migrateonpremsqltosqldb?view=sql-server-2017
+
+Best practices for running Data Migration Assistant
+https://docs.microsoft.com/en-us/sql/dma/dma-bestpractices?view=sql-server-2017
+
+Overview of Data Migration Assistant
+https://docs.microsoft.com/en-us/sql/dma/dma-overview?view=sql-server-2017
+
+SQL Server instance migration to Azure SQL Database Managed Instance
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-migrate
+
+Migrate your SQL Server database to Azure SQL Database using DMA
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-migrate-your-sql-server-database
+
+SQL Server database migration to Azure SQL Database
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-cloud-migrate
+
+#Not in the course, but thought this was fun
+Quickstart: Install MS SQL on Ubunut
+https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-linux-2017&WT.mc_id=twitter
+
+Use PowerShell on Windows to Manage SQL Server on Linux
+https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-manage-powershell?view=sql-server-linux-2017

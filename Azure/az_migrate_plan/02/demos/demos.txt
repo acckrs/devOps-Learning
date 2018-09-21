@@ -1,0 +1,20 @@
+Microsoft Azure Documentation
+https://docs.microsoft.com/en-us/azure/
+
+Azure Migration Center
+https://azure.microsoft.com/en-us/migration/
+
+Azure Migrate Documentation
+https://docs.microsoft.com/en-us/azure/migrate/
+
+Overview of Data Migration Assistant
+https://docs.microsoft.com/en-us/sql/dma/dma-overview?view=sql-server-2017
+
+Configure Service Map in Azure
+https://docs.microsoft.com/en-us/azure/monitoring/monitoring-service-map-configure
+
+Azure Database Migration Guide
+https://datamigration.microsoft.com/
+
+Azure Database Migration Service
+https://docs.microsoft.com/en-us/azure/dms/dms-overview
