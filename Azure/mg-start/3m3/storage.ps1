@@ -11,11 +11,11 @@
 
 #region Connect to Azure
 Login-AzureRmAccount
-Select-AzureRmSubscription -SubscriptionName '150-Jan-19'
-Get-AzureRmSubscription -SubscriptionName '150-Jan-19' | Set-AzureRmContext
+Select-AzureRmSubscription -SubscriptionName 'Free Trial'
+Get-AzureRmSubscription -SubscriptionName 'Free Trial' | Set-AzureRmContext
 Get-Command -CommandType Alias -Module AzureRM*
 Get-AzureRmContext
-Set-AzureRmCurrentStorageAccount -ResourceGroupName 'AzureTraining' -Name 'azuretrainingstorage2'
+Set-AzureRmCurrentStorageAccount -ResourceGroupName 'AzureTraining' -Name 'azuretrainingsto2acckrs'
 #endregion
 
 #region Copy a blob between storage accounts
@@ -51,10 +51,10 @@ Set-AzureRmVm -ResourceGroupName 'AzureTraining' -Name 'vm-win100' -Generalized
 
 # save the image
 Save-AzureRmVMImage -ResourceGroupName 'AzureTraining' -Name 'vm-win100'  `
-   -DestinationContainerName 'images' -VHDNamePrefix 'winimage'  `
-   -Path 'C:\vm-win100.json'
+   -DestinationContainerName 'images' -VHDNamePrefix 'winimage2'  `
+   -Path 'C:\Acca\github\devOps-Learning\Azure\mg-start\3m3\vm-win100.json' -Overwrite
 
-ise 'C:\vm-win100.json'
+code 'vm-win100.json'
 
 #endregion
 
