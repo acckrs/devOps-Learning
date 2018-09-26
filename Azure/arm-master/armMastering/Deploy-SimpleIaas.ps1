@@ -4,7 +4,7 @@
 $resourceGroupName = 'contoso-simple-iaas'
 $resourceProviderNamespace = 'Microsoft.Network'
 $resourceTypeName = 'virtualNetworks'
-$resourceGroupLocation = 'Australia Southeast'
+$resourceGroupLocation = 'West Europe'
 
 $vNetName = 'vnet-contoso'
 $vNetAddressPrefix = '172.16.0.0/16'
