@@ -1,0 +1,201 @@
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ==========================================================================================
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ================================= Starting HP3PARInfo ====================================
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ==========================================================================================
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] main() in ..\..\..\common\src\main.cpp at line# 95 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Factory::Factory() in ..\..\..\common\src\Factory.cpp at line# 19 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] AbstractFactory::AbstractFactory() in ..\..\..\common\src\AbstractFactory.cpp at line# 20 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] AbstractFactory::AbstractFactory() in ..\..\..\common\src\AbstractFactory.cpp at line# 23 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsErrorMessage::WindowsErrorMessage() in ..\..\src\WindowsErrorMessage.cpp at line# 16 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsErrorMessage::WindowsErrorMessage() in ..\..\src\WindowsErrorMessage.cpp at line# 19 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::WindowsFactoryImplementation() in ..\..\src\WindowsFactoryImplementation.cpp at line# 18 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::WindowsFactoryImplementation() in ..\..\src\WindowsFactoryImplementation.cpp at line# 21 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Factory::Factory() in ..\..\..\common\src\Factory.cpp at line# 36 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] main() in ..\..\..\common\src\main.cpp at line# 126 Factory object successfully created.
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::Delegate() in ..\..\..\common\src\Delegate.cpp at line# 45 Entry with strVendorName as #3PAR#
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::clearScsiIoctlBuffers() in ..\..\..\common\src\Delegate.cpp at line# 393 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::clearScsiIoctlBuffers() in ..\..\..\common\src\Delegate.cpp at line# 403 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::DataExtractor() in ..\..\..\common\src\DataExtractor.cpp at line# 17 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::DataExtractor() in ..\..\..\common\src\DataExtractor.cpp at line# 20 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ScsiDataExtractor::ScsiDataExtractor() in ..\..\..\common\src\ScsiDataExtractor.cpp at line# 17 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ScsiDataExtractor::ScsiDataExtractor() in ..\..\..\common\src\ScsiDataExtractor.cpp at line# 20 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ThreeParScsiDataExtractor::ThreeParScsiDataExtractor() in ..\..\..\common\src\3par\src\ThreeParScsiDataExtractor.cpp at line# 15 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ThreeParScsiDataExtractor::ThreeParScsiDataExtractor() in ..\..\..\common\src\3par\src\ThreeParScsiDataExtractor.cpp at line# 18 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DisplayData::DisplayData() in ..\..\..\common\src\DisplayData.cpp at line# 17 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DisplayData::DisplayData() in ..\..\..\common\src\DisplayData.cpp at line# 20 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ThreeParDisplaydata::ThreeParDisplaydata() in ..\..\..\common\src\3par\src\ThreeParDisplayData.cpp at line# 15 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ThreeParDisplaydata::ThreeParDisplaydata() in ..\..\..\common\src\3par\src\ThreeParDisplayData.cpp at line# 18 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::Delegate() in ..\..\..\common\src\Delegate.cpp at line# 65 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsDelegate::WindowsDelegate() in ..\..\src\WindowsDelegate.cpp at line# 28 Entry with strVendorName as #3PAR#
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsDelegate::WindowsDelegate() in ..\..\src\WindowsDelegate.cpp at line# 31 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] main() in ..\..\..\common\src\main.cpp at line# 145 Delegate object successfully created.
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::parseCommandLineOptions() in ..\..\..\common\src\Delegate.cpp at line# 662 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::OptionCollector() in ..\..\..\common\src\OptionCollector.cpp at line# 30 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::OptionCollector() in ..\..\..\common\src\OptionCollector.cpp at line# 36 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::parseCommandLineOptions() in ..\..\..\common\src\Delegate.cpp at line# 671 Successfully created OptionCollector object
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::parseCommandLineOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 63 Entry with bIsFetchNeeded as 0
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::parseCommandLineOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 122 Option e invoked with #a#
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::setOptionE() in ..\..\..\common\src\OptionCollector.cpp at line# 507 Entry with bIsInvoked as 1
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::setOptionE() in ..\..\..\common\src\OptionCollector.cpp at line# 512 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::parseCommandLineOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 174 Command line parsing completed.
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::validateOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 241 Entry with bIsFetchNeeded as 0
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::validateOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 246 Number of options passed are 1
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::validateOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 260 Validation successful.
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::validateOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 272 Need to make SCSI inquries to fetch the required data.
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::validateOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 277 Exit with Validation Passed!!
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::parseCommandLineOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 226 Exit with bAreArgumentsValid as 1
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::parseCommandLineOptions() in ..\..\..\common\src\Delegate.cpp at line# 682 Exit with parsing successful as 1
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] main() in ..\..\..\common\src\main.cpp at line# 166 Parsed command line arguments successfully.
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] main() in ..\..\..\common\src\main.cpp at line# 171 Need to make SCSI calls to fetch required data.
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Factory::getFactory() in ..\..\..\common\src\Factory.cpp at line# 67 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Factory::getFactory() in ..\..\..\common\src\Factory.cpp at line# 70 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::createDataCollectorObjects() in ..\..\src\WindowsFactoryImplementation.cpp at line# 57 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::getHostInfoCollector() in ..\..\src\WindowsFactoryImplementation.cpp at line# 130 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsHostInfoCollector::WindowsHostInfoCollector() in ..\..\src\WindowsHostInfoCollector.cpp at line# 26 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsHostInfoCollector::WindowsHostInfoCollector() in ..\..\src\WindowsHostInfoCollector.cpp at line# 31 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::getHostInfoCollector() in ..\..\src\WindowsFactoryImplementation.cpp at line# 138 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::createDataCollectorObjects() in ..\..\src\WindowsFactoryImplementation.cpp at line# 67 Successfully created Host Info collector
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::getScsiCollector() in ..\..\src\WindowsFactoryImplementation.cpp at line# 107 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ScsiCollector::ScsiCollector() in ..\..\..\common\src\ScsiCollector.cpp at line# 20 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ScsiCollector::ScsiCollector() in ..\..\..\common\src\ScsiCollector.cpp at line# 23 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::WindowsScsiCollector() in ..\..\src\WindowsScsiCollector.cpp at line# 15 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::WindowsScsiCollector() in ..\..\src\WindowsScsiCollector.cpp at line# 18 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::getScsiCollector() in ..\..\src\WindowsFactoryImplementation.cpp at line# 115 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::createDataCollectorObjects() in ..\..\src\WindowsFactoryImplementation.cpp at line# 76 Successfully created SCSI collector
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::createDataCollectorObjects() in ..\..\src\WindowsFactoryImplementation.cpp at line# 92 Exit with return value as 1
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Factory::getFactory() in ..\..\..\common\src\Factory.cpp at line# 67 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Factory::getFactory() in ..\..\..\common\src\Factory.cpp at line# 70 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::getHostInfoCollector() in ..\..\src\WindowsFactoryImplementation.cpp at line# 130 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::getHostInfoCollector() in ..\..\src\WindowsFactoryImplementation.cpp at line# 138 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsHostInfoCollector::getHostInfo() in ..\..\src\WindowsHostInfoCollector.cpp at line# 55 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsHostInfoCollector::getHostInfo() in ..\..\src\WindowsHostInfoCollector.cpp at line# 99 Processor Architecture Id is 9
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsHostInfoCollector::getHostInfo() in ..\..\src\WindowsHostInfoCollector.cpp at line# 102 Refer to http://msdn.microsoft.com/en-us/library/ms724958(v=vs.85).aspx
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsHostInfoCollector::getHostInfo() in ..\..\src\WindowsHostInfoCollector.cpp at line# 114 
+ 											  Major Version number is 6 
+ 											  Major Version number is 1 
+ 											  Platform Id is 2 
+ 											  Product Type is 1 
+ 											  Build number is 7601 
+ 											  Service Pack is Service Pack 1 
+ 											  Service Pack Major number is 1 
+ 											  Service Pack Minor number is 0 
+ 											  Product Suites Id is 100
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsHostInfoCollector::getHostInfo() in ..\..\src\WindowsHostInfoCollector.cpp at line# 126 Refer to http://msdn.microsoft.com/en-us/library/ms724833(v=vs.85).aspx
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsHostInfoCollector::getHostInfo() in ..\..\src\WindowsHostInfoCollector.cpp at line# 165 Product type is 4
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsHostInfoCollector::getHostInfo() in ..\..\src\WindowsHostInfoCollector.cpp at line# 349 Fetching service pack and build number.
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsHostInfoCollector::getHostInfo() in ..\..\src\WindowsHostInfoCollector.cpp at line# 375 Windows version is: Microsoft Windows 7 Enterprise Edition Service Pack 1 (build 7601), 64-bit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsHostInfoCollector::getHostInfo() in ..\..\src\WindowsHostInfoCollector.cpp at line# 384 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Factory::getFactory() in ..\..\..\common\src\Factory.cpp at line# 67 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Factory::getFactory() in ..\..\..\common\src\Factory.cpp at line# 70 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsDelegate::scanForDevice() in ..\..\src\WindowsDelegate.cpp at line# 57 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::pushDeviceIntoVector() in ..\..\..\common\src\Delegate.cpp at line# 117 Entry with strDevice as #\\.\PhysicalDrive0#
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::pushDeviceIntoVector() in ..\..\..\common\src\Delegate.cpp at line# 122 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::getListOfDevices() in ..\..\..\common\src\Delegate.cpp at line# 134 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::getListOfDevices() in ..\..\..\common\src\Delegate.cpp at line# 137 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsDelegate::scanForDevice() in ..\..\src\WindowsDelegate.cpp at line# 131 Number of device exposed to the host are 1
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsDelegate::scanForDevice() in ..\..\src\WindowsDelegate.cpp at line# 135 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::getListOfDevices() in ..\..\..\common\src\Delegate.cpp at line# 134 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::getListOfDevices() in ..\..\..\common\src\Delegate.cpp at line# 137 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] main() in ..\..\..\common\src\main.cpp at line# 207 Device name is \\.\PhysicalDrive0
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Factory::getFactory() in ..\..\..\common\src\Factory.cpp at line# 67 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Factory::getFactory() in ..\..\..\common\src\Factory.cpp at line# 70 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::FetchData() in ..\..\..\common\src\Delegate.cpp at line# 199 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::getScsiCollector() in ..\..\src\WindowsFactoryImplementation.cpp at line# 107 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::getScsiCollector() in ..\..\src\WindowsFactoryImplementation.cpp at line# 115 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::getHostInfoCollector() in ..\..\src\WindowsFactoryImplementation.cpp at line# 130 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::getHostInfoCollector() in ..\..\src\WindowsFactoryImplementation.cpp at line# 138 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::getInvokationStatusOfOptionF() in ..\..\..\common\src\OptionCollector.cpp at line# 455 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::getInvokationStatusOfOptionF() in ..\..\..\common\src\OptionCollector.cpp at line# 458 Exit with m_bIsFOptionInvoked as 0
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::FetchData() in ..\..\..\common\src\Delegate.cpp at line# 231 Need to fetch data for all the LUNs
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::clearScsiIoctlBuffers() in ..\..\..\common\src\Delegate.cpp at line# 393 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::clearScsiIoctlBuffers() in ..\..\..\common\src\Delegate.cpp at line# 403 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::openDeviceFile() in ..\..\src\WindowsScsiCollector.cpp at line# 42 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::openDeviceFile() in ..\..\src\WindowsScsiCollector.cpp at line# 72 Opened #\\.\PhysicalDrive0# device file successfully.
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::openDeviceFile() in ..\..\src\WindowsScsiCollector.cpp at line# 76 Exit with file descriptor value as 148
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsDelegate::getLunIdAndTargetId() in ..\..\src\WindowsDelegate.cpp at line# 152 Entry with nFd as 148
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::makeIoControlCall() in ..\..\src\WindowsScsiCollector.cpp at line# 222 Entry with nFd as 148 and ulRequestCode as 266264
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::makeIoControlCall() in ..\..\src\WindowsScsiCollector.cpp at line# 267 Exit with bFuncReturnValue as 1
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsDelegate::getLunIdAndTargetId() in ..\..\src\WindowsDelegate.cpp at line# 178 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::sendScsiCommands() in ..\..\..\common\src\Delegate.cpp at line# 428 Entry with fileDescriptor as 148
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::sendScsiCommand() in ..\..\src\WindowsScsiCollector.cpp at line# 148 Entry with nOperationCode as 18, fileHandle as 148 and cdbLength as 6
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ScsiCollector::getCdbForScsiCommand() in ..\..\..\common\src\ScsiCollector.cpp at line# 48 Entry with nOperationCode as 18
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ScsiCollector::getCdbForScsiCommand() in ..\..\..\common\src\ScsiCollector.cpp at line# 73 Entry with nPageCode as 0
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ScsiCollector::getCdbForScsiCommand() in ..\..\..\common\src\ScsiCollector.cpp at line# 120 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::makeIoControlCall() in ..\..\src\WindowsScsiCollector.cpp at line# 222 Entry with nFd as 148 and ulRequestCode as 315412
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::makeIoControlCall() in ..\..\src\WindowsScsiCollector.cpp at line# 267 Exit with bFuncReturnValue as 1
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::sendScsiCommand() in ..\..\src\WindowsScsiCollector.cpp at line# 205 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 437 Entry with memory address as 0x318fe4 and number of bytes as 256
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000000: 00 00 05 02 63 00 00 02 ....c...
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000008: 49 6e 74 65 6c 20 20 20 Intel   
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000010: 52 61 69 64 20 31 20 56 Raid 1 V
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000018: 6f 6c 75 6d 65 00 00 00 olume...
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000020: 31 2e 30 2e 00 00 00 00 1.0.....
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000028: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000030: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000038: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000040: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000048: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000050: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000058: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000060: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000068: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000070: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000078: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000080: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000088: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000090: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x000098: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x0000a0: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x0000a8: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x0000b0: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x0000b8: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x0000c0: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x0000c8: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x0000d0: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x0000d8: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x0000e0: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x0000e8: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x0000f0: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 503 0x0000f8: 00 00 00 00 00 00 00 00 ........
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::hexdump() in ..\..\..\common\src\DataExtractor.cpp at line# 512 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::sendScsiCommands() in ..\..\..\common\src\Delegate.cpp at line# 462 Vendor name is #Intel#
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::sendScsiCommands() in ..\..\..\common\src\Delegate.cpp at line# 547 This is not the LUN from the vendor we are interested in.
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::sendScsiCommands() in ..\..\..\common\src\Delegate.cpp at line# 561 Exit with 0 (0-Failure, 1-Success)
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::closeDeviceFile() in ..\..\src\WindowsScsiCollector.cpp at line# 113 Closed device file with descriptor 148 successfully.
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::getInvokationStatusOfOptionF() in ..\..\..\common\src\OptionCollector.cpp at line# 455 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::getInvokationStatusOfOptionF() in ..\..\..\common\src\OptionCollector.cpp at line# 458 Exit with m_bIsFOptionInvoked as 0
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ThreeParDisplaydata::displayNoRequestedVedorDeviceFileMessage() in ..\..\..\common\src\3par\src\ThreeParDisplayData.cpp at line# 603 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ThreeParDisplaydata::displayNoRequestedVedorDeviceFileMessage() in ..\..\..\common\src\3par\src\ThreeParDisplayData.cpp at line# 608 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::FetchData() in ..\..\..\common\src\Delegate.cpp at line# 355 Failed to fetch data for all devices
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::FetchData() in ..\..\..\common\src\Delegate.cpp at line# 380 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] main() in ..\..\..\common\src\main.cpp at line# 251 Failed to fetch required data.
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Factory::~Factory() in ..\..\..\common\src\Factory.cpp at line# 45 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::~WindowsFactoryImplementation() in ..\..\src\WindowsFactoryImplementation.cpp at line# 30 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::~WindowsScsiCollector() in ..\..\src\WindowsScsiCollector.cpp at line# 27 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsScsiCollector::~WindowsScsiCollector() in ..\..\src\WindowsScsiCollector.cpp at line# 30 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ScsiCollector::~ScsiCollector() in ..\..\..\common\src\ScsiCollector.cpp at line# 32 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ScsiCollector::~ScsiCollector() in ..\..\..\common\src\ScsiCollector.cpp at line# 35 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsHostInfoCollector::~WindowsHostInfoCollector() in ..\..\src\WindowsHostInfoCollector.cpp at line# 40 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsHostInfoCollector::~WindowsHostInfoCollector() in ..\..\src\WindowsHostInfoCollector.cpp at line# 43 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsFactoryImplementation::~WindowsFactoryImplementation() in ..\..\src\WindowsFactoryImplementation.cpp at line# 45 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsErrorMessage::~WindowsErrorMessage() in ..\..\src\WindowsErrorMessage.cpp at line# 28 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsErrorMessage::~WindowsErrorMessage() in ..\..\src\WindowsErrorMessage.cpp at line# 31 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] AbstractFactory::~AbstractFactory() in ..\..\..\common\src\AbstractFactory.cpp at line# 32 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] AbstractFactory::~AbstractFactory() in ..\..\..\common\src\AbstractFactory.cpp at line# 35 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Factory::~Factory() in ..\..\..\common\src\Factory.cpp at line# 54 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsDelegate::~WindowsDelegate() in ..\..\src\WindowsDelegate.cpp at line# 41 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] WindowsDelegate::~WindowsDelegate() in ..\..\src\WindowsDelegate.cpp at line# 44 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::~Delegate() in ..\..\..\common\src\Delegate.cpp at line# 74 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ThreeParScsiDataExtractor::~ThreeParScsiDataExtractor() in ..\..\..\common\src\3par\src\ThreeParScsiDataExtractor.cpp at line# 27 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ThreeParScsiDataExtractor::~ThreeParScsiDataExtractor() in ..\..\..\common\src\3par\src\ThreeParScsiDataExtractor.cpp at line# 30 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ScsiDataExtractor::~ScsiDataExtractor() in ..\..\..\common\src\ScsiDataExtractor.cpp at line# 29 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ScsiDataExtractor::~ScsiDataExtractor() in ..\..\..\common\src\ScsiDataExtractor.cpp at line# 32 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::~DataExtractor() in ..\..\..\common\src\DataExtractor.cpp at line# 29 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DataExtractor::~DataExtractor() in ..\..\..\common\src\DataExtractor.cpp at line# 32 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ThreeParDisplaydata::~ThreeParDisplaydata() in ..\..\..\common\src\3par\src\ThreeParDisplayData.cpp at line# 27 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] ThreeParDisplaydata::~ThreeParDisplaydata() in ..\..\..\common\src\3par\src\ThreeParDisplayData.cpp at line# 30 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DisplayData::~DisplayData() in ..\..\..\common\src\DisplayData.cpp at line# 29 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] DisplayData::~DisplayData() in ..\..\..\common\src\DisplayData.cpp at line# 32 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::~OptionCollector() in ..\..\..\common\src\OptionCollector.cpp at line# 45 Entry
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] OptionCollector::~OptionCollector() in ..\..\..\common\src\OptionCollector.cpp at line# 48 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] Delegate::~Delegate() in ..\..\..\common\src\Delegate.cpp at line# 105 Exit
+[17/09/2018 15:18:11]:Process Id[12816] Thread Id[10560] main() in ..\..\..\common\src\main.cpp at line# 293 Exit with return value as 0

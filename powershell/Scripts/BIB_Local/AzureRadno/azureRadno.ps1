@@ -1,0 +1,3 @@
+$acctKey = ConvertTo-SecureString -String "9WGU4C2bZPHAzYystRKjoLMbm3bidCVZS5f31PtFKPGSaAtL+Ail39IozbVmZ2w2QXVHmMEpOmiczVh9HaPHkw==" -AsPlainText -Force
+$credential = New-Object System.Management.Automation.PSCredential -ArgumentList "Azure\msftsolutionsacckrs", $acctKey
+New-PSDrive -Name M -PSProvider FileSystem -Root "\\msftsolutionsacckrs.file.core.windows.net\financials" -Credential $credential -Persist

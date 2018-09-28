@@ -1,0 +1,81 @@
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ==========================================================================================
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ================================= Starting HP3PARInfo ====================================
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ==========================================================================================
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] main() in ..\..\..\common\src\main.cpp at line# 95 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Factory::Factory() in ..\..\..\common\src\Factory.cpp at line# 19 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] AbstractFactory::AbstractFactory() in ..\..\..\common\src\AbstractFactory.cpp at line# 20 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] AbstractFactory::AbstractFactory() in ..\..\..\common\src\AbstractFactory.cpp at line# 23 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] WindowsErrorMessage::WindowsErrorMessage() in ..\..\src\WindowsErrorMessage.cpp at line# 16 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] WindowsErrorMessage::WindowsErrorMessage() in ..\..\src\WindowsErrorMessage.cpp at line# 19 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] WindowsFactoryImplementation::WindowsFactoryImplementation() in ..\..\src\WindowsFactoryImplementation.cpp at line# 18 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] WindowsFactoryImplementation::WindowsFactoryImplementation() in ..\..\src\WindowsFactoryImplementation.cpp at line# 21 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Factory::Factory() in ..\..\..\common\src\Factory.cpp at line# 36 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] main() in ..\..\..\common\src\main.cpp at line# 126 Factory object successfully created.
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Delegate::Delegate() in ..\..\..\common\src\Delegate.cpp at line# 45 Entry with strVendorName as #3PAR#
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Delegate::clearScsiIoctlBuffers() in ..\..\..\common\src\Delegate.cpp at line# 393 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Delegate::clearScsiIoctlBuffers() in ..\..\..\common\src\Delegate.cpp at line# 403 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] DataExtractor::DataExtractor() in ..\..\..\common\src\DataExtractor.cpp at line# 17 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] DataExtractor::DataExtractor() in ..\..\..\common\src\DataExtractor.cpp at line# 20 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ScsiDataExtractor::ScsiDataExtractor() in ..\..\..\common\src\ScsiDataExtractor.cpp at line# 17 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ScsiDataExtractor::ScsiDataExtractor() in ..\..\..\common\src\ScsiDataExtractor.cpp at line# 20 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ThreeParScsiDataExtractor::ThreeParScsiDataExtractor() in ..\..\..\common\src\3par\src\ThreeParScsiDataExtractor.cpp at line# 15 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ThreeParScsiDataExtractor::ThreeParScsiDataExtractor() in ..\..\..\common\src\3par\src\ThreeParScsiDataExtractor.cpp at line# 18 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] DisplayData::DisplayData() in ..\..\..\common\src\DisplayData.cpp at line# 17 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] DisplayData::DisplayData() in ..\..\..\common\src\DisplayData.cpp at line# 20 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ThreeParDisplaydata::ThreeParDisplaydata() in ..\..\..\common\src\3par\src\ThreeParDisplayData.cpp at line# 15 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ThreeParDisplaydata::ThreeParDisplaydata() in ..\..\..\common\src\3par\src\ThreeParDisplayData.cpp at line# 18 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Delegate::Delegate() in ..\..\..\common\src\Delegate.cpp at line# 65 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] WindowsDelegate::WindowsDelegate() in ..\..\src\WindowsDelegate.cpp at line# 28 Entry with strVendorName as #3PAR#
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] WindowsDelegate::WindowsDelegate() in ..\..\src\WindowsDelegate.cpp at line# 31 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] main() in ..\..\..\common\src\main.cpp at line# 145 Delegate object successfully created.
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Delegate::parseCommandLineOptions() in ..\..\..\common\src\Delegate.cpp at line# 662 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::OptionCollector() in ..\..\..\common\src\OptionCollector.cpp at line# 30 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::OptionCollector() in ..\..\..\common\src\OptionCollector.cpp at line# 36 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Delegate::parseCommandLineOptions() in ..\..\..\common\src\Delegate.cpp at line# 671 Successfully created OptionCollector object
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::parseCommandLineOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 63 Entry with bIsFetchNeeded as 0
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::parseCommandLineOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 159 Option h invoked
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::setOptionH() in ..\..\..\common\src\OptionCollector.cpp at line# 340 Entry with bIsInvoked as 1
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::setOptionH() in ..\..\..\common\src\OptionCollector.cpp at line# 345 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::parseCommandLineOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 174 Command line parsing completed.
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::validateOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 241 Entry with bIsFetchNeeded as 0
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::validateOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 246 Number of options passed are 1
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::validateOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 260 Validation successful.
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::validateOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 266 Need not make SCSI inquries to fetch the required data.
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::validateOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 277 Exit with Validation Passed!!
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::parseCommandLineOptions() in ..\..\..\common\src\OptionCollector.cpp at line# 226 Exit with bAreArgumentsValid as 1
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Delegate::parseCommandLineOptions() in ..\..\..\common\src\Delegate.cpp at line# 682 Exit with parsing successful as 1
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] main() in ..\..\..\common\src\main.cpp at line# 166 Parsed command line arguments successfully.
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] main() in ..\..\..\common\src\main.cpp at line# 235 No need to make SCSI and ioctl calls, user must have invoked version or help option :)
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Delegate::DisplayExtractedData() in ..\..\..\common\src\Delegate.cpp at line# 603 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::getInvokationStatusOfOptionI() in ..\..\..\common\src\OptionCollector.cpp at line# 422 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::getInvokationStatusOfOptionI() in ..\..\..\common\src\OptionCollector.cpp at line# 425 Exit with m_bIsIOptionInvoked as 0
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::getInvokationStatusOfOptionH() in ..\..\..\common\src\OptionCollector.cpp at line# 389 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::getInvokationStatusOfOptionH() in ..\..\..\common\src\OptionCollector.cpp at line# 392 Exit with m_bIsHelpOptionInvoked as 1
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ThreeParDisplaydata::DisplayDataForOptionH() in ..\..\..\common\src\3par\src\ThreeParDisplayData.cpp at line# 435 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ThreeParDisplaydata::DisplayDataForOptionH() in ..\..\..\common\src\3par\src\ThreeParDisplayData.cpp at line# 469 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Delegate::DisplayExtractedData() in ..\..\..\common\src\Delegate.cpp at line# 647 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Factory::~Factory() in ..\..\..\common\src\Factory.cpp at line# 45 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] WindowsFactoryImplementation::~WindowsFactoryImplementation() in ..\..\src\WindowsFactoryImplementation.cpp at line# 30 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] WindowsFactoryImplementation::~WindowsFactoryImplementation() in ..\..\src\WindowsFactoryImplementation.cpp at line# 45 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] WindowsErrorMessage::~WindowsErrorMessage() in ..\..\src\WindowsErrorMessage.cpp at line# 28 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] WindowsErrorMessage::~WindowsErrorMessage() in ..\..\src\WindowsErrorMessage.cpp at line# 31 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] AbstractFactory::~AbstractFactory() in ..\..\..\common\src\AbstractFactory.cpp at line# 32 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] AbstractFactory::~AbstractFactory() in ..\..\..\common\src\AbstractFactory.cpp at line# 35 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Factory::~Factory() in ..\..\..\common\src\Factory.cpp at line# 54 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] WindowsDelegate::~WindowsDelegate() in ..\..\src\WindowsDelegate.cpp at line# 41 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] WindowsDelegate::~WindowsDelegate() in ..\..\src\WindowsDelegate.cpp at line# 44 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Delegate::~Delegate() in ..\..\..\common\src\Delegate.cpp at line# 74 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ThreeParScsiDataExtractor::~ThreeParScsiDataExtractor() in ..\..\..\common\src\3par\src\ThreeParScsiDataExtractor.cpp at line# 27 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ThreeParScsiDataExtractor::~ThreeParScsiDataExtractor() in ..\..\..\common\src\3par\src\ThreeParScsiDataExtractor.cpp at line# 30 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ScsiDataExtractor::~ScsiDataExtractor() in ..\..\..\common\src\ScsiDataExtractor.cpp at line# 29 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ScsiDataExtractor::~ScsiDataExtractor() in ..\..\..\common\src\ScsiDataExtractor.cpp at line# 32 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] DataExtractor::~DataExtractor() in ..\..\..\common\src\DataExtractor.cpp at line# 29 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] DataExtractor::~DataExtractor() in ..\..\..\common\src\DataExtractor.cpp at line# 32 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ThreeParDisplaydata::~ThreeParDisplaydata() in ..\..\..\common\src\3par\src\ThreeParDisplayData.cpp at line# 27 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] ThreeParDisplaydata::~ThreeParDisplaydata() in ..\..\..\common\src\3par\src\ThreeParDisplayData.cpp at line# 30 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] DisplayData::~DisplayData() in ..\..\..\common\src\DisplayData.cpp at line# 29 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] DisplayData::~DisplayData() in ..\..\..\common\src\DisplayData.cpp at line# 32 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::~OptionCollector() in ..\..\..\common\src\OptionCollector.cpp at line# 45 Entry
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] OptionCollector::~OptionCollector() in ..\..\..\common\src\OptionCollector.cpp at line# 48 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] Delegate::~Delegate() in ..\..\..\common\src\Delegate.cpp at line# 105 Exit
+[17/09/2018 15:17:46]:Process Id[12532] Thread Id[15684] main() in ..\..\..\common\src\main.cpp at line# 293 Exit with return value as 0
