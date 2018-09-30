@@ -1,9 +1,9 @@
 ﻿### Define Deployment Variables
 {
-$resourceGroupLocation = 'West Europe'
+$resourceGroupLocation = 'Australia Southeast'
 $resourceGroupName = 'contoso-paas'
 $resourceDeploymentName = 'contoso-paas-deployment'
-$templatePath = $env:SystemDrive + '\' + 'Acca\github\devOps-Learning\Azure\arm-master\armMastering'
+$templatePath = $env:SystemDrive + '\' + 'pluralsight'
 $templateFile = 'contosoPaas.json'
 $template = $templatePath + '\' + $templateFile
 }
@@ -12,7 +12,7 @@ $template = $templatePath + '\' + $templateFile
 {
 New-AzureRmResourceGroup `
     -Name $resourceGroupName `
-    -Location $resourceGroupLocation `
+    -Location $location `
     -Verbose -Force
 }
 

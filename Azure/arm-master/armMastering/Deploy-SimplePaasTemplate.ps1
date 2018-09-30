@@ -1,9 +1,9 @@
 ﻿### Define Deployment Variables
 {
-$location = 'Australia Southeast'
+$location = 'West Europe'
 $resourceGroupName = 'contoso-simple-paas-template'
 $resourceDeploymentName = 'contoso-paas-template-deployment'
-$templatePath = $env:SystemDrive + '\' + 'pluralsight'
+$templatePath = $env:SystemDrive + '\' + 'Acca\github\devOps-Learning\Azure\arm-master\armMastering'
 $templateFile = 'simplePaas.json'
 $template = $templatePath + '\' + $templateFile
 }
