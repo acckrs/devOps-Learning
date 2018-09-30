@@ -1,9 +1,9 @@
 ﻿### Define Deployment Variables
 {
-$location = 'Australia Southeast'
+$location = 'West Europe'
 $resourceGroupName = 'contoso-simple-iaas-template'
 $resourceDeploymentName = 'contoso-iaas-template-deployment'
-$templatePath = $env:SystemDrive + '\' + 'pluralsight'
+$templatePath = $env:SystemDrive + '\' + 'Acca\github\devOps-Learning'
 $templateFile = 'simpleiaas.json'
 $template = $templatePath + '\' + $templateFile
 }
