@@ -33,7 +33,9 @@
             }
         }
     },
-    "variables": {},
+    "variables": {
+        "siteName": "variableValue"
+    },
     "resources": [{
             "apiVersion": "2016-09-01",
             "name": "[concat(parameters('webAppNamePrefix'),'-',copyIndex(),'-',uniqueString(resourceGroup().id))]",
@@ -56,18 +58,18 @@
         },
         {
             "apiVersion": "2015-08-01",
-            "name": "WEB_APP_NAME",
+            "name": "[variables('siteName')]",
             "type": "Microsoft.Web/sites",
-            "location": "[resourceGroup().location]",
+            "location": "[parameters('webAppLocations')[copyIndex()]]",
             "tags": {
                 "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/APP_SERVICE_PLAN_NAME')]": "Resource",
                 "displayName": "WEB_APP_NAME"
             },
             "dependsOn": [
-                "Microsoft.Web/serverfarms/APP_SERVICE_PLAN_NAME"
+                "Microsoft.Web/serverfarms/[concat(parameters('webAppNamePrefix'),'-',copyIndex(),'-',uniqueString(resourceGroup().id))]"
             ],
             "properties": {
-                "name": "WEB_APP_NAME",
+                "name": "[variables('siteName')]",
                 "serverFarmId": "[resourceId('Microsoft.Web/serverfarms/', 'APP_SERVICE_PLAN_NAME')]"
             }
         }
