@@ -1,0 +1,38 @@
+[Encoding]
+InputEncoding = ISO8859_1
+[WFClient]
+Version=2
+RemoveICAFile=Yes
+ProxyType=Auto
+HttpBrowserAddress=http://xenapp-wi/Citrix/PNAgent/config.xml:80
+ConnectionBar=0
+
+[ApplicationServers]
+http://xenapp-wi/Citrix/PNAgent/config.xml=
+
+[http://xenapp-wi/Citrix/PNAgent/config.xml]
+Address=http://xenapp-wi/Citrix/PNAgent/config.xml
+InitialProgram=
+CGPAddress=*:2598
+ClientAudio=On
+DesiredColor=8
+DesiredHRes = 1024
+DesiredVRes = 768
+TWIMode = False
+KeyboardTimer = 0
+MouseTimer = 0
+ConnectionBar=0
+Username=KALEKSANDAR
+Domain=ICT-211-5888
+TransportDriver=TCP/IP
+WinStationDriver=ICA 3.0
+BrowserProtocol=HTTPonTCP
+Compress=On
+EncryptionLevelSession=Encrypt
+[Encrypt]
+DriverNameWin32=PDCRYPTN.DLL
+DriverNameWin16=PDCRYPTW.DLL
+[Compress]
+DriverName=PDCOMP.DLL
+DriverNameWin16=PDCOMPW.DLL
+DriverNameWin32=PDCOMPN.DLL

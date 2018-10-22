@@ -1,0 +1,16 @@
+[ {
+        "ImeOkruzenja": "FC1",
+        "P1": "\"Vrednost P1 u FC1\"",
+        "P2": "\"Vrednost P2 u FC1\""
+    },
+  {
+        "ImeOkruzenja": "FC2",
+        "P1": "\"Vrednost P1 u FC2\"",
+        "P2": "\"Vrednost P2 u FC2\""
+    },
+  {
+        "ImeOkruzenja": "FC3",
+        "P1": "\"Vrednost P1 u FC3\"",
+        "P2": "\"Vrednost P2 u FC3\""
+    }
+]

@@ -4,7 +4,7 @@ param (
     #Imena servera razdvojena ','
     [String[]] $servers,
     #Putanja do bin-a
-    [String] $binPath = "ilo4_255.bin",
+    [String] $binPath,
     #Funkcija koju pokrecemo - Check proverava, Upgrade azurira firmware
     [parameter(Mandatory = $true)]
     [ValidateSet("Check", "Upgrade")]

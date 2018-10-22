@@ -1,0 +1,242 @@
+5724-H72 (C) Copyright IBM Corp. 1994, 2016.
+Starting MQSC for queue manager QMTESTNODE01.
+
+
+     1 : dis q(*)
+AMQ8409: Display Queue details.
+   QUEUE(AMQ.MQEXPLORER.5BB1C1780381B923)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(AMQ.MQEXPLORER.5BB1C17803CCB823)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(AMQ.MQEXPLORER.5BB1C1783A8CB923)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(BIB.COMMON_LOG.QUEUE)             TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.DB_LOG.QUEUE)                 TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.EMAIL.QUEUE)                  TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.EMAIL_FALIURE.QUEUE)          TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.FILE_LOG.QUEUE)               TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.FILE_LOG_OUT.QUEUE)           TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.KONDOR.SPOT_DEAL_CREATE_DELETE.RETRY)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.CL_DSBR_LIQD.QUEUE)     TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.CREDIT_CASA_CCY_INDCUST.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.CREDIT_CASA_CORP_CUST.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.CREDIT_CASA_CORP_CUST.QUEUE.RETRY)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.CURR_RSD_ACC_INDV.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.CUST_ACCLIMITS.QUEUE)   TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.CUST_ACCTDLS.QUEUE)     TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.DEBIT_CASA_CORP_CUST.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.EMAIL_FXINCOME_REPORT.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.FDEAL.CORPQ)            TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.FXDEAL.CORPQ)           TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.FXDEAL.CORPTRIGQ)       TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.FXDEAL.RETAILQ)         TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.FXDEAL.RETAILTRIGQ)     TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.FXDEAL.TRIGGERQ)        TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.FX_SYNC.QUEUE)          TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.GL_BRNCH.QUEUE)         TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.GL_CHNG.QUEUE)          TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.LOAN_ACC_UPDATE.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.LQ_CONTRACT.QUEUE)      TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.OD_LIMIT_CHANGE.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.OWNR_EMP.QUEUE)         TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.REPO.DEALQ)             TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.REPO.DEALTRIGQ)         TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.RSD_CORP_CUST.QUEUE)    TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.RSD_SAVNG_TD.QUEUE)     TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.TD_ACC_WITHDRAW.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(BIB.NOTIF.UP_EXECUTION.QUEUE)     TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(DLQ)                              TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(NOTIF.CURR_RSD_ACC_INDV.QUEUE)    TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(NOTIF_COMM_QUEUE)                 TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(NOTIF_ERR_QUEUE)                  TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(NOTIF_SMSPQ_QUEUE)                TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(NOTIF_SMS_QUEUE)                  TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(QMTEST_NOTIFY_QUEUE)              TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(QMTEST_NOTIF_ERR_QUEUE)           TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.ADMIN.ACCOUNTING.QUEUE)    TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.ADMIN.ACTIVITY.QUEUE)      TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.ADMIN.CHANNEL.EVENT)       TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.ADMIN.COMMAND.EVENT)       TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.ADMIN.COMMAND.QUEUE)       TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.ADMIN.CONFIG.EVENT)        TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.ADMIN.LOGGER.EVENT)        TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.ADMIN.PERFM.EVENT)         TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.ADMIN.PUBSUB.EVENT)        TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.ADMIN.QMGR.EVENT)          TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.ADMIN.STATISTICS.QUEUE)    TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.ADMIN.TRACE.ACTIVITY.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.ADMIN.TRACE.ROUTE.QUEUE)   TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.AMQP.COMMAND.QUEUE)        TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.AUTH.DATA.QUEUE)           TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.BROKER.ADMIN.STREAM)       TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.BROKER.CONTROL.QUEUE)      TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.BROKER.DEFAULT.STREAM)     TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.BROKER.INTER.BROKER.COMMUNICATIONS)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.BROKER.TIMEOUT.QUEUE)      TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.BROKER.WS.ACK)             TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.BROKER.WS.INPUT)           TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.BROKER.WS.REPLY)           TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.CHANNEL.INITQ)             TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.CHANNEL.SYNCQ)             TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.CHLAUTH.DATA.QUEUE)        TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.CICS.INITIATION.QUEUE)     TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.CLUSTER.COMMAND.QUEUE)     TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.CLUSTER.HISTORY.QUEUE)     TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.CLUSTER.REPOSITORY.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.CLUSTER.TRANSMIT.MODEL.QUEUE)
+   TYPE(QMODEL)                         
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.CLUSTER.TRANSMIT.QUEUE)    TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.DDELAY.LOCAL.QUEUE)        TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.DEAD.LETTER.QUEUE)         TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.DEFAULT.ALIAS.QUEUE)       TYPE(QALIAS)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.DEFAULT.INITIATION.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.DEFAULT.LOCAL.QUEUE)       TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.DEFAULT.MODEL.QUEUE)       TYPE(QMODEL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.DEFAULT.REMOTE.QUEUE)      TYPE(QREMOTE)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.DOTNET.XARECOVERY.QUEUE)   TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.DURABLE.MODEL.QUEUE)       TYPE(QMODEL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.DURABLE.SUBSCRIBER.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.HIERARCHY.STATE)           TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.INTER.QMGR.CONTROL)        TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.INTER.QMGR.FANREQ)         TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.INTER.QMGR.PUBS)           TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.INTERNAL.REPLY.QUEUE)      TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.INTERNAL.REQUEST.QUEUE)    TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.JMS.TEMPQ.MODEL)           TYPE(QMODEL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.MESSAGE.ASSOCIATION.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.MQEXPLORER.REPLY.MODEL)    TYPE(QMODEL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.MQSC.REPLY.QUEUE)          TYPE(QMODEL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.NDURABLE.MODEL.QUEUE)      TYPE(QMODEL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.PENDING.DATA.QUEUE)        TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.PROTECTION.ERROR.QUEUE)    TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.PROTECTION.POLICY.QUEUE)   TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.RETAINED.PUB.QUEUE)        TYPE(QLOCAL)
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.SELECTION.EVALUATION.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(SYSTEM.SELECTION.VALIDATION.QUEUE)
+   TYPE(QLOCAL)                         
+AMQ8409: Display Queue details.
+   QUEUE(TEST)                             TYPE(QLOCAL)
+One MQSC command read.
+No commands have a syntax error.
+All valid MQSC commands were processed.

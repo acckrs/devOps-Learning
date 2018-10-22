@@ -1,0 +1,549 @@
+# FILE 0926_095423_INS.01081713.02625986
+ 
+ACTION "INS"
+TRANS_ID 2625986
+ 
+XACTKEY 350110000183322136
+OPERATIONS 4
+MAIN_DEAL_TABLE_ID 95
+MAIN_DEAL_ID 1081713
+WARNING ""
+ORIGINAL_TYPE_OF_EVENT Q
+DEALS_INSTRUMENT_ID 13
+DEALS_OPERATION_ID 0
+MESSAGE_SOURCE DoubleValidation
+DEALS_OPERATION "INSERT"
+ 
+TBL ForwardDeals
+Action I "Insert"
+MvtDate "26/09/2018 09:54:23"
+MvtId 0
+Xactkey 350110000183322136
+ForwardDeals_Id 1081713
+Entities_Id 1
+DealStatus V "Valid"
+InputMode C "Captured"
+CaptureDate "26/09/2018 11:54:22"
+TradeDate 26/09/2018
+Users_Id 245646
+Users_Id_Last 0
+Folders_Id 165427
+Purposes_Id 0
+TypeOfEvent Q "Investment Outright Forward"
+BlockNumber 28912773
+TypeOfInstr_Id 171896
+Comments ""
+Pairs_Id 110771
+Amount1 1000000.0
+Amount2 -118320000.0
+CapturedAmount 1 "Amount 1"
+RemainingCur1 0.0
+RemainingCur2 0.0
+InterestRateCur1 0.7319
+InterestRateCur2 0.648225
+CapturedInterest 1 "Interest 1"
+Pairs_Id_Local 110771
+LocalRate 118.31945
+LocalPts 5.50
+Cpty_Id 165639
+SpotRate 118.31945
+SpotMargin 0.0
+SpotMarginAmount 0.0
+ClientSpot 0.0
+ClientFwd 118.32
+ClientPts 5.50
+CapturedFarRate P "Points"
+FwdRate 118.32
+FarMargin 0.0
+Points 5.50
+MarginIn F "Forex Position"
+ValueDate 28/09/2018
+ValueDateIslamic 28/09/2018
+MaturityDate 26/09/2018
+MaturityDateIslamic 26/09/2018
+MaturityType S "Short-term"
+InterestHedging Y "Yes"
+ForwardType D "Deliverable"
+FwdSwapHedgeMethod B "B/S Points"
+HedgeDate 28/09/2018
+SplitSpot N "No"
+MarginSale N "No"
+FixingType F "Free"
+NDFFixingType F "Free"
+Currencies_Id_Liq 0
+Currencies_Id_Split 0
+Pairs_Id_Split 0
+SplitRate 0.0
+SplitPts 0.0
+SplitCurInterestRate 0.0
+LiquidationSplitPoints 0.0
+Folders_Id_Swap1 0
+Folders_Id_Swap2 0
+Folders_Id_Mirror_Swap1 0
+Folders_Id_Mirror_Swap2 0
+Folders_Id_SpotRisk1 0
+Folders_Id_SpotRisk2 0
+Folders_Id_SpotRisk3 0
+Folders_Id_SpotAdjust1 165427
+Folders_Id_SpotAdjust2 165427
+Folders_Id_SpotAdjust3 165427
+Folders_Id_SpotAdjust4 0
+Folders_Id_Mirror_SpotAdjust1 0
+Folders_Id_Mirror_SpotAdjust2 0
+Folders_Id_Mirror_SpotAdjust3 0
+Folders_Id_Mirror_SpotAdjust4 0
+Folders_Id_Corporate1 0
+Folders_Id_Corporate2 0
+ClearingModes_Id 0
+LiquidationAmount 0.0
+LiquidationRate 0.0
+Corresp_Id_PayToTheir 0
+PaymentComments ""
+Corresp_Id_ReceiveToOur 170453
+Corresp_Id_PayFromOur 170573
+Currencies_Id_Corporate 3488
+Brokers_Id 0
+Currencies_Id_Brokerage 0
+BrokerageAmount 0.0
+Brokerage_COC 0.0
+FarInterbankAmount -118320000.0
+ForwardDeals_Id_Father 0
+ReferenceValueCur1 0.0
+ReferenceValueCur2 0.0
+RollInvSpotRate 0.0
+CompoundProducts_Id_From 0
+Codifiers_Id 0
+LocalLiquidation N "No"
+LocalSpotRate 0.0
+LocalPoints 0.0
+Folders_Id_LocalLiquidation 0
+KdbTables_Id_LocalLiquidation 0
+LocalLiquidationAmount 0.0
+LiquidationOrgCaptAmt 0.0
+IsCLS N "No"
+OriginalId 0
+LastModifDate "26/09/2018 11:54:22"
+Currencies_Id_Hedge 3488
+Cur1Cur2IsSwapPair Y "Yes"
+Cur1SplitIsSwapPair N "No"
+Cur2SplitIsSwapPair N "No"
+OriginalLocalPts 5.50
+OriginalLocalRate 118.31945
+Pairs_Id_OriginalLocal 110771
+Cur1Basis M "ACT/360"
+Cur2Basis M "ACT/360"
+SplitCurBasis M "ACT/360"
+LocalCurBasis M "ACT/360"
+PositionOwner_Id 0
+CollatAgrt_Id 0
+Currencies_Id_CVA 0
+CVAChargeMargin 0.0
+CVAChargeAmount 0.0
+IsCollateralized N "No"
+Folders_Id_Captured 165427
+UTI ""
+EOT 
+ 
+ 
+TBL Corresp_ReceiveToOur
+Corresp_Id 170453
+Corresp_ShortName "BCITITMM"
+Corresp_Name "INTESA SANPAOLO SPA"
+Cpty_Id 0
+DownloadKey "BCITITMM_KEY"
+Codifiers_Id 0
+OriginalId 0
+EOT 
+ 
+ 
+TBL Entities
+Entities_Id 1
+Entities_ShortName "ISP"
+Entities_Name "ISP"
+Dataservers_Id 1
+Cities_Id 120
+EOT 
+ 
+ 
+TBL Folders_SpotAdjust1
+Folders_Id 165427
+Folders_ShortName "FXMM_INBK"
+Folders_Name "INTERBANK FX MM"
+Portfolios_Id 165416
+Currencies_Id 0
+Cpty_Id 165426
+Folders_Id_Spot_Risk 0
+Folders_Id_Interest_Risk 0
+Codifiers_Id 0
+OriginalId 0
+Entities_Id 1
+EOT 
+ 
+ 
+TBL Folders_SpotAdjust2
+Folders_Id 165427
+Folders_ShortName "FXMM_INBK"
+Folders_Name "INTERBANK FX MM"
+Portfolios_Id 165416
+Currencies_Id 0
+Cpty_Id 165426
+Folders_Id_Spot_Risk 0
+Folders_Id_Interest_Risk 0
+Codifiers_Id 0
+OriginalId 0
+Entities_Id 1
+EOT 
+ 
+ 
+TBL Folders_SpotAdjust3
+Folders_Id 165427
+Folders_ShortName "FXMM_INBK"
+Folders_Name "INTERBANK FX MM"
+Portfolios_Id 165416
+Currencies_Id 0
+Cpty_Id 165426
+Folders_Id_Spot_Risk 0
+Folders_Id_Interest_Risk 0
+Codifiers_Id 0
+OriginalId 0
+Entities_Id 1
+EOT 
+ 
+ 
+TBL Users
+Users_Id 245646
+Users_ShortName "U392983"
+UsersGrp_Id 165471
+Users_Name "OSTOJIC NIKOLA"
+Codifiers_Id 257845
+OriginalId 0
+EOT 
+ 
+ 
+TBL Cpty
+Cpty_Id 165639
+Cpty_ShortName "SBPORSBG"
+Cpty_Name "POSTAL SAVINGS BANK JSC"
+Cities_Id 0
+Countries_Id 165607
+Folders_Id 0
+Codifiers_Id 0
+OriginalId 0
+Cpty_Id_Parent 0
+CptyClasses_Id 0
+RiskSector_Id 0
+LegalEntities_Id 0
+EOT 
+ 
+ 
+TBL Folders
+Folders_Id 165427
+Folders_ShortName "FXMM_INBK"
+Folders_Name "INTERBANK FX MM"
+Portfolios_Id 165416
+Currencies_Id 0
+Cpty_Id 165426
+Folders_Id_Spot_Risk 0
+Folders_Id_Interest_Risk 0
+Codifiers_Id 0
+OriginalId 0
+Entities_Id 1
+EOT 
+ 
+ 
+TBL Portfolios
+Portfolios_Id 165416
+Portfolios_ShortName "INTERBANK"
+Portfolios_Name "INTERBANK"
+Branches_Id 165413
+Codifiers_Id 0
+OriginalId 0
+EOT 
+ 
+ 
+TBL Branches
+Branches_Id 165413
+Branches_ShortName "BIB"
+Branches_Name "BANCA INTESA BEOGRAD"
+Codifiers_Id 0
+OriginalId 0
+HierarchyEntities_Id 235038
+EOT 
+ 
+ 
+TBL HierarchyEntities
+HierarchyEntities_Id 235038
+HierarchyEntities_Name "DEFAULT ENTITY"
+HierarchyEntities_ShortName "D_ENTITY"
+Regions_Id 235037
+EOT 
+ 
+ 
+TBL Regions
+Regions_Id 235037
+Codifiers_Id 0
+OriginalId 0
+Regions_Name "DEFAULT REGION"
+Regions_ShortName "D_REGION"
+Cities_Id 120
+EOT 
+ 
+ 
+TBL TypeOfInstr
+TypeOfInstr_Id 171896
+TypeOfInstr_ShortName "TODAY"
+TypeOfInstr_Name "VALUE TODAY DEAL"
+Codifiers_Id 0
+OriginalId 0
+EOT 
+ 
+ 
+TBL Pairs_Local
+Pairs_Id 110771
+Pairs_ShortName "EUR/RSD"
+Currencies_Id_1 3488
+Currencies_Id_2 110731
+QuotationMode D "Direct"
+QuotationUnit 0 "1"
+Quotation 1.0
+PointsDigit 4
+NoDecimal 4
+DisplayOrder Y "Yes"
+Currencies_Id_Split_Spot 0
+Currencies_Id_Split_FxSwap 0
+Currencies_Id_Split_Forward 0
+VolatCurves_Id_Default 0
+GoodOrder Y "Yes"
+SpotLag 2
+SettlementLag 0
+AdjSettlCur 0 "None"
+SwapPair Y "Yes"
+OptionPair N "No"
+LimitRevalRate 118.34
+SpotRateBid 118.36
+SpotRateAsk 118.56
+SpotRate 118.46
+EOT 
+ 
+ 
+TBL Folders_Captured
+Folders_Id 165427
+Folders_ShortName "FXMM_INBK"
+Folders_Name "INTERBANK FX MM"
+Portfolios_Id 165416
+Currencies_Id 0
+Cpty_Id 165426
+Folders_Id_Spot_Risk 0
+Folders_Id_Interest_Risk 0
+Codifiers_Id 0
+OriginalId 0
+Entities_Id 1
+EOT 
+ 
+ 
+TBL Pairs
+Pairs_Id 110771
+Pairs_ShortName "EUR/RSD"
+Currencies_Id_1 3488
+Currencies_Id_2 110731
+QuotationMode D "Direct"
+QuotationUnit 0 "1"
+Quotation 1.0
+PointsDigit 4
+NoDecimal 4
+DisplayOrder Y "Yes"
+Currencies_Id_Split_Spot 0
+Currencies_Id_Split_FxSwap 0
+Currencies_Id_Split_Forward 0
+VolatCurves_Id_Default 0
+GoodOrder Y "Yes"
+SpotLag 2
+SettlementLag 0
+AdjSettlCur 0 "None"
+SwapPair Y "Yes"
+OptionPair N "No"
+LimitRevalRate 118.34
+SpotRateBid 118.36
+SpotRateAsk 118.56
+SpotRate 118.46
+EOT 
+ 
+ 
+TBL Corresp_PayFromOur
+Corresp_Id 170573
+Corresp_ShortName "DBDBRSBG"
+Corresp_Name "BANCA INTESA AD, BEOGRAD, BE"
+Cpty_Id 0
+DownloadKey "DBDBCSBG_KEY"
+Codifiers_Id 0
+OriginalId 0
+EOT 
+ 
+ 
+TBL UsersCodes
+D3000BIBG "NO"
+ANAG_BE "BIB"
+INBK_TDYTN "Yes"
+BSALES_TDY "Yes"
+EXPORTBIB "5377"
+360T "BIAB.Ostojic"
+__RTACCESS "OSTOJIC"
+IFRS9_SPPI "YES"
+BIBMKTSPOT "yes"
+EOT 
+ 
+ 
+TBL FoldersCodes
+ANAG_BE "BIB"
+EOT 
+ 
+ 
+TBL CptyCodes
+D3000BIBG "SBPO"
+ANAG_BE "SBPORSBG"
+EOT 
+ 
+ 
+TBL CorrespCodes_ReceiveToOur
+D3000BIBG "BCITITMM"
+ANAG_BE "BCITITMM"
+EOT 
+ 
+ 
+TBL CorrespCodes_PayFromOur
+D3000BIBG "DBDBRSBG"
+ANAG_BE "DBDBRSBG"
+D3000BIBG1 "908-16001-87"
+EOT 
+ 
+ 
+TBL FoldersCodes_Captured
+ANAG_BE "BIB"
+EOT 
+ 
+ 
+TBL LocalData
+DealLocalCaptureDate "26/09/2018 11:54:22"
+UserLocalCaptureDate "26/09/2018 11:54:22"
+EOT 
+ 
+ 
+TBL TradeKast_ADD_DATA
+AgreedType "Nessuno"
+EnteOrig "CCIB"
+FilialeTramite ""
+FilialeDestin ""
+FlagSSI "Y"
+RefCentradia ""
+AgreedTOT 0
+notifica ""
+conto1 ""
+conto2 ""
+Finanaziamento ""
+ContrattoOriginario ""
+CW_ClientSPOT 0.0
+CW_ClientFWD 0.0
+CliAmount1Cur1 0.0
+CliAmount1Cur2 0.0
+CliAmount2Cur1 0.0
+CliAmount2Cur2 0.0
+FlgCIRS "No"
+FlagEsercizioOpzione "N"
+EOT 
+ 
+ 
+TBL TradeKast_BSALES_TDY
+Pair ""
+SpRate 0.0
+TPoints 0.0
+CalcSptMargin 0.0
+CWFwdRate 0.0
+AdFee 0.0
+EOT 
+ 
+ 
+TBL TradeKast_DEALINGFX
+Metodo ""
+Nos_Corr ""
+Lor_Corr ""
+DealerId ""
+EOT 
+ 
+ 
+TBL TradeKast_FAIRVALUE
+FairValue "2"
+EOT 
+ 
+ 
+TBL TradeKast_IDMUSER
+IDMUser ""
+EOT 
+ 
+ 
+TBL TradeKast_INBK_TDYTN
+Pair "EUR/RSD"
+SpRate 118.43
+TPoints 5.50
+EOT 
+ 
+ 
+TBL TradeKast_KGR-ADDON
+PayOff_Input ""
+PayOff_Output ""
+UL_Input ""
+UL_Output ""
+Segno_Input ""
+Segno_Output ""
+EOT 
+ 
+ 
+TBL TradeKast_MTF_OTF
+MICCode ""
+TVTIC ""
+ISIN ""
+EOT 
+ 
+ 
+TBL TradeKast_NDF_FIXING
+NDFRate3 ""
+NDFTime3 "HH:MM"
+NDFPairs1 ""
+NDFRate1 "EMT00"
+NDFPairs2 ""
+NDFRate2 ""
+NDFTime2 ""
+NDFCity2 ""
+EOT 
+ 
+ 
+TBL TradeKast_UTIEMIR
+UTI "E022W8N8UU78PMDQKZENC08BIKPLBIFWDC20180926115112723"
+Compression "No"
+DL "--"
+USI ""
+EOT 
+ 
+ 
+TBL custTKClient_Forward_check_0
+TradeKastFilter 1
+EOT 
+ 
+ 
+TBL custTKClient_Forward_check
+Number 1
+EOT 
+ 
+ 
+TBL ForwardDeals_RolloverRollback
+MarketSpotRate 0.0
+MarketFarPts 0.0
+MarketNearOrPrevFarPts 0.0
+MarketSplitSpotRate 0.0
+MarketSplitFarPts 0.0
+MarketSplitNearOrPrevFarPts 0.0
+SplitFarPts 0.0
+NearOrPrevFarInterestRateCur1 0.0
+NearOrPrevFarInterestRateCur2 0.0
+NearOrPrevFarInterestRateSplit 0.0
+EOT 
+ 

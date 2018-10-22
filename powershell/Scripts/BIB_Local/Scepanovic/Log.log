@@ -1,0 +1,266 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180926083112
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1537874904-58f0335b-eae7-46f7-b6e8-d9dfa2ca67ba1537874898740\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-11156-164667' -FeatureFlags @()
+Process ID: 12072
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Log.log
+**********************
+Windows PowerShell transcript end
+End time: 20180926083112
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20180926084628
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1537874904-58f0335b-eae7-46f7-b6e8-d9dfa2ca67ba1537874898740\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-11156-164667' -FeatureFlags @()
+Process ID: 12072
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Log.log
+File C:\Acca\Powershell_local\BIB\Scepanovic\1 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\10 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\11 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\12 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\13 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\14 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\2 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\3 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\4 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\5 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\6 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\7 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\8 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\9 deleted
+**********************
+Windows PowerShell transcript end
+End time: 20180926084628
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20180926084639
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1537874904-58f0335b-eae7-46f7-b6e8-d9dfa2ca67ba1537874898740\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-11156-164667' -FeatureFlags @()
+Process ID: 12072
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Log.log
+**********************
+Windows PowerShell transcript end
+End time: 20180926084639
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20180926084719
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1537874904-58f0335b-eae7-46f7-b6e8-d9dfa2ca67ba1537874898740\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-11156-164667' -FeatureFlags @()
+Process ID: 12072
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Log.log
+File C:\Acca\Powershell_local\BIB\Scepanovic\1 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\10 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\11 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\12 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\13 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\14 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\2 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\3 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\4 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\5 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\6 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\7 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\8 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\9 deleted
+**********************
+Windows PowerShell transcript end
+End time: 20180926084719
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20180926084723
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1537874904-58f0335b-eae7-46f7-b6e8-d9dfa2ca67ba1537874898740\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-11156-164667' -FeatureFlags @()
+Process ID: 12072
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Log.log
+**********************
+Windows PowerShell transcript end
+End time: 20180926084723
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20180926084804
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1537874904-58f0335b-eae7-46f7-b6e8-d9dfa2ca67ba1537874898740\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-11156-164667' -FeatureFlags @()
+Process ID: 12072
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>ParameterBinding(Out-File): name="InputObject"; value="Transcript started, output file is Log.log"
+**********************
+Windows PowerShell transcript end
+End time: 20180926084804
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20180926084843
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1537874904-58f0335b-eae7-46f7-b6e8-d9dfa2ca67ba1537874898740\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-11156-164667' -FeatureFlags @()
+Process ID: 12072
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Log.log
+**********************
+Windows PowerShell transcript end
+End time: 20180926084843
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20180926084847
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1537874904-58f0335b-eae7-46f7-b6e8-d9dfa2ca67ba1537874898740\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-11156-164667' -FeatureFlags @()
+Process ID: 12072
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Log.log
+File C:\Acca\Powershell_local\BIB\Scepanovic\1 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\10 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\11 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\12 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\13 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\14 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\2 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\3 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\4 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\5 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\6 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\7 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\8 deleted
+File C:\Acca\Powershell_local\BIB\Scepanovic\9 deleted
+**********************
+Windows PowerShell transcript end
+End time: 20180926084847
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20180926084952
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1537874904-58f0335b-eae7-46f7-b6e8-d9dfa2ca67ba1537874898740\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-11156-164667' -FeatureFlags @()
+Process ID: 12072
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>ParameterBinding(Out-File): name="InputObject"; value="Transcript started, output file is Log.log"
+**********************
+Windows PowerShell transcript end
+End time: 20180926084952
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20180926084956
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1537874904-58f0335b-eae7-46f7-b6e8-d9dfa2ca67ba1537874898740\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-11156-164667' -FeatureFlags @()
+Process ID: 12072
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>ParameterBinding(Out-File): name="InputObject"; value="Transcript started, output file is Log.log"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\1 deleted"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\10 deleted"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\11 deleted"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\12 deleted"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\13 deleted"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\14 deleted"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\2 deleted"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\3 deleted"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\4 deleted"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\5 deleted"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\6 deleted"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\7 deleted"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\8 deleted"
+PS>ParameterBinding(Out-File): name="InputObject"; value="File C:\Acca\Powershell_local\BIB\Scepanovic\9 deleted"
+**********************
+Windows PowerShell transcript end
+End time: 20180926084956
+**********************

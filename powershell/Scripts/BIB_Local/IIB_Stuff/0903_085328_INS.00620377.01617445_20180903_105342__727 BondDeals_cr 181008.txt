@@ -1,0 +1,566 @@
+# FILE 0903_085328_INS.00620377.01617445
+ 
+ACTION "INS"
+TRANS_ID 1617445
+ 
+XACTKEY 350180000176031930
+OPERATIONS 1
+MAIN_DEAL_TABLE_ID 97
+MAIN_DEAL_ID 620377
+WARNING ""
+ORIGINAL_TYPE_OF_EVENT N
+DEALS_INSTRUMENT_ID 1
+DEALS_OPERATION_ID 0
+MESSAGE_SOURCE DoubleValidation
+DEALS_OPERATION "INSERT"
+ 
+TBL BondsDeals
+Action I "Insert"
+MvtDate "03/09/2018 08:53:28"
+MvtId 0
+Xactkey 350180000176031930
+BondsDeals_Id 620377
+Entities_Id 1
+DealStatus V "Valid"
+InputMode C "Captured"
+CaptureDate "03/09/2018 10:53:27"
+TradeDate 03/09/2018
+Users_Id 158509
+Users_Id_Last 0
+Folders_Id 165449
+Sellers_Id 0
+Purposes_Id 0
+TypeOfEvent N "None"
+BlockNumber 27858021
+Comments ""
+DealType B "Buy"
+Bonds_Id 264905
+Quantity 10000.0
+FaceAmount 100000000.0
+CapturedMarketValue Y "Yield"
+Price 101.966
+Yield 3.20
+MoneyMarketYield 3.1483
+Accrued 1.85
+ConversionRate 0.0
+GrossAmount 103816000.0
+SpotRateCoupon 1.0
+SpotRateRedemption 1.0
+Sobretasa 0.0
+Brokers_Id 0
+BrokerageRate 0.0
+GrossBrokerage 0.0
+BrokerageDiscount 0.0
+NetBrokerage 0.0
+Brokerage_COC 0.0
+Vat 0.0
+NetAmount 103816000.0
+ValueDate 03/09/2018
+SettlementDate 03/09/2018
+PaymentDate 03/09/2018
+CorrectionFactor 100.0
+Cpty_Id 283496
+ClearingModes_Id 2872
+Corresp_Id_PayToTheir 0
+Corresp_Id_PayReceiveToOur 170573
+PaymentComments ""
+Margin 0.0
+CostOfCarry 0.0
+AnticipatedCarry 0.0
+CouponsCumul 0.0
+ReinvestedCoupons 0.0
+PrincipalCumul 0.0
+PrincipalReinvested 0.0
+ReferenceValue 0.0
+RefCostOfCarry 0.0
+RefAnticipatedCarry 0.0
+RefCouponsCumul 0.0
+RefReinvestedCoupons 0.0
+RefPrincipalCumul 0.0
+RefPrincipalReinvested 0.0
+AdjFactor 1.0
+CompoundProducts_Id_From 0
+ActuarialAmortized 0.0
+CouponAmortized 0.0
+DailyAmortized 0.0
+DiscountPremiumAmount -1965999.99999999
+RefActuarialAmortized 0.0
+RefCouponAmortized 0.0
+RefDailyAmortized 0.0
+Codifiers_Id 0
+OriginalId 0
+LastModifDate "03/09/2018 10:53:27"
+PriceBondCur 0.0
+GrossAmountBondCur 0.0
+NetAmountBondCur 0.0
+CrossSpotRate 0.0
+Currencies_Id 110731
+DiscountMargin 0.0
+PremiumOrDiscount 0.0
+UTI ""
+PoolFactor 0.0
+EOT 
+ 
+ 
+TBL Entities
+Entities_Id 1
+Entities_ShortName "ISP"
+Entities_Name "ISP"
+Dataservers_Id 1
+Cities_Id 120
+EOT 
+ 
+ 
+TBL Corresp_PayReceiveToOur
+Corresp_Id 170573
+Corresp_ShortName "BIBDBDBRSBGXXX"
+Corresp_Name "BIB-BANCA INTESA AD, BEOGRAD, BE"
+Cpty_Id 0
+DownloadKey "DBDBCSBG_KEY"
+Codifiers_Id 0
+OriginalId 0
+EOT 
+ 
+ 
+TBL ClearingModes
+ClearingModes_Id 2872
+ClearingModes_ShortName "DEFAULT"
+ClearingModes_Name "TITOLI ESTERI"
+EOT 
+ 
+ 
+TBL Users
+Users_Id 158509
+Users_ShortName "OPERBIB"
+UsersGrp_Id 1
+Users_Name "UTENZA TECNICA PER A.M. BELGRADO"
+Codifiers_Id 257845
+OriginalId 0
+EOT 
+ 
+ 
+TBL Cpty
+Cpty_Id 283496
+Cpty_ShortName "BIB2335487"
+Cpty_Name "BIB-MIN FIN RS TEST"
+Cities_Id 0
+Countries_Id 0
+Folders_Id 0
+Codifiers_Id 0
+OriginalId 0
+Cpty_Id_Parent 0
+CptyClasses_Id 0
+RiskSector_Id 0
+LegalEntities_Id 0
+EOT 
+ 
+ 
+TBL Folders
+Folders_Id 165449
+Folders_ShortName "F_INC_INV"
+Folders_Name "FIXED INCOME INVESTMENT"
+Portfolios_Id 165416
+Currencies_Id 0
+Cpty_Id 165448
+Folders_Id_Spot_Risk 0
+Folders_Id_Interest_Risk 0
+Codifiers_Id 0
+OriginalId 0
+Entities_Id 1
+EOT 
+ 
+ 
+TBL Portfolios
+Portfolios_Id 165416
+Portfolios_ShortName "INTERBANK"
+Portfolios_Name "INTERBANK"
+Branches_Id 165413
+Codifiers_Id 0
+OriginalId 0
+EOT 
+ 
+ 
+TBL Branches
+Branches_Id 165413
+Branches_ShortName "BIB"
+Branches_Name "BANCA INTESA BEOGRAD"
+Codifiers_Id 0
+OriginalId 0
+HierarchyEntities_Id 235038
+EOT 
+ 
+ 
+TBL HierarchyEntities
+HierarchyEntities_Id 235038
+HierarchyEntities_Name "DEFAULT ENTITY"
+HierarchyEntities_ShortName "D_ENTITY"
+Regions_Id 235037
+EOT 
+ 
+ 
+TBL Regions
+Regions_Id 235037
+Codifiers_Id 0
+OriginalId 0
+Regions_Name "DEFAULT REGION"
+Regions_ShortName "D_REGION"
+Cities_Id 120
+EOT 
+ 
+ 
+TBL Currencies_Deal
+Currencies_Id 110731
+Currencies_ShortName "RSD"
+Currencies_Name "DINARO SERBIA"
+Cities_Id 22591
+EOT 
+ 
+ 
+TBL Bonds
+Bonds_Id 264905
+Bonds_ShortName "RSOB17153"
+Bonds_Name "RSMFRSD38581 3Y T BOND"
+Cities_Id 22591
+Market D "Domestic"
+MarketType S "Secondary"
+Currencies_Id 110731
+Quotation P "Percent"
+QuotationIn P "Clean Price"
+Cpty_Id_Issuer 283498
+Cpty_Id_Guarantee 0
+FirstCouponDate 05/04/2018
+FaceValue 10000.0
+RedemptionValue 10000.0
+IssueDate 05/04/2017
+IssueAmount 110000000000.0
+SettlementDate 05/04/2017
+NoBondsIssued 11000000.0
+Indexation F "Fixed"
+FloatingRates_Id 0
+ResetLag 0
+Spread 0.0
+MultipleSpread 0.0
+MinimumRate 0.0
+MaximumRate 0.0
+IsCapFloor N "None"
+LockOutPeriod 0
+LockOutDaysType B "Business days"
+ExDividendDaysType C "Calendar days"
+MarketConvention S "Settlement Date"
+BondsCalendar_Id 0
+Amortization S "Straight"
+MaturityDate 05/04/2020
+CouponFrequency A "Annual"
+MaturityClasses_Id_Payment 0
+AccruedFormula E "30E/360"
+AccruedDateCalc V "Value Date"
+YieldFormula R "IRR"
+YieldBasis E "30E/360"
+Redrawal N "No"
+DrawingPercentage 100.0
+Category G "Government Bond"
+EndOfMonthAdherence N "No"
+PriceRoundingConv 4
+PriceRoundingType R "Round"
+YieldRoundingConv 4
+YieldRoundingType R "Round"
+CouponRoundingConv 4
+CouponRoundingType R "Round"
+IsCouponRounded N "No"
+IsAModel N "No"
+IsExDividend N "No"
+IsZeroCoupon N "No"
+IsFRN N "No"
+IsMMYield Y "Last Year"
+NoExDividendDays 0
+SettlementDateConv 0
+SettlementDaysType B "Business days"
+ValueDateConv 0
+ValueDaysType B "Business days"
+RollConvention O "None"
+EndDateRollConvention O "None"
+PartlyPaidIssues N "No"
+IsCallPutable N "No"
+IsConvertible N "No"
+Bonds_Id_Conversion 0
+Equities_Id_Conversion 0
+IMMConvention N "No"
+InterestBearing Y "Yes"
+AddAccruedToCall N "No"
+AddAccruedToPut N "No"
+PrincipalIndexed N "No"
+CapitalizationRate 0.0
+AmortizationMethod O "Outstanding Number"
+Pairs_Id_Coupon 0
+CollateralCouponMethod N "None"
+NbGuaranteedMonths 0
+Pairs_Id_Redemption 0
+AccrualFormula L "Linear Method"
+Codifiers_Id 0
+OriginalId 0
+ResetInArrears N "No"
+BrkPrdInterpolation N "No"
+BrokenPeriod B "Beginning"
+FloatingRates_Id_BkPrd_Begin1 0
+FloatingRates_Id_BkPrd_Begin2 0
+FloatingRates_Id_BkPrd_End1 0
+FloatingRates_Id_BkPrd_End2 0
+Seniority P "Senior Secured Public Debt"
+InterestCalcMethod S "Simple Interest"
+FullCoupon Y "Yes"
+Adjusted N "No"
+FixingFrequency A "Annual"
+MaturityClasses_Id_Fixing 0
+AmortizationFrequency A "Annual"
+MaturityClasses_Id_Amortize 0
+AverageFrequency Q "Quarterly"
+MaturityClasses_Id_Average 0
+AverageCalculationMethod W "Weighted"
+AverageFirstCoupon N "No"
+CompoundMargin Y "Yes"
+PaymentLag 0
+PaymentLagType B "Business days"
+Days 0
+EOMAType C "Calendar days"
+AdjustMaturityDate N "No"
+FirstCouponRate 0.0
+CurrenciesInstrumentCategory S "Single Currency"
+LastCouponRate 0.0
+ScheduleGeneration B "From Beginning"
+ScheduleMerging N "None"
+FXResetLag 0
+IsPrincipalReset N "No"
+ISINCode "RSMFRSD38581"
+EligibilityDegree N "None"
+AccruedMethod R "Coupon Rate"
+IncludeAccruedInterest Y "Yes"
+OriginalCurrentFaceValue C "Current"
+PaymentDateConv 0
+PaymentDaysType B "Business days"
+YieldType N "Nominal"
+StructuredBonds N "Bond"
+IsExponentiallyCompounded N "No"
+SpreadType Z "Zero Coupon Spread"
+UseBrazilianRoundingRules N "No"
+IssueYield 0.0
+IsPaidInAdvance N "No"
+DiscountFactorType P "Par Rates"
+GetPriceFrom Y "Yield Curve"
+DominantYield M "Yield to Maturity"
+ParRateInterpolation L "Linear"
+UpdateRiskFigures Y "Yes"
+Curves_Id_CollateralDiscount 0
+CollateralDiscountSpreadBid 0.0
+CollateralDiscountSpreadAsk 0.0
+Bonds_Id_CollateralBenchmark 0
+ForwardFXRateMethod Y "Yield Curve"
+ForwardRates Y "Yield Curve"
+VolatCurves_Id_IR 0
+CollateralBenchmarkSpread 0.0
+PricingMethod D "Dominant Risk"
+NbLoops 0
+Curves_Id_Discount_Principal 0
+PrincipalDiscountSpreadAsk 0.0
+PrincipalDiscountSpreadBid 0.0
+Quanto_Adj N "No"
+VolatCurves_Id_Quanto 0
+FlatVolatQuanto 0.0
+Correlation_Quanto 0.0
+TypeOfInstr_Id 171855
+LegalStatus_Id 207
+RiskSector_Id 0
+ForwardSpreadBid 0.0
+ForwardSpreadAsk 0.0
+Curves_Id_Forward 0
+VolatCurves_Id_Default 0
+CouponFXRate 0.0
+RedemptionFXRate 0.0
+FlatVolatIR 0.0
+ClearingModes_Id 0
+Bonds_Id_Benchmark 0
+BenchmarkSpread 0.0
+Curves_Id_Discount_Coupon 165043
+CouponDiscountSpreadBid 0.0
+CouponDiscountSpreadAsk 0.0
+FloatingRates_Id_Bias 0
+IRFXCorrelMatrix_Id 0
+WhenIssued N "No"
+LastFixingDate "29/08/2018 14:06:47"
+IsModified Y "Yes"
+Currencies_Id_Fixed 110731
+CouponRate 4.50
+IssuePrice 10000.0
+CapitalGainRate 0.0
+ComputeConvexityBias N "No"
+Refundable N "No"
+RepoHedgeRatio 0.0
+Tax N "No"
+WithholdingRate 0.0
+DepositBatchDate 29/08/2018
+IsManualMeanRev N "No"
+MeanReversion 0.0
+CalibDateGenerationMethod D "Exercise Dates"
+CalibStrikeGenerationMethod S "Swaption Strike"
+InstrCalibStrikeValue 0.0
+MarginFormula N "Nominal"
+InstrumentProvider K "Kondor"
+Collateral ""
+Cpty_Id_Originator 0
+Cpty_Id_Servicer 0
+ProductType_Id 0
+EOT 
+ 
+ 
+TBL Cpty_Issuer
+Cpty_Id 283498
+Cpty_ShortName "002974621"
+Cpty_Name "REP SRBIJA TEST"
+Cities_Id 0
+Countries_Id 0
+Folders_Id 0
+Codifiers_Id 0
+OriginalId 0
+Cpty_Id_Parent 0
+CptyClasses_Id 0
+RiskSector_Id 0
+LegalEntities_Id 0
+EOT 
+ 
+ 
+TBL TypeOfInstr
+TypeOfInstr_Id 171855
+TypeOfInstr_ShortName "GBONDS"
+TypeOfInstr_Name "GOVERNMENT BONDS"
+Codifiers_Id 0
+OriginalId 0
+EOT 
+ 
+ 
+TBL Currencies
+Currencies_Id 110731
+Currencies_ShortName "RSD"
+Currencies_Name "DINARO SERBIA"
+Cities_Id 22591
+EOT 
+ 
+ 
+TBL BondsRT
+Bonds_Id 264905
+Duration 1.557416644
+ModifiedDuration 1.507901677
+Gamma 0.000390958
+Theta 0.930229658
+Vega 0.0
+Bpv -1.562921993
+Convexity 3.771947818
+CollateralBpv 0.0
+UncollateralBpv 0.0
+Accrued 1.80
+FxBpv 0.0
+StrippedYTM 0.0
+SovereignSpread 0.0
+Vega_Quanto 0.0
+AdjFactor 1.0
+MarketPrice 101.848765543
+MarketPriceBid 101.848765543
+MarketPriceAsk 101.848765543
+CleanPrice 101.8488
+CleanPriceBid 101.8488
+CleanPriceAsk 101.8488
+YieldToMaturity 3.2837
+CapitalizationFactor 0.0
+EOT 
+ 
+ 
+TBL CptyCodes_Issuer
+ANAG_BE "002974621"
+EOT 
+ 
+ 
+TBL UsersCodes
+CHKCPTYOK "aaa"
+ANAG_BE "BIB"
+PURPCHECK "aaa"
+BSALES_TDY "aaa"
+__RTACCESS "OPERBIB"
+MIFID2 "Yes"
+EOT 
+ 
+ 
+TBL FoldersCodes
+ANAG_BE "BIB"
+EOT 
+ 
+ 
+TBL BondsCodes
+ANAG_BE "RSOB17153"
+IFRS9 "HTCS"
+EOT 
+ 
+ 
+TBL CptyCodes
+ANAG_BE "002335487"
+EOT 
+ 
+ 
+TBL CorrespCodes_PayReceiveToOur
+D3000BIBG "DBDBRSBG"
+ANAG_BE "DBDBRSBG"
+D3000BIBG1 "908-16001-87"
+EOT 
+ 
+ 
+TBL TradeKast_ANAG_BE
+DealIdORIG 0
+EOT 
+ 
+ 
+TBL TradeKast_BONDVISION
+BondVision_Id 0
+EOT 
+ 
+ 
+TBL TradeKast_C_BONDS
+OriginalAmount 0.0
+EOT 
+ 
+ 
+TBL TradeKast_FO-BO
+MIFID ""
+FissatoBollato "DEFAULT"
+PagamentoBolli "DEFAULT"
+TipoSegnalazione "STANDARD"
+TipoPrezzo "MERCATO"
+EOT 
+ 
+ 
+TBL TradeKast_KGR-ADDON
+PayOff_Input ""
+PayOff_Output ""
+UL_Input ""
+UL_Output ""
+Segno_Input ""
+Segno_Output ""
+EOT 
+ 
+ 
+TBL TradeKast_MIFIDBOND
+BENC "NO"
+ACTX "NO"
+TNCP "NO"
+SDIV "NO"
+RPRI "NO"
+TPAC "NO"
+XFPH "NO"
+EOT 
+ 
+ 
+TBL TradeKast_NYORIGID
+Orig_Deal_Id ""
+EOT 
+ 
+ 
+TBL TradeKast_NYTIMESAVE
+NYTimeStamp ""
+EOT 
+ 

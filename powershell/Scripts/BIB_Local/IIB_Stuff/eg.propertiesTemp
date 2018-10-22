@@ -1,0 +1,12 @@
+#EGname=port
+BIB_Internal=7850
+Auxiliary=7851
+BiBCo=7852
+eBankIndividuals=7853
+eBankLegal=7854   
+eMailNotif=7855
+ExternalRegisters=7856
+Kondor=7857
+OriginationAndLending=7858
+SMS=7859
+Common=7860

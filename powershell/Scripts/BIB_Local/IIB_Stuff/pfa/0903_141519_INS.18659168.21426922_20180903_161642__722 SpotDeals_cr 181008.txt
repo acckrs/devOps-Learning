@@ -1,0 +1,419 @@
+# FILE 0903_141519_INS.18659168.21426922
+ 
+ACTION "INS"
+TRANS_ID 21426922
+ 
+XACTKEY 350180000176031936
+OPERATIONS 1
+MAIN_DEAL_TABLE_ID 91
+MAIN_DEAL_ID 18659168
+WARNING ""
+ORIGINAL_TYPE_OF_EVENT N
+DEALS_INSTRUMENT_ID 25
+DEALS_OPERATION_ID 0
+MESSAGE_SOURCE DoubleValidation
+DEALS_OPERATION "INSERT"
+ 
+TBL SpotDeals
+Action I "Insert"
+MvtDate "03/09/2018 14:15:19"
+MvtId 0
+Xactkey 350180000176031936
+SpotDeals_Id 18659168
+Entities_Id 1
+DealStatus V "Valid"
+InputMode C "Captured"
+CaptureDate "03/09/2018 16:15:18"
+TradeDate 03/09/2018
+Users_Id 165486
+Users_Id_Last 0
+Folders_Id 165427
+Purposes_Id 0
+TypeOfEvent N "None"
+BlockNumber 27858023
+TypeOfInstr_Id 1071
+Comments ""
+Pairs_Id 3497
+Cpty_Id 165571
+Amount1 -100000.0
+Amount2 118000.0
+FixingType F "Free"
+EstimatedAmount 0.0
+SpotRate 1.18
+SpotMargin 0.0
+ClientSpot 0.0
+Folders_Id_Spot1 165427
+Folders_Id_Spot2 0
+Folders_Id_Mirror_Spot1 0
+Folders_Id_Mirror_Spot2 0
+Folders_Id_Corporate 0
+CapturedAmount 2 "Amount 2"
+Pairs_Id_Local 3497
+LocalRate 1.18
+LocalAmount 100000.0
+InterbankAmount -100000.0
+ValueDate 05/09/2018
+ValueDateIslamic 05/09/2018
+Currencies_Id_Split 0
+Pairs_Id_Split 0
+SplitRate 0.0
+SplitAmount 0.0
+ClearingModes_Id 0
+MarginSale N "No"
+Corresp_Id_PayToTheir 170556
+PaymentComments ""
+Corresp_Id_ReceiveToOur 170539
+Corresp_Id_PayFromOur 170453
+Currencies_Id_Corporate 3488
+Brokers_Id 0
+Currencies_Id_Brokerage 0
+BrokerageAmount 0.0
+Brokerage_COC 0.0
+FwdSwapHedgeMethod N "None"
+CostOfCarryCur1 0.0
+CostOfCarryCur2 0.0
+AnticipatedCarryCur1 0.0
+AnticipatedCarryCur2 0.0
+CompoundProducts_Id_From 0
+FundProcesses_Id 0
+Codifiers_Id 0
+IsCLS N "No"
+Currencies_Id_Hedge 3488
+OriginalId 0
+LastModifDate "03/09/2018 16:15:18"
+Cur1Cur2IsSwapPair Y "Yes"
+Cur1SplitIsSwapPair N "No"
+Cur2SplitIsSwapPair N "No"
+OriginalLocalAmount 100000.0
+OriginalLocalRate 1.18
+Pairs_Id_OriginalLocal 3497
+Cur1Basis M "ACT/360"
+Cur2Basis M "ACT/360"
+SplitCurBasis M "ACT/360"
+LocalCurBasis M "ACT/360"
+PositionOwner_Id 0
+CollatAgrt_Id 0
+Currencies_Id_CVA 0
+CVAChargeMargin 0.0
+CVAChargeAmount 0.0
+IsCollateralized N "No"
+Folders_Id_Captured 165427
+UTI ""
+EOT 
+ 
+ 
+TBL Corresp_ReceiveToOur
+Corresp_Id 170539
+Corresp_ShortName "CHASUS33"
+Corresp_Name "JPMORGAN CHASE BANK, N.A., N"
+Cpty_Id 0
+DownloadKey "CHASUS33_KEY"
+Codifiers_Id 0
+OriginalId 0
+EOT 
+ 
+ 
+TBL Folders_Spot1
+Folders_Id 165427
+Folders_ShortName "FXMM_INBK"
+Folders_Name "INTERBANK FX MM"
+Portfolios_Id 165416
+Currencies_Id 0
+Cpty_Id 165426
+Folders_Id_Spot_Risk 0
+Folders_Id_Interest_Risk 0
+Codifiers_Id 0
+OriginalId 0
+Entities_Id 1
+EOT 
+ 
+ 
+TBL Entities
+Entities_Id 1
+Entities_ShortName "ISP"
+Entities_Name "ISP"
+Dataservers_Id 1
+Cities_Id 120
+EOT 
+ 
+ 
+TBL Users
+Users_Id 165486
+Users_ShortName "BAROSEVIC"
+UsersGrp_Id 165471
+Users_Name "BOJAN BAROSEVIC"
+Codifiers_Id 257845
+OriginalId 0
+EOT 
+ 
+ 
+TBL Cpty
+Cpty_Id 165571
+Cpty_ShortName "COBADEFF"
+Cpty_Name "COMMERZBANK AG"
+Cities_Id 0
+Countries_Id 318
+Folders_Id 0
+Codifiers_Id 0
+OriginalId 0
+Cpty_Id_Parent 0
+CptyClasses_Id 0
+RiskSector_Id 0
+LegalEntities_Id 0
+EOT 
+ 
+ 
+TBL Folders
+Folders_Id 165427
+Folders_ShortName "FXMM_INBK"
+Folders_Name "INTERBANK FX MM"
+Portfolios_Id 165416
+Currencies_Id 0
+Cpty_Id 165426
+Folders_Id_Spot_Risk 0
+Folders_Id_Interest_Risk 0
+Codifiers_Id 0
+OriginalId 0
+Entities_Id 1
+EOT 
+ 
+ 
+TBL Portfolios
+Portfolios_Id 165416
+Portfolios_ShortName "INTERBANK"
+Portfolios_Name "INTERBANK"
+Branches_Id 165413
+Codifiers_Id 0
+OriginalId 0
+EOT 
+ 
+ 
+TBL Branches
+Branches_Id 165413
+Branches_ShortName "BIB"
+Branches_Name "BANCA INTESA BEOGRAD"
+Codifiers_Id 0
+OriginalId 0
+HierarchyEntities_Id 235038
+EOT 
+ 
+ 
+TBL HierarchyEntities
+HierarchyEntities_Id 235038
+HierarchyEntities_Name "DEFAULT ENTITY"
+HierarchyEntities_ShortName "D_ENTITY"
+Regions_Id 235037
+EOT 
+ 
+ 
+TBL Regions
+Regions_Id 235037
+Codifiers_Id 0
+OriginalId 0
+Regions_Name "DEFAULT REGION"
+Regions_ShortName "D_REGION"
+Cities_Id 120
+EOT 
+ 
+ 
+TBL Corresp_PayToTheir
+Corresp_Id 170556
+Corresp_ShortName "COBADEFF"
+Corresp_Name "COMMERZBANK AG, FRANKFURT AM"
+Cpty_Id 0
+DownloadKey "COBADEFF_KEY"
+Codifiers_Id 0
+OriginalId 0
+EOT 
+ 
+ 
+TBL TypeOfInstr
+TypeOfInstr_Id 1071
+TypeOfInstr_ShortName "SPOT"
+TypeOfInstr_Name "SPOT EXCHANGE"
+Codifiers_Id 0
+OriginalId 0
+EOT 
+ 
+ 
+TBL Pairs_Local
+Pairs_Id 3497
+Pairs_ShortName "EUR/USD"
+Currencies_Id_1 3488
+Currencies_Id_2 247
+QuotationMode D "Direct"
+QuotationUnit 0 "1"
+Quotation 1.0
+PointsDigit 4
+NoDecimal 7
+DisplayOrder Y "Yes"
+Currencies_Id_Split_Spot 0
+Currencies_Id_Split_FxSwap 0
+Currencies_Id_Split_Forward 0
+VolatCurves_Id_Default 0
+GoodOrder Y "Yes"
+SpotLag 2
+SettlementLag 0
+AdjSettlCur 0 "None"
+SwapPair Y "Yes"
+OptionPair N "No"
+LimitRevalRate 1.1827
+SpotRateBid 1.1827
+SpotRateAsk 1.183
+SpotRate 1.18285
+EOT 
+ 
+ 
+TBL Folders_Captured
+Folders_Id 165427
+Folders_ShortName "FXMM_INBK"
+Folders_Name "INTERBANK FX MM"
+Portfolios_Id 165416
+Currencies_Id 0
+Cpty_Id 165426
+Folders_Id_Spot_Risk 0
+Folders_Id_Interest_Risk 0
+Codifiers_Id 0
+OriginalId 0
+Entities_Id 1
+EOT 
+ 
+ 
+TBL Pairs
+Pairs_Id 3497
+Pairs_ShortName "EUR/USD"
+Currencies_Id_1 3488
+Currencies_Id_2 247
+QuotationMode D "Direct"
+QuotationUnit 0 "1"
+Quotation 1.0
+PointsDigit 4
+NoDecimal 7
+DisplayOrder Y "Yes"
+Currencies_Id_Split_Spot 0
+Currencies_Id_Split_FxSwap 0
+Currencies_Id_Split_Forward 0
+VolatCurves_Id_Default 0
+GoodOrder Y "Yes"
+SpotLag 2
+SettlementLag 0
+AdjSettlCur 0 "None"
+SwapPair Y "Yes"
+OptionPair N "No"
+LimitRevalRate 1.1827
+SpotRateBid 1.1827
+SpotRateAsk 1.183
+SpotRate 1.18285
+EOT 
+ 
+ 
+TBL Corresp_PayFromOur
+Corresp_Id 170453
+Corresp_ShortName "BCITITMM"
+Corresp_Name "INTESA SANPAOLO SPA"
+Cpty_Id 0
+DownloadKey "BCITITMM_KEY"
+Codifiers_Id 0
+OriginalId 0
+EOT 
+ 
+ 
+TBL UsersCodes
+D3000BIBG "BB"
+ANAG_BE "BIB"
+INBK_TDYTN "yes"
+EXPORTBIB "5361"
+360T "BIB.Barosevic"
+__RTACCESS "BAROSEVIC"
+IFRS9_SPPI "YES"
+EOT 
+ 
+ 
+TBL FoldersCodes
+ANAG_BE "BIB"
+EOT 
+ 
+ 
+TBL CptyCodes
+D3000BIBG "COBA"
+ANAG_BE "COBADEFF"
+D3000BIBG1 "DREF"
+EOT 
+ 
+ 
+TBL CorrespCodes_PayToTheir
+D3000BIBG "COBA"
+ANAG_BE "COBADEFF"
+D3000BIBG1 "DREF"
+EOT 
+ 
+ 
+TBL CorrespCodes_ReceiveToOur
+D3000BIBG "CHASUS33"
+ANAG_BE "CHASUS33"
+EOT 
+ 
+ 
+TBL CorrespCodes_PayFromOur
+D3000BIBG "BCITITMM"
+ANAG_BE "BCITITMM"
+EOT 
+ 
+ 
+TBL FoldersCodes_Captured
+ANAG_BE "BIB"
+EOT 
+ 
+ 
+TBL LocalData
+DealLocalCaptureDate "03/09/2018 16:15:18"
+UserLocalCaptureDate "03/09/2018 16:15:18"
+EOT 
+ 
+ 
+TBL TradeKast_ADD_DATA
+AgreedType "Nessuno"
+EnteOrig "CCIB"
+FilialeTramite ""
+FilialeDestin ""
+FlagSSI "Y"
+RefCentradia ""
+AgreedTOT 0
+notifica ""
+conto1 ""
+conto2 ""
+Finanaziamento ""
+ContrattoOriginario ""
+CW_ClientSPOT 0.0
+CW_ClientFWD 0.0
+CliAmount1Cur1 0.0
+CliAmount1Cur2 0.0
+CliAmount2Cur1 0.0
+CliAmount2Cur2 0.0
+FlgCIRS "No"
+FlagEsercizioOpzione "N"
+EOT 
+ 
+ 
+TBL TradeKast_DEALINGFX
+Metodo ""
+Nos_Corr ""
+Lor_Corr ""
+DealerId ""
+EOT 
+ 
+ 
+TBL TradeKast_FAIRVALUE
+FairValue "2"
+EOT 
+ 
+ 
+TBL custTKClient_Spot_check_0
+TradeKastFilter 1
+EOT 
+ 
+ 
+TBL custTKClient_Spot_check
+Number 1
+EOT 
+ 

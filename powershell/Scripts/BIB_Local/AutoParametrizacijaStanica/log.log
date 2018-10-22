@@ -1,0 +1,29 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180928134708
+Username: DELTABANK\admin_kaleksandar
+RunAs User: DELTABANK\admin_kaleksandar
+Machine: ICT-211-5888 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\scripts\Start-EditorServices.ps1' -EditorServicesVersion '1.5.1' -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '1.5.1' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\logs\1538030231-3cbc5a64-29d0-4a6e-bc74-6da6b531da1a1538030226024\EditorServices.log' -SessionDetailsPath 'C:\Users\admin_kaleksandar\.vscode\extensions\ms-vscode.powershell-1.5.1\sessions\PSES-VSCode-14292-622686' -FeatureFlags @()
+Process ID: 17804
+PSVersion: 5.0.10586.117
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0.10586.117
+BuildVersion: 10.0.10586.117
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is log.log
+[28-09-2018 13:47:08]   Script init and load module ActiveDirectory,".\get-newContent.ps1"
+[28-09-2018 13:47:10]  Stanica ict-211-5888 je vec clan AD grupe ict-211-NAC
+[28-09-2018 13:47:10]  Folder .\UAT\Config\Clients\ict-211-5888\ vec postoji na UAT
+[28-09-2018 13:47:10]  Folder .\DEV\Config\Clients\ict-211-5888\ vec postoji na DEV
+[28-09-2018 13:47:10]  Folder .\MNT\Config\Clients\ict-211-5888\ vec postoji na MNT
+[28-09-2018 13:47:10]  Folder .\TRN\Config\Clients\ict-211-5888\ vec postoji na TRN
+[28-09-2018 13:47:10]  Folder .\FC1\Config\Clients\ict-211-5888\ vec postoji na FC1
+[28-09-2018 13:47:10]  Folder .\FC2\Config\Clients\ict-211-5888\ vec postoji na FC2
+**********************
+Windows PowerShell transcript end
+End time: 20180928134710
+**********************
