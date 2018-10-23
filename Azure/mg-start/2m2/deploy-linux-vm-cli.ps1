@@ -8,7 +8,6 @@
 # WEB: timw.info
 # #############################################################################
 
-ssh-keygen -t rsa -b 2048 -C "acckrs@vm-azuretraining-acckrslin" -f c:/users/acckr/.ssh/id_rsa -N Animacija132!
 
 az
 
