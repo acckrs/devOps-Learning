@@ -1,4 +1,4 @@
-set-location "C:\Acca\Powershell_local\"
+set-location "D:\Acca\"
 function Global:Prompt
 {
     $p = Split-Path -leaf -path (Get-Location)
